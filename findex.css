@@ -153,3 +153,9 @@
     padding-right: 12px;
     background-clip: padding-box;
   }
+
+.textarea-fixed{
+    resize: none;
+    overflow: auto;
+  }
+  html{ scroll-behavior: auto !important; }
