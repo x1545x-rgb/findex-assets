@@ -1,4 +1,4 @@
-<!-- 1) Card hover tilt/spotlight: set CSS vars (--mx/--my/--rx/--ry) for .link-block / .hoverfx -->
+// 1) Card hover tilt/spotlight: set CSS vars (--mx/--my/--rx/--ry) for .link-block / .hoverfx
 
 (() => {
   const MAX_TILT = 6;
@@ -37,7 +37,7 @@
 })();
 
 
-<!-- 2) Filter toggle active state: toggles .is-active on .filter-toggle -->
+// 2) Filter toggle active state: toggles .is-active on .filter-toggle
 
 (() => {
   const BTN_SEL = ".filter-toggle";
@@ -50,7 +50,8 @@
 })();
 
 
-<!-- 3) Background "market glow" canvas: fetch/resample series + draw glow/grid/noise/vignette + series switcher -->
+// 3)  Background "market glow" canvas: fetch/resample series + draw glow/grid/noise/vignette + series switcher
+
 (() => {
   if (window.__bgFix && typeof window.__bgFix.destroy === "function") {
     window.__bgFix.destroy();
@@ -669,7 +670,8 @@
   boot();
 })();
 
-<!-- 4) Text shuffle reveal for [data-shuffle="true"] -->
+// 4) Text shuffle reveal for [data-shuffle="true"]
+
 (() => {
   const CHARS = "0123456789!?#$%&*-_+=/";
 
@@ -717,7 +719,8 @@
   });
 })();
 
-<!-- 5) Pagination/anchor jump: force instant scroll on pagination clicks (override smooth behavior temporarily) -->
+// 5) Pagination/anchor jump: force instant scroll on pagination clicks (override smooth behavior temporarily) 
+
 (() => {
   let forceInstant = false;
 
@@ -774,7 +777,8 @@
   }, true);
 })();
 
-<!-- 6) Filter panel "hug width": measure tag rows and set panel width to fit content -->
+// 6) Filter panel "hug width": measure tag rows and set panel width to fit content
+
 (() => {
   if (window.__findexFilterHug?.destroy) window.__findexFilterHug.destroy();
 
