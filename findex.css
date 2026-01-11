@@ -1,0 +1,155 @@
+  /* Card image zoom on hover */
+  .cardimgwrap { overflow: hidden; }
+  .collectionitemimage{
+    transition: transform .6s cubic-bezier(.2,.8,.2,1);
+    will-change: transform;
+    transform: translateZ(0);
+  }
+  .link-block:hover .collectionitemimage{
+    transform: scale(1.05);
+  }
+
+  /* Card hover lighting + lift/tilt (JS sets CSS vars: --mx/--my/--rx/--ry) */
+  .link-block,
+  .hoverfx{
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform .45s cubic-bezier(.2,.8,.2,1), box-shadow .45s cubic-bezier(.2,.8,.2,1);
+    will-change: transform;
+  }
+
+  
+  
+@media (hover: none) {
+  .link-block::before,
+  .link-block::after,
+  .hoverfx::before,
+  .hoverfx::after{
+    opacity: 0 !important;
+  }
+
+  .link-block,
+  .hoverfx{
+    transform: none !important;
+    box-shadow: none !important;
+  }
+
+  .link-block:hover .collectionitemimage{
+    transform: none !important;
+  }
+}
+
+  
+  
+  
+  
+  
+  /* Spotlight (cursor-follow radial gradient) */
+  .link-block::before,
+  .hoverfx::before{
+    content:"";
+    position:absolute;
+    inset:-2px;
+    pointer-events:none;
+    opacity:0;
+    transition: opacity .25s ease;
+    border-radius: 14px;
+    background:
+      radial-gradient(
+        500px circle at var(--mx, 50%) var(--my, 50%),
+        rgba(120,160,255,.25),
+        rgba(120,160,255,.08) 35%,
+        rgba(0,0,0,0) 65%
+      );
+    mix-blend-mode: screen;
+  }
+
+  /* Subtle inner border */
+  .link-block::after,
+  .hoverfx::after{
+    content:"";
+    position:absolute;
+    inset:0;
+    pointer-events:none;
+    opacity:0;
+    transition: opacity .25s ease;
+    border-radius: 14px;
+    box-shadow: 0 0 0 1px rgba(255,255,255,.10) inset;
+  }
+
+  .link-block:hover::before,
+  .link-block:hover::after{
+    opacity:1;
+  }
+
+  /* Lift + tilt */
+  .link-block:hover,
+  .hoverfx:hover{
+    transform:
+      translateY(-3px)
+      rotateX(var(--rx, 0deg))
+      rotateY(var(--ry, 0deg));
+    box-shadow: 0 18px 45px rgba(0,0,0,.35);
+  }
+
+  /* Filter toggle active state */
+  .filter-toggle.is-active{
+    background-color: #6033ff !important;
+  }
+
+  /* Collection item title font */
+  .collectionitemtitle{
+    font-family: "Kt Flux 2 Variable", "Zen Kaku Gothic New", serif;
+  }
+
+  /* Market glow background canvas wrapper */
+  #market-glow-bg{
+    z-index: 0;
+    pointer-events: none;
+    overflow: hidden;
+    background: #050508;
+  }
+
+  /* Ensure main content stays above background layers */
+  body{
+    position: relative;
+    -webkit-font-smoothing: antialiased;
+  }
+  .page-wrapper,
+  .w-page{
+    position: relative;
+    z-index: 1;
+  }
+
+  /* Loading state */
+  .CollectionItem{ transition: opacity .2s ease; }
+  .CollectionItem.is-list-loading{ opacity: .35; }
+
+  /* Pagination disabled styles */
+  .w-pagination-previous.w--current,
+  .w-pagination-previous[aria-disabled="true"],
+  .w-pagination-previous[disabled]{
+    opacity: .25;
+    pointer-events: none;
+  }
+  .w-pagination-next.w--current,
+  .w-pagination-next[aria-disabled="true"],
+  .w-pagination-next[disabled]{
+    opacity: .25;
+    pointer-events: none;
+  }
+
+  /* Text selection color */
+  ::selection{
+    background:#3519B7;
+    color:#fff;
+  }
+
+  /* Hide native select arrow for series select */
+  select[data-bg-series-select="1"]{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding-right: 12px;
+    background-clip: padding-box;
+  }
