@@ -50,7 +50,7 @@
 })();
 
 
-// 3)  Background "market glow" canvas: fetch/resample series + draw glow/grid/noise/vignette + series switcher
+// 3) Background "market glow" canvas: fetch/resample series + draw glow/grid/noise/vignette + series switcher
 
 (() => {
   if (window.__bgFix && typeof window.__bgFix.destroy === "function") {
@@ -81,15 +81,15 @@
     layerOpacity: 0.92,
     blendMode: "screen",
 
-    // Colors
-    backgroundTop: "#0A0A12",
+    // Colors (Neon Lime / #72ff00)
+    backgroundTop: "#070A07",
     backgroundBottom: "#050508",
     areaGradientStops: [
-      { stop: 0.00, color: "rgba(70, 120, 255, 0.70)" },
-      { stop: 0.55, color: "rgba(83, 54, 238, 0.45)" },
-      { stop: 1.00, color: "rgba(0, 210, 255, 0.20)" }
+      { stop: 0.00, color: "rgba(114, 255, 0, 0.70)" },  // #72ff00 main
+      { stop: 0.55, color: "rgba(0, 255, 170, 0.28)" },  // teal hint for depth
+      { stop: 1.00, color: "rgba(0, 120, 60, 0.10)" }    // dark green tail
     ],
-    strokeColor: "rgba(160, 190, 255, 0.95)",
+    strokeColor: "rgba(190, 255, 160, 0.95)",
 
     noiseOpacity: 0.10,
     vignetteOpacity: 0.55,
@@ -719,7 +719,7 @@
   });
 })();
 
-// 5) Pagination/anchor jump: force instant scroll on pagination clicks (override smooth behavior temporarily) 
+// 5) Pagination/anchor jump: force instant scroll on pagination clicks (override smooth behavior temporarily)
 
 (() => {
   let forceInstant = false;
@@ -875,5 +875,3 @@
     }
   };
 })();
-
-  
