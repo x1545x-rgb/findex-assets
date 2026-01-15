@@ -1,57 +1,4 @@
-// 1) Card hover tilt/spotlight: set CSS vars (--mx/--my/--rx/--ry) for .link-block / .hoverfx
-
-(() => {
-  const MAX_TILT = 6;
-
-  function setVars(el, ev) {
-    const r = el.getBoundingClientRect();
-    const x = ev.clientX - r.left;
-    const y = ev.clientY - r.top;
-
-    el.style.setProperty("--mx", `${(x / r.width) * 100}%`);
-    el.style.setProperty("--my", `${(y / r.height) * 100}%`);
-
-    const dx = (x / r.width) - 0.5;
-    const dy = (y / r.height) - 0.5;
-
-    el.style.setProperty("--ry", `${dx * MAX_TILT}deg`);
-    el.style.setProperty("--rx", `${-dy * MAX_TILT}deg`);
-  }
-
-  const SEL = ".link-block, .hoverfx";
-
-  document.addEventListener("mousemove", (ev) => {
-    const el = ev.target.closest(SEL);
-    if (!el) return;
-    setVars(el, ev);
-  }, { passive: true });
-
-  document.addEventListener("mouseout", (ev) => {
-    const el = ev.target.closest?.(SEL);
-    if (!el) return;
-    if (!el.contains(ev.relatedTarget)) {
-      el.style.setProperty("--rx", "0deg");
-      el.style.setProperty("--ry", "0deg");
-    }
-  }, true);
-})();
-
-
-// 2) Filter toggle active state: toggles .is-active on .filter-toggle
-
-(() => {
-  const BTN_SEL = ".filter-toggle";
-
-  document.addEventListener("click", (e) => {
-    const btn = e.target.closest(BTN_SEL);
-    if (!btn) return;
-    btn.classList.toggle("is-active");
-  });
-})();
-
-
-// 3) Background "market glow" canvas: fetch/resample series + draw glow/grid/noise/vignette + series switcher
-
+<!-- 3) Background "market glow" canvas: fetch/resample series + draw glow/grid/noise/vignette + series switcher -->
 (() => {
   if (window.__bgFix && typeof window.__bgFix.destroy === "function") {
     window.__bgFix.destroy();
@@ -60,6 +7,9 @@
   const el = document.getElementById("market-glow-bg");
   if (!el) return;
 
+  const clamp01 = (v) => Math.max(0, Math.min(1, Number(v)));
+
+  // ---- Settings (defaults are your latest "good numbers") ----
   const SETTINGS = {
     // Data
     seriesId: "NASDAQCOM",
@@ -76,23 +26,54 @@
     graphOverscanScale: 1.10,
 
     // Blur / Glow
-    blurPx: 22,
+    // ※ 以前は glow canvas に CSS filter を当ててたが、haze/area を別々に調整したいので
+    //    ここでは "描画側の ctx.filter" でコントロールする。
+    chartBlurPx: 18,        // ← グラフ自体のぼかし（要望）
+    strokeWidth: 2,
+    strokeShadowBlur: 28,
     glowStrength: 1.6,
     layerOpacity: 0.92,
     blendMode: "screen",
 
-    // Colors (Neon Lime / #72ff00)
-    backgroundTop: "#070A07",
-    backgroundBottom: "#050508",
-    areaGradientStops: [
-      { stop: 0.00, color: "rgba(114, 255, 0, 0.70)" },  // #72ff00 main
-      { stop: 0.55, color: "rgba(0, 255, 170, 0.28)" },  // teal hint for depth
-      { stop: 1.00, color: "rgba(0, 120, 60, 0.10)" }    // dark green tail
+    // Colors (base)
+    backgroundTop: "#000000",
+    backgroundBottom: "#000000",
+    backgroundRadials: [
+      { x: 0.8, y: 1.05, r: 1.1, color: "rgba(1,11,147,0.41)" },
+      { x: 0.1, y: 0.1,  r: 0.85, color: "rgba(4,0,255,0.27)" },
     ],
-    strokeColor: "rgba(190, 255, 160, 0.95)",
 
-    noiseOpacity: 0.10,
-    vignetteOpacity: 0.55,
+    // Area gradient (ratio + angle controllable)
+    areaGradientStops: [
+      { stop: 0.00, color: "rgba(6,27,76,0)" },
+      { stop: 0.55, color: "rgba(17,60,187,0.26)" },
+      { stop: 1.00, color: "rgba(199,223,255,1)" },
+    ],
+    // 3点の比率（top/mid/bottom）を別パラメータで上書き可能にする
+    areaStopTop: 0.11,
+    areaStopMid: 0.57,
+    areaStopBottom: 0.64,
+    // グラデの角度（0: 左→右 / 90: 上→下）
+    areaAngleDeg: 15,
+
+    strokeColor: "rgba(0,0,0,0)",
+
+    // Haze (multi-layer depth; driven by wave)
+    hazeEnabled: true,
+    hazeOpacity: 0.61,
+    hazeBlurPx: 51,
+    hazeCount: 14,
+    hazeSpread: 0.39,
+    hazeYOffset: 42, // px想定（本番側はpxで扱う）
+    hazeStops: [
+      { stop: 0.00, color: "rgba(70,120,255,0.26)" },
+      { stop: 0.55, color: "rgba(83,54,238,0.20)" },
+      { stop: 1.00, color: "rgba(0,210,255,0.12)" },
+    ],
+
+    // Overlay
+    noiseOpacity: 0.06,
+    vignetteOpacity: 0.15,
 
     // Grid
     gridEnabled: true,
@@ -107,7 +88,7 @@
     gridBlendMode: "overlay",
     gridOverallOpacity: 0.95,
 
-    // BG tint
+    // BG tint (keep existing feature; you can disable anytime)
     bgTintEnabled: true,
     bgTintOpacity: 0.45,
     bgTintBlendMode: "screen",
@@ -219,7 +200,8 @@
     left: `-${insetPct}%`,
     width: `${overscan * 100}%`,
     height: `${overscan * 100}%`,
-    filter: `blur(${SETTINGS.blurPx}px)`,
+    // blurは ctx.filter 側で扱う（haze/area別調整のため）
+    filter: "none",
     opacity: String(SETTINGS.layerOpacity),
     mixBlendMode: SETTINGS.blendMode,
     pointerEvents: "none"
@@ -401,12 +383,31 @@
   }
 
   function drawBackground(w, h) {
+    // base linear
     const bg = mctx.createLinearGradient(0, 0, 0, h);
     bg.addColorStop(0, SETTINGS.backgroundTop);
     bg.addColorStop(1, SETTINGS.backgroundBottom);
     mctx.fillStyle = bg;
     mctx.fillRect(0, 0, w, h);
 
+    // explicit radials (your preset)
+    if (Array.isArray(SETTINGS.backgroundRadials) && SETTINGS.backgroundRadials.length) {
+      mctx.save();
+      mctx.globalCompositeOperation = "screen";
+      for (const r of SETTINGS.backgroundRadials) {
+        const cx = (Number(r.x) || 0) * w;
+        const cy = (Number(r.y) || 0) * h;
+        const rr = (Number(r.r) || 0) * Math.max(w, h);
+        const grad = mctx.createRadialGradient(cx, cy, 0, cx, cy, rr);
+        grad.addColorStop(0, r.color || "rgba(80,120,255,0.12)");
+        grad.addColorStop(1, "rgba(0,0,0,0)");
+        mctx.fillStyle = grad;
+        mctx.fillRect(0, 0, w, h);
+      }
+      mctx.restore();
+    }
+
+    // keep legacy bgTint option (optional)
     if (!SETTINGS.bgTintEnabled) return;
 
     const topColorSrc = (SETTINGS.areaGradientStops && SETTINGS.areaGradientStops[0]?.color) || SETTINGS.strokeColor;
@@ -431,6 +432,80 @@
     mctx.restore();
   }
 
+  function makeAngledGradient(ctx, rect, angleDeg) {
+    const x = rect.x, y = rect.y, w = rect.w, h = rect.h;
+    const cx = x + w / 2;
+    const cy = y + h / 2;
+    const rad = (Number(angleDeg) || 90) * Math.PI / 180;
+    const L = Math.hypot(w, h);
+    const dx = Math.cos(rad) * (L / 2);
+    const dy = Math.sin(rad) * (L / 2);
+    return ctx.createLinearGradient(cx - dx, cy - dy, cx + dx, cy + dy);
+  }
+
+  function getAreaStops() {
+    const src = Array.isArray(SETTINGS.areaGradientStops) ? SETTINGS.areaGradientStops : [];
+    const c0 = src[0]?.color || "rgba(70,120,255,0.70)";
+    const c1 = src[1]?.color || "rgba(83,54,238,0.45)";
+    const c2 = src[2]?.color || "rgba(0,210,255,0.20)";
+
+    // ratio override（top/mid/bottom）
+    const s0 = (SETTINGS.areaStopTop != null) ? clamp01(SETTINGS.areaStopTop) : clamp01(src[0]?.stop ?? 0);
+    const s1 = (SETTINGS.areaStopMid != null) ? clamp01(SETTINGS.areaStopMid) : clamp01(src[1]?.stop ?? 0.55);
+    const s2 = (SETTINGS.areaStopBottom != null) ? clamp01(SETTINGS.areaStopBottom) : clamp01(src[2]?.stop ?? 1);
+
+    // ensure monotonic (just in case)
+    const a0 = Math.min(s0, s1, s2);
+    const a2 = Math.max(s0, s1, s2);
+    const a1 = Math.min(Math.max(s1, a0), a2);
+
+    return [
+      { stop: a0, color: c0 },
+      { stop: a1, color: c1 },
+      { stop: a2, color: c2 },
+    ];
+  }
+
+  function drawWaveHaze(nd, w, h, chartY, chartH, drawW) {
+    if (!SETTINGS.hazeEnabled) return;
+
+    const count = Math.max(6, SETTINGS.hazeCount | 0);
+    const yOffsetPx = Number(SETTINGS.hazeYOffset) || 0;
+
+    gctx.save();
+    gctx.globalCompositeOperation = "screen";
+    gctx.globalAlpha = clamp01(SETTINGS.hazeOpacity);
+
+    const blur = Math.max(0, Number(SETTINGS.hazeBlurPx) || 0);
+    gctx.filter = blur > 0 ? `blur(${blur}px)` : "none";
+
+    const rect = { x: 0, y: chartY - chartH, w, h: chartH };
+    const blobGrad = makeAngledGradient(gctx, rect, SETTINGS.areaAngleDeg);
+    const hazeStops = Array.isArray(SETTINGS.hazeStops) ? SETTINGS.hazeStops : [];
+    for (const s of hazeStops) blobGrad.addColorStop(clamp01(s.stop), s.color);
+
+    for (let i = 0; i < count; i++) {
+      const t = i / (count - 1);
+      const idx = Math.min(nd.length - 1, Math.max(0, Math.round(t * (nd.length - 1))));
+      const p = nd[idx];
+
+      const x = -SETTINGS.bleedX + t * drawW;
+      const y = chartY - p.n * chartH + yOffsetPx;
+
+      const baseR = Math.max(w, h) * 0.22 * (Number(SETTINGS.hazeSpread) || 1);
+      const r = baseR * (0.72 + p.n * 0.75) * (0.90 + Math.random() * 0.20);
+
+      gctx.beginPath();
+      gctx.arc(x, y, r, 0, Math.PI * 2);
+      gctx.fillStyle = blobGrad;
+      gctx.fill();
+    }
+
+    gctx.filter = "none";
+    gctx.globalAlpha = 1;
+    gctx.restore();
+  }
+
   function drawChartGlow(data, w, h) {
     const ow = w * SETTINGS.graphOverscanScale;
     const oh = h * SETTINGS.graphOverscanScale;
@@ -448,8 +523,18 @@
     const drawW = w + SETTINGS.bleedX * 2;
     const jitter = SETTINGS.subtleJitter ? (SEED - 0.5) * 18 : 0;
 
-    const area = gctx.createLinearGradient(0, chartY - chartH, 0, chartY);
-    for (const s of SETTINGS.areaGradientStops) area.addColorStop(s.stop, s.color);
+    // haze first (under area)
+    drawWaveHaze(nd, w, h, chartY, chartH, drawW);
+
+    // angled area gradient with ratio control
+    const rect = { x: 0, y: chartY - chartH, w, h: chartH };
+    const area = makeAngledGradient(gctx, rect, SETTINGS.areaAngleDeg);
+    const stops = getAreaStops();
+    for (const s of stops) area.addColorStop(clamp01(s.stop), s.color);
+
+    // --- area fill (with chart blur) ---
+    const chartBlur = Math.max(0, Number(SETTINGS.chartBlurPx) || 0);
+    gctx.filter = chartBlur > 0 ? `blur(${chartBlur}px)` : "none";
 
     gctx.beginPath();
     nd.forEach((p, i) => {
@@ -465,6 +550,7 @@
     gctx.fillStyle = area;
     gctx.fill();
 
+    // --- stroke (also blurred a bit; you can set strokeColor alpha instead) ---
     gctx.beginPath();
     nd.forEach((p, i) => {
       const t = i / (nd.length - 1);
@@ -473,12 +559,15 @@
       if (i === 0) gctx.moveTo(x, y);
       else gctx.lineTo(x, y);
     });
+
     gctx.strokeStyle = SETTINGS.strokeColor;
-    gctx.lineWidth = 2;
-    gctx.shadowBlur = 26 * SETTINGS.glowStrength;
+    gctx.lineWidth = SETTINGS.strokeWidth || 2;
+    gctx.shadowBlur = (SETTINGS.strokeShadowBlur || 28) * (SETTINGS.glowStrength || 1);
     gctx.shadowColor = SETTINGS.strokeColor;
     gctx.stroke();
+
     gctx.shadowBlur = 0;
+    gctx.filter = "none";
 
     gctx.restore();
   }
@@ -655,8 +744,19 @@
     },
     redraw: scheduleFullRedraw,
     setSeries(id) { setSeriesId(id).catch(console.error); },
+
+    // quick tweaks from console if needed
+    setAreaAngle(v) { SETTINGS.areaAngleDeg = Number(v) || 0; scheduleFullRedraw(); },
+    setAreaStops(a, b, c) {
+      SETTINGS.areaStopTop = clamp01(a);
+      SETTINGS.areaStopMid = clamp01(b);
+      SETTINGS.areaStopBottom = clamp01(c);
+      scheduleFullRedraw();
+    },
+    setChartBlur(v) { SETTINGS.chartBlurPx = Math.max(0, Number(v) || 0); scheduleFullRedraw(); },
     setVignette(v) { SETTINGS.vignetteOpacity = Number(v) || 0; scheduleFullRedraw(); },
     setNoise(v) { SETTINGS.noiseOpacity = Number(v) || 0; scheduleFullRedraw(); },
+
     destroy() {
       cancelAnimationFrame(rafFollow);
       cancelAnimationFrame(rafDraw);
@@ -668,210 +768,4 @@
   };
 
   boot();
-})();
-
-// 4) Text shuffle reveal for [data-shuffle="true"]
-
-(() => {
-  const CHARS = "0123456789!?#$%&*-_+=/";
-
-  function shuffleReveal(el, {
-    duration = 600,
-    fps = 60,
-    startRatio = 0.15,
-    chars = CHARS
-  } = {}) {
-    const finalText = el.dataset.finalText || el.textContent;
-    el.dataset.finalText = finalText;
-
-    const len = finalText.length;
-    const frameMs = 1000 / fps;
-    const totalFrames = Math.max(1, Math.round(duration / frameMs));
-    const startFrame = Math.floor(totalFrames * startRatio);
-
-    let frame = 0;
-
-    const tick = () => {
-      frame++;
-      const prog = Math.min(1, Math.max(0, (frame - startFrame) / (totalFrames - startFrame)));
-      const fixedCount = Math.floor(len * prog);
-
-      let out = "";
-      for (let i = 0; i < len; i++) {
-        const c = finalText[i];
-        if (c === " ") { out += " "; continue; }
-        if (i < fixedCount) out += c;
-        else out += chars[Math.floor(Math.random() * chars.length)];
-      }
-      el.textContent = out;
-
-      if (frame < totalFrames) requestAnimationFrame(tick);
-      else el.textContent = finalText;
-    };
-
-    requestAnimationFrame(tick);
-  }
-
-  window.addEventListener("DOMContentLoaded", () => {
-    document.querySelectorAll('[data-shuffle="true"]').forEach((el) => {
-      shuffleReveal(el, { duration: 600, startRatio: 0.15 });
-    });
-  });
-})();
-
-// 5) Pagination/anchor jump: force instant scroll on pagination clicks (override smooth behavior temporarily)
-
-(() => {
-  let forceInstant = false;
-
-  const _scrollTo = window.scrollTo.bind(window);
-  window.scrollTo = (arg1, arg2) => {
-    if (!forceInstant) return _scrollTo(arg1, arg2);
-    if (typeof arg1 === "object" && arg1) {
-      const opts = { ...arg1 };
-      if (opts.behavior) opts.behavior = "auto";
-      return _scrollTo(opts);
-    }
-    return _scrollTo(arg1, arg2);
-  };
-
-  const _siv = Element.prototype.scrollIntoView;
-  Element.prototype.scrollIntoView = function (arg) {
-    if (!forceInstant) return _siv.call(this, arg);
-    if (typeof arg === "object" && arg) {
-      const opts = { ...arg };
-      if (opts.behavior) opts.behavior = "auto";
-      return _siv.call(this, opts);
-    }
-    return _siv.call(this, arg);
-  };
-
-  const jumpToAnchor = () => {
-    const anchor =
-      document.querySelector('[fs-list-element="scroll-anchor-pagination"]') ||
-      document.querySelector('[fs-list-element="scroll-anchor"]');
-
-    const y = anchor
-      ? Math.max(0, anchor.getBoundingClientRect().top + window.pageYOffset)
-      : 0;
-
-    window.scrollTo({ top: y, left: 0, behavior: "auto" });
-    setTimeout(() => window.scrollTo({ top: y, left: 0, behavior: "auto" }), 50);
-    setTimeout(() => window.scrollTo({ top: y, left: 0, behavior: "auto" }), 150);
-  };
-
-  const pagerSelector = [
-    ".w-pagination-next",
-    ".w-pagination-previous",
-    '[fs-list-element="page-button"]'
-  ].join(",");
-
-  document.addEventListener("click", (e) => {
-    const pager = e.target.closest(pagerSelector);
-    if (!pager) return;
-
-    forceInstant = true;
-    setTimeout(jumpToAnchor, 0);
-    setTimeout(jumpToAnchor, 200);
-    setTimeout(() => { forceInstant = false; }, 1200);
-  }, true);
-})();
-
-// 6) Filter panel "hug width": measure tag rows and set panel width to fit content
-
-(() => {
-  if (window.__findexFilterHug?.destroy) window.__findexFilterHug.destroy();
-
-  const panel = document.querySelector('[data-filter-panel="1"]');
-  if (!panel) return;
-
-  const wraps = Array.from(panel.querySelectorAll('[data-tag-wrap="1"]'));
-  if (!wraps.length) return;
-
-  panel.style.boxSizing = "border-box";
-  panel.style.maxWidth = "100%";
-
-  const getGapX = (wrap) => {
-    const cs = getComputedStyle(wrap);
-    const g = (cs.columnGap && cs.columnGap !== "normal") ? cs.columnGap : cs.gap;
-    const first = (g || "0px").toString().trim().split(" ")[0];
-    const n = parseFloat(first);
-    return Number.isFinite(n) ? n : 0;
-  };
-
-  const measureWrapMaxRowWidth = (wrap) => {
-    const items = Array.from(wrap.children).filter((el) => el.offsetParent !== null);
-    if (!items.length) return 0;
-
-    const gapX = getGapX(wrap);
-
-    const rows = new Map();
-    for (const el of items) {
-      const top = el.offsetTop;
-      if (!rows.has(top)) rows.set(top, []);
-      rows.get(top).push(el);
-    }
-
-    let maxRowW = 0;
-    for (const row of rows.values()) {
-      let w = 0;
-      row.forEach((el, i) => {
-        w += el.getBoundingClientRect().width;
-        if (i > 0) w += gapX;
-      });
-      maxRowW = Math.max(maxRowW, w);
-    }
-
-    const cs = getComputedStyle(wrap);
-    const padX = (parseFloat(cs.paddingLeft) || 0) + (parseFloat(cs.paddingRight) || 0);
-
-    return maxRowW + padX;
-  };
-
-  let raf = 0;
-
-  const measureAll = () => {
-    cancelAnimationFrame(raf);
-
-    const parent = panel.parentElement;
-    const available = parent ? parent.getBoundingClientRect().width : window.innerWidth;
-
-    panel.style.width = available + "px";
-
-    raf = requestAnimationFrame(() => {
-      let maxW = 0;
-      for (const wrap of wraps) {
-        maxW = Math.max(maxW, measureWrapMaxRowWidth(wrap));
-      }
-
-      const pcs = getComputedStyle(panel);
-      const panelPadX = (parseFloat(pcs.paddingLeft) || 0) + (parseFloat(pcs.paddingRight) || 0);
-      maxW += panelPadX;
-
-      const finalW = Math.min(maxW, available);
-      panel.style.width = finalW + "px";
-    });
-  };
-
-  const ro = new ResizeObserver(measureAll);
-  wraps.forEach((w) => ro.observe(w));
-  if (panel.parentElement) ro.observe(panel.parentElement);
-
-  window.addEventListener("resize", measureAll, { passive: true });
-  panel.addEventListener("transitionend", measureAll);
-
-  if (document.fonts?.ready) document.fonts.ready.then(measureAll).catch(() => {});
-  document.addEventListener("click", () => measureAll(), true);
-
-  measureAll();
-
-  window.__findexFilterHug = {
-    destroy() {
-      try { ro.disconnect(); } catch (e) {}
-      window.removeEventListener("resize", measureAll);
-      panel.removeEventListener("transitionend", measureAll);
-      cancelAnimationFrame(raf);
-      delete window.__findexFilterHug;
-    }
-  };
 })();
