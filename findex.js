@@ -1,5 +1,4 @@
 // 1) Card hover tilt/spotlight: set CSS vars (--mx/--my/--rx/--ry) for .link-block / .hoverfx
-
 (() => {
   const MAX_TILT = 6;
 
@@ -20,25 +19,31 @@
 
   const SEL = ".link-block, .hoverfx";
 
-  document.addEventListener("mousemove", (ev) => {
-    const el = ev.target.closest(SEL);
-    if (!el) return;
-    setVars(el, ev);
-  }, { passive: true });
+  document.addEventListener(
+    "mousemove",
+    (ev) => {
+      const el = ev.target.closest(SEL);
+      if (!el) return;
+      setVars(el, ev);
+    },
+    { passive: true }
+  );
 
-  document.addEventListener("mouseout", (ev) => {
-    const el = ev.target.closest?.(SEL);
-    if (!el) return;
-    if (!el.contains(ev.relatedTarget)) {
-      el.style.setProperty("--rx", "0deg");
-      el.style.setProperty("--ry", "0deg");
-    }
-  }, true);
+  document.addEventListener(
+    "mouseout",
+    (ev) => {
+      const el = ev.target.closest?.(SEL);
+      if (!el) return;
+      if (!el.contains(ev.relatedTarget)) {
+        el.style.setProperty("--rx", "0deg");
+        el.style.setProperty("--ry", "0deg");
+      }
+    },
+    true
+  );
 })();
 
-
 // 2) Filter toggle active state: toggles .is-active on .filter-toggle
-
 (() => {
   const BTN_SEL = ".filter-toggle";
 
@@ -49,10 +54,9 @@
   });
 })();
 
-
-// 3)  Background "market glow" canvas: fetch/resample series + draw glow/grid/noise/vignette + series switcher
-
+// 3) Background "market glow" canvas: fetch/resample series + draw glow/grid/noise/vignette + series switcher
 (() => {
+  // Guard: avoid duplicate instances
   if (window.__bgFix && typeof window.__bgFix.destroy === "function") {
     window.__bgFix.destroy();
   }
@@ -60,6 +64,7 @@
   const el = document.getElementById("market-glow-bg");
   if (!el) return;
 
+  // ===== SETTINGS (reflect StackBlitz tuned look) =====
   const SETTINGS = {
     // Data
     seriesId: "NASDAQCOM",
@@ -69,32 +74,50 @@
 
     // Geometry
     points: 180,
-    chartHeightRatio: 0.78,
-    chartBottomOvershoot: 160,
-    bleedX: 180,
+    chartHeightRatio: 0.93,
+    chartBottomOvershoot: 136,
+    bleedX: 240,
     bleedY: 120,
     graphOverscanScale: 1.10,
 
-    // Blur / Glow
-    blurPx: 22,
+    // Blur / Glow (graph blur lives here)
+    chartBlurPx: 25,
     glowStrength: 1.6,
     layerOpacity: 0.92,
     blendMode: "screen",
 
-    // Colors
-    backgroundTop: "#0A0A12",
-    backgroundBottom: "#050508",
-    areaGradientStops: [
-      { stop: 0.00, color: "rgba(70, 120, 255, 0.70)" },
-      { stop: 0.55, color: "rgba(83, 54, 238, 0.45)" },
-      { stop: 1.00, color: "rgba(0, 210, 255, 0.20)" }
+    // Background base
+    backgroundTop: "#000000",
+    backgroundBottom: "#000000",
+
+    // Background radials (multi-layer depth)
+    backgroundRadials: [
+      { x: 0.8, y: 1.05, r: 1.1, color: "rgba(1,11,147,0.41)" },
+      { x: 0.1, y: 0.1, r: 0.85, color: "rgba(4,0,255,0.27)" },
     ],
-    strokeColor: "rgba(160, 190, 255, 0.95)",
 
-    noiseOpacity: 0.10,
-    vignetteOpacity: 0.55,
+    // Area gradient (4 stops + angle)
+    areaColorTop: "#000000",     // ※ "#000000" は透明扱いにする（下の helper 参照）
+    areaColorTopMid: "#0b1441",
+    areaColorMid: "#1740ba",
+    areaColorBottom: "#c7dfff",
 
-    // Grid
+    areaStopTop: 0.41,
+    areaStopTopMid: 0.53,        // Top と Mid の間の追加 stop
+    areaStopMid: 0.60,
+    areaStopBottom: 0.62,
+    areaAngleDeg: 83,            // 0=縦、90=横（左→右）
+
+    // Stroke
+    strokeColor: "rgba(0,0,0,0)",
+    strokeWidth: 2,
+    strokeShadowBlur: 28,
+
+    // Noise / Vignette
+    noiseOpacity: 0.13,
+    vignetteOpacity: 0.18,
+
+    // Grid (見た目に関係ないところは維持)
     gridEnabled: true,
     gridGapPx: 56,
     gridThicknessPx: 1,
@@ -107,38 +130,44 @@
     gridBlendMode: "overlay",
     gridOverallOpacity: 0.95,
 
-    // BG tint
+    // BG tint (これも既存の“雰囲気”要素なので維持。ただし色源は area 側に寄せる)
     bgTintEnabled: true,
     bgTintOpacity: 0.45,
     bgTintBlendMode: "screen",
     bgTintTopAlpha: 0.85,
     bgTintBottomAlpha: 0.65,
 
-    subtleJitter: false
+    subtleJitter: false,
   };
 
+  // ===== Series labels =====
   const SERIES = {
-    NASDAQCOM:  { label: "NASDAQ" },
-    SP500:      { label: "S&P 500" },
-    NIKKEI225:  { label: "Nikkei 225" },
-    DJIA:       { label: "Dow Jones" },
-    VIXCLS:     { label: "VIX" },
-    DGS10:      { label: "US 10Y Yield" },
-    DEXJPUS:    { label: "USD/JPY" },
-    DCOILWTICO: { label: "WTI Crude Oil" }
+    NASDAQCOM: { label: "NASDAQ" },
+    SP500: { label: "S&P 500" },
+    NIKKEI225: { label: "Nikkei 225" },
+    DJIA: { label: "Dow Jones" },
+    VIXCLS: { label: "VIX" },
+    DGS10: { label: "US 10Y Yield" },
+    DEXJPUS: { label: "USD/JPY" },
+    DCOILWTICO: { label: "WTI Crude Oil" },
   };
 
+  // Select / Buttons
   const seriesSelectEl = document.querySelector('[data-bg-series-select="1"]');
   const seriesBtnEls = Array.from(document.querySelectorAll("[data-bg-series-btn]"));
 
   const SEED = Math.random();
   const vv = window.visualViewport || null;
 
+  // iOS Safari fixed workaround
   const ua = navigator.userAgent || "";
-  const isIOS = /iP(hone|od|ad)/.test(ua) || (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
+  const isIOS =
+    /iP(hone|od|ad)/.test(ua) ||
+    (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
   const isWebKit = /AppleWebKit/.test(ua) && !/CriOS|FxiOS|EdgiOS/.test(ua);
   const useFakeFixed = isIOS && isWebKit;
 
+  // Base element styling
   Object.assign(el.style, {
     left: "0",
     top: "0",
@@ -153,7 +182,7 @@
   if (useFakeFixed) {
     Object.assign(el.style, {
       position: "absolute",
-      willChange: "transform"
+      willChange: "transform",
     });
   } else {
     Object.assign(el.style, {
@@ -161,19 +190,20 @@
       height: "100vh",
       inset: "0",
       transform: "none",
-      willChange: "auto"
+      willChange: "auto",
     });
   }
 
+  // ---- Size helpers ----
   function getTargetSize() {
     const docW = document.documentElement.clientWidth || 0;
     const docH = document.documentElement.clientHeight || 0;
     const innerW = window.innerWidth || 0;
     const innerH = window.innerHeight || 0;
     const vvW = vv ? vv.width : 0;
-    const vvH = vv ? (vv.height + vv.offsetTop) : 0;
-    const screenW = (window.screen && window.screen.width) ? window.screen.width : 0;
-    const screenH = (window.screen && window.screen.height) ? window.screen.height : 0;
+    const vvH = vv ? vv.height + vv.offsetTop : 0;
+    const screenW = window.screen?.width || 0;
+    const screenH = window.screen?.height || 0;
 
     const w = Math.max(docW, innerW, vvW, screenW);
     const h = Math.max(docH, innerH, vvH, screenH);
@@ -188,6 +218,7 @@
     void el.offsetHeight;
   }
 
+  // fake-fixed follow
   let rafFollow = 0;
   let lastY = -1;
 
@@ -204,12 +235,19 @@
     rafFollow = requestAnimationFrame(followLoop);
   }
 
+  // ===== canvases =====
   const main = document.createElement("canvas");
   const glow = document.createElement("canvas");
   const overlay = document.createElement("canvas");
 
-  Object.assign(main.style, { position: "absolute", inset: "0", width: "100%", height: "100%" });
+  Object.assign(main.style, {
+    position: "absolute",
+    inset: "0",
+    width: "100%",
+    height: "100%",
+  });
 
+  // glow overscan
   const overscan = SETTINGS.graphOverscanScale;
   const insetPct = ((overscan - 1) / 2) * 100;
 
@@ -219,10 +257,11 @@
     left: `-${insetPct}%`,
     width: `${overscan * 100}%`,
     height: `${overscan * 100}%`,
-    filter: `blur(${SETTINGS.blurPx}px)`,
+    // ★ graph blur
+    filter: `blur(${SETTINGS.chartBlurPx}px)`,
     opacity: String(SETTINGS.layerOpacity),
     mixBlendMode: SETTINGS.blendMode,
-    pointerEvents: "none"
+    pointerEvents: "none",
   });
 
   Object.assign(overlay.style, {
@@ -232,9 +271,10 @@
     height: "100%",
     pointerEvents: "none",
     mixBlendMode: SETTINGS.gridBlendMode,
-    opacity: String(SETTINGS.gridOverallOpacity)
+    opacity: String(SETTINGS.gridOverallOpacity),
   });
 
+  // replace existing canvases
   el.querySelectorAll("canvas").forEach((c) => c.remove());
   el.appendChild(main);
   el.appendChild(glow);
@@ -245,10 +285,10 @@
   const octx = overlay.getContext("2d");
   if (!mctx || !gctx || !octx) return;
 
+  // noise tile (keep)
   const noiseTile = document.createElement("canvas");
   noiseTile.width = 128;
   noiseTile.height = 128;
-
   const nctx = noiseTile.getContext("2d");
   if (nctx) {
     const img = nctx.createImageData(128, 128);
@@ -262,6 +302,7 @@
     nctx.putImageData(img, 0, 0);
   }
 
+  // ===== data utils =====
   function startDate(period) {
     const d = new Date();
     if (period === "6mo") d.setMonth(d.getMonth() - 6);
@@ -294,7 +335,7 @@
     for (let i = 0; i < rawPoints; i++) {
       const d = new Date(today);
       d.setDate(d.getDate() - (rawPoints - i));
-      v *= (1 + (Math.random() - 0.48) * 0.02 + 0.0003);
+      v *= 1 + (Math.random() - 0.48) * 0.02 + 0.0003;
       out.push({ date: d.toISOString().slice(0, 10), value: v });
     }
     return resample(out, points);
@@ -326,7 +367,7 @@
     if (cachedRaw) {
       try {
         const { data, ts } = JSON.parse(cachedRaw);
-        if (Array.isArray(data) && data.length && (Date.now() - ts) < SETTINGS.cacheTTLms) {
+        if (Array.isArray(data) && data.length && Date.now() - ts < SETTINGS.cacheTTLms) {
           return { data, usedCache: true, key };
         }
       } catch (e) {}
@@ -354,13 +395,16 @@
     }
   }
 
+  // ===== draw helpers =====
   function resizeCanvases() {
     const dpr = window.devicePixelRatio || 1;
 
-    const size = useFakeFixed ? getTargetSize() : {
-      w: document.documentElement.clientWidth || window.innerWidth || 1,
-      h: document.documentElement.clientHeight || window.innerHeight || 1
-    };
+    const size = useFakeFixed
+      ? getTargetSize()
+      : {
+          w: document.documentElement.clientWidth || window.innerWidth || 1,
+          h: document.documentElement.clientHeight || window.innerHeight || 1,
+        };
 
     const w = Math.max(1, Math.floor(size.w));
     const h = Math.max(1, Math.floor(size.h));
@@ -379,11 +423,16 @@
     glow.height = Math.floor(oh * dpr);
     gctx.setTransform(dpr, 0, 0, dpr, 0, 0);
 
+    // chart blur reflect (in case later changed)
+    glow.style.filter = `blur(${SETTINGS.chartBlurPx}px)`;
+
     return { w, h };
   }
 
   function rgbaWithAlpha(color, alpha) {
-    const m = String(color).match(/rgba?\(\s*([\d.]+)\s*,\s*([\d.]+)\s*,\s*([\d.]+)(?:\s*,\s*([\d.]+))?\s*\)/i);
+    const m = String(color).match(
+      /rgba?\(\s*([\d.]+)\s*,\s*([\d.]+)\s*,\s*([\d.]+)(?:\s*,\s*([\d.]+))?\s*\)/i
+    );
     if (m) return `rgba(${Math.round(m[1])},${Math.round(m[2])},${Math.round(m[3])},${alpha})`;
 
     if (String(color).startsWith("#")) {
@@ -400,17 +449,88 @@
     return `rgba(0,0,0,${alpha})`;
   }
 
+  // "#000000" を「透明のトップ」として扱いたい時の保険
+  function normalizeTopColorMaybeTransparent(col) {
+    const s = String(col || "").trim().toLowerCase();
+    if (s === "#000" || s === "#000000" || s === "rgb(0,0,0)" || s === "rgb(0, 0, 0)") {
+      return "rgba(0,0,0,0)";
+    }
+    return col;
+  }
+
+  // angled linear gradient creator
+  // angleDeg: 0 = vertical(top->bottom), 90 = horizontal(left->right)
+  function createAngledLinearGradient(ctx, cx, cy, w, h, angleDeg) {
+    const rad = (Number(angleDeg) || 0) * (Math.PI / 180);
+    const dx = Math.sin(rad);
+    const dy = Math.cos(rad);
+
+    const L = Math.max(w, h) * 1.35;
+    const x0 = cx - dx * (L / 2);
+    const y0 = cy - dy * (L / 2);
+    const x1 = cx + dx * (L / 2);
+    const y1 = cy + dy * (L / 2);
+
+    return ctx.createLinearGradient(x0, y0, x1, y1);
+  }
+
+  function clamp01(n) {
+    const v = Number(n);
+    if (!Number.isFinite(v)) return 0;
+    return Math.max(0, Math.min(1, v));
+  }
+
+  function makeAreaStops() {
+    // ensure ascending (don’t break if user tweaks values later)
+    const a = [
+      { stop: clamp01(SETTINGS.areaStopTop), color: normalizeTopColorMaybeTransparent(SETTINGS.areaColorTop) },
+      { stop: clamp01(SETTINGS.areaStopTopMid), color: SETTINGS.areaColorTopMid },
+      { stop: clamp01(SETTINGS.areaStopMid), color: SETTINGS.areaColorMid },
+      { stop: clamp01(SETTINGS.areaStopBottom), color: SETTINGS.areaColorBottom },
+    ].sort((p, q) => p.stop - q.stop);
+
+    // de-dup identical stops (Canvas gradient can be finicky)
+    const out = [];
+    for (const it of a) {
+      const prev = out[out.length - 1];
+      if (!prev || Math.abs(prev.stop - it.stop) > 1e-6) out.push(it);
+      else out[out.length - 1] = it;
+    }
+    return out;
+  }
+
   function drawBackground(w, h) {
+    // base vertical gradient
     const bg = mctx.createLinearGradient(0, 0, 0, h);
     bg.addColorStop(0, SETTINGS.backgroundTop);
     bg.addColorStop(1, SETTINGS.backgroundBottom);
     mctx.fillStyle = bg;
     mctx.fillRect(0, 0, w, h);
 
+    // layered radials (depth)
+    if (Array.isArray(SETTINGS.backgroundRadials) && SETTINGS.backgroundRadials.length) {
+      mctx.save();
+      mctx.globalCompositeOperation = "screen";
+      for (const r of SETTINGS.backgroundRadials) {
+        const cx = (r.x ?? 0.5) * w;
+        const cy = (r.y ?? 0.5) * h;
+        const rr = (r.r ?? 0.8) * Math.max(w, h);
+
+        const g = mctx.createRadialGradient(cx, cy, 0, cx, cy, rr);
+        g.addColorStop(0, r.color || "rgba(0,0,0,0)");
+        g.addColorStop(1, "rgba(0,0,0,0)");
+        mctx.fillStyle = g;
+        mctx.fillRect(0, 0, w, h);
+      }
+      mctx.restore();
+    }
+
+    // optional subtle tint (keep)
     if (!SETTINGS.bgTintEnabled) return;
 
-    const topColorSrc = (SETTINGS.areaGradientStops && SETTINGS.areaGradientStops[0]?.color) || SETTINGS.strokeColor;
-    const bottomColorSrc = (SETTINGS.areaGradientStops && SETTINGS.areaGradientStops[1]?.color) || SETTINGS.strokeColor;
+    const stops = makeAreaStops();
+    const topColorSrc = stops[1]?.color || stops[0]?.color || SETTINGS.areaColorMid || "#000";
+    const bottomColorSrc = stops[stops.length - 1]?.color || SETTINGS.areaColorBottom || "#000";
 
     mctx.save();
     mctx.globalAlpha = SETTINGS.bgTintOpacity;
@@ -422,7 +542,7 @@
     mctx.fillStyle = g1;
     mctx.fillRect(0, 0, w, h);
 
-    const g2 = mctx.createRadialGradient(w * 0.78, h * 0.88, 0, w, h, Math.max(w, h) * 0.90);
+    const g2 = mctx.createRadialGradient(w * 0.78, h * 0.88, 0, w, h, Math.max(w, h) * 0.9);
     g2.addColorStop(0, rgbaWithAlpha(bottomColorSrc, SETTINGS.bgTintBottomAlpha));
     g2.addColorStop(1, "rgba(0,0,0,0)");
     mctx.fillStyle = g2;
@@ -448,9 +568,14 @@
     const drawW = w + SETTINGS.bleedX * 2;
     const jitter = SETTINGS.subtleJitter ? (SEED - 0.5) * 18 : 0;
 
-    const area = gctx.createLinearGradient(0, chartY - chartH, 0, chartY);
-    for (const s of SETTINGS.areaGradientStops) area.addColorStop(s.stop, s.color);
+    // ★ angled area gradient
+    const gradCenterX = w * 0.5;
+    const gradCenterY = chartY - chartH * 0.5;
+    const area = createAngledLinearGradient(gctx, gradCenterX, gradCenterY, w, chartH, SETTINGS.areaAngleDeg);
+    const stops = makeAreaStops();
+    for (const s of stops) area.addColorStop(s.stop, s.color);
 
+    // area fill
     gctx.beginPath();
     nd.forEach((p, i) => {
       const t = i / (nd.length - 1);
@@ -465,6 +590,7 @@
     gctx.fillStyle = area;
     gctx.fill();
 
+    // stroke (if visible)
     gctx.beginPath();
     nd.forEach((p, i) => {
       const t = i / (nd.length - 1);
@@ -473,13 +599,24 @@
       if (i === 0) gctx.moveTo(x, y);
       else gctx.lineTo(x, y);
     });
-    gctx.strokeStyle = SETTINGS.strokeColor;
-    gctx.lineWidth = 2;
-    gctx.shadowBlur = 26 * SETTINGS.glowStrength;
-    gctx.shadowColor = SETTINGS.strokeColor;
-    gctx.stroke();
-    gctx.shadowBlur = 0;
 
+    gctx.strokeStyle = SETTINGS.strokeColor;
+    gctx.lineWidth = SETTINGS.strokeWidth;
+
+    // shadow glow
+    gctx.shadowBlur = (SETTINGS.strokeShadowBlur || 0) * (SETTINGS.glowStrength || 1);
+    gctx.shadowColor = SETTINGS.strokeColor;
+
+    // only draw if not fully transparent
+    if (String(SETTINGS.strokeColor).includes("0)") === false && String(SETTINGS.strokeColor).includes(",0)") === false) {
+      gctx.stroke();
+    } else {
+      // if transparent, still stroke lightly with last stop color (optional)
+      // 何もいらないならここを消してOK
+      // gctx.shadowBlur = 0;
+    }
+
+    gctx.shadowBlur = 0;
     gctx.restore();
   }
 
@@ -496,12 +633,12 @@
     const yOffset = 0.5;
 
     for (let y = 0; y <= h; y += gap) {
-      const isMajor = majorEvery > 0 && (Math.round(y / gap) % majorEvery === 0);
+      const isMajor = majorEvery > 0 && Math.round(y / gap) % majorEvery === 0;
       const baseA = isMajor ? SETTINGS.gridMajorAlpha : SETTINGS.gridAlpha;
 
       let fade = 1;
       if (fadeTopPx > 0 && y < fadeTopPx) fade = y / fadeTopPx;
-      if (fadeBottomPx > 0 && y > (h - fadeBottomPx)) fade = (h - y) / fadeBottomPx;
+      if (fadeBottomPx > 0 && y > h - fadeBottomPx) fade = (h - y) / fadeBottomPx;
       fade = Math.max(0, Math.min(1, fade));
 
       const a = baseA * fade;
@@ -529,7 +666,14 @@
       octx.globalAlpha = 1;
     }
 
-    const vig = octx.createRadialGradient(w / 2, h / 2, 0, w / 2, h / 2, Math.max(w, h) * 0.72);
+    const vig = octx.createRadialGradient(
+      w / 2,
+      h / 2,
+      0,
+      w / 2,
+      h / 2,
+      Math.max(w, h) * 0.72
+    );
     vig.addColorStop(0, "rgba(0,0,0,0)");
     vig.addColorStop(1, `rgba(0,0,0,${SETTINGS.vignetteOpacity})`);
     octx.fillStyle = vig;
@@ -543,6 +687,7 @@
     drawOverlays(w, h);
   }
 
+  // ===== render scheduling + series switch =====
   let currentData = null;
   let rafDraw = 0;
 
@@ -566,6 +711,7 @@
     SETTINGS.seriesId = nextId;
     localStorage.setItem("bg_series_id", nextId);
 
+    // instant mock draw
     currentData = mock(SETTINGS.period, SETTINGS.points);
     drawAll(currentData);
 
@@ -576,6 +722,7 @@
     currentData = data;
     drawAll(currentData);
 
+    // if cached, refresh in bg
     if (usedCache) {
       const fresh = await refreshInBackground(key);
       if (fresh && fresh.length && token === seriesSwitchToken) {
@@ -587,12 +734,14 @@
 
   function initSeriesSwitcher() {
     const saved = localStorage.getItem("bg_series_id");
-    const initial = (saved && SERIES[saved]) ? saved : SETTINGS.seriesId;
+    const initial = saved && SERIES[saved] ? saved : SETTINGS.seriesId;
 
     SETTINGS.seriesId = initial;
 
     if (seriesSelectEl) {
-      try { seriesSelectEl.value = initial; } catch (e) {}
+      try {
+        seriesSelectEl.value = initial;
+      } catch (e) {}
       seriesSelectEl.addEventListener("change", (e) => {
         setSeriesId(e.target.value).catch(console.error);
       });
@@ -603,14 +752,18 @@
         btn.addEventListener("click", () => {
           const id = btn.getAttribute("data-bg-series-btn");
           setSeriesId(id).catch(console.error);
+
           if (seriesSelectEl) {
-            try { seriesSelectEl.value = id; } catch (e) {}
+            try {
+              seriesSelectEl.value = id;
+            } catch (e) {}
           }
         });
       });
     }
   }
 
+  // ===== boot =====
   async function boot() {
     initSeriesSwitcher();
 
@@ -626,19 +779,18 @@
     await setSeriesId(SETTINGS.seriesId);
   }
 
+  // listeners
   window.addEventListener("resize", onViewportLikelyChanged, { passive: true });
   window.addEventListener("orientationchange", onViewportLikelyChanged, { passive: true });
+  if (vv) vv.addEventListener("resize", onViewportLikelyChanged, { passive: true });
 
-  if (vv) {
-    vv.addEventListener("resize", onViewportLikelyChanged, { passive: true });
-  }
-
+  // debug api (keep)
   window.__bgFix = {
     status() {
       const canv = [...el.querySelectorAll("canvas")].map((c, i) => ({
         i,
         css_h: c.getBoundingClientRect().height,
-        attr_h: c.height
+        attr_h: c.height,
       }));
       const t = getTargetSize();
       return {
@@ -647,40 +799,48 @@
         el_css_h: el.getBoundingClientRect().height,
         doc_client_h: document.documentElement.clientHeight,
         inner_h: window.innerHeight,
-        vv_h: vv ? (vv.height + vv.offsetTop) : null,
-        screen_h: (window.screen && window.screen.height) ? window.screen.height : null,
+        vv_h: vv ? vv.height + vv.offsetTop : null,
+        screen_h: window.screen?.height || null,
         seriesId: SETTINGS.seriesId,
-        canv
+        canv,
       };
     },
     redraw: scheduleFullRedraw,
-    setSeries(id) { setSeriesId(id).catch(console.error); },
-    setVignette(v) { SETTINGS.vignetteOpacity = Number(v) || 0; scheduleFullRedraw(); },
-    setNoise(v) { SETTINGS.noiseOpacity = Number(v) || 0; scheduleFullRedraw(); },
+    setSeries(id) {
+      setSeriesId(id).catch(console.error);
+    },
+    setVignette(v) {
+      SETTINGS.vignetteOpacity = Number(v) || 0;
+      scheduleFullRedraw();
+    },
+    setNoise(v) {
+      SETTINGS.noiseOpacity = Number(v) || 0;
+      scheduleFullRedraw();
+    },
     destroy() {
       cancelAnimationFrame(rafFollow);
       cancelAnimationFrame(rafDraw);
       window.removeEventListener("resize", onViewportLikelyChanged);
       window.removeEventListener("orientationchange", onViewportLikelyChanged);
       if (vv) vv.removeEventListener("resize", onViewportLikelyChanged);
-      try { el.querySelectorAll("canvas").forEach((c) => c.remove()); } catch (e) {}
-    }
+
+      try {
+        el.querySelectorAll("canvas").forEach((c) => c.remove());
+      } catch (e) {}
+    },
   };
 
   boot();
 })();
 
 // 4) Text shuffle reveal for [data-shuffle="true"]
-
 (() => {
   const CHARS = "0123456789!?#$%&*-_+=/";
 
-  function shuffleReveal(el, {
-    duration = 600,
-    fps = 60,
-    startRatio = 0.15,
-    chars = CHARS
-  } = {}) {
+  function shuffleReveal(
+    el,
+    { duration = 600, fps = 60, startRatio = 0.15, chars = CHARS } = {}
+  ) {
     const finalText = el.dataset.finalText || el.textContent;
     el.dataset.finalText = finalText;
 
@@ -693,13 +853,19 @@
 
     const tick = () => {
       frame++;
-      const prog = Math.min(1, Math.max(0, (frame - startFrame) / (totalFrames - startFrame)));
+      const prog = Math.min(
+        1,
+        Math.max(0, (frame - startFrame) / (totalFrames - startFrame))
+      );
       const fixedCount = Math.floor(len * prog);
 
       let out = "";
       for (let i = 0; i < len; i++) {
         const c = finalText[i];
-        if (c === " ") { out += " "; continue; }
+        if (c === " ") {
+          out += " ";
+          continue;
+        }
         if (i < fixedCount) out += c;
         else out += chars[Math.floor(Math.random() * chars.length)];
       }
@@ -719,8 +885,7 @@
   });
 })();
 
-// 5) Pagination/anchor jump: force instant scroll on pagination clicks (override smooth behavior temporarily) 
-
+// 5) Pagination/anchor jump: force instant scroll on pagination clicks (override smooth behavior temporarily)
 (() => {
   let forceInstant = false;
 
@@ -763,22 +928,27 @@
   const pagerSelector = [
     ".w-pagination-next",
     ".w-pagination-previous",
-    '[fs-list-element="page-button"]'
+    '[fs-list-element="page-button"]',
   ].join(",");
 
-  document.addEventListener("click", (e) => {
-    const pager = e.target.closest(pagerSelector);
-    if (!pager) return;
+  document.addEventListener(
+    "click",
+    (e) => {
+      const pager = e.target.closest(pagerSelector);
+      if (!pager) return;
 
-    forceInstant = true;
-    setTimeout(jumpToAnchor, 0);
-    setTimeout(jumpToAnchor, 200);
-    setTimeout(() => { forceInstant = false; }, 1200);
-  }, true);
+      forceInstant = true;
+      setTimeout(jumpToAnchor, 0);
+      setTimeout(jumpToAnchor, 200);
+      setTimeout(() => {
+        forceInstant = false;
+      }, 1200);
+    },
+    true
+  );
 })();
 
 // 6) Filter panel "hug width": measure tag rows and set panel width to fit content
-
 (() => {
   if (window.__findexFilterHug?.destroy) window.__findexFilterHug.destroy();
 
@@ -793,7 +963,7 @@
 
   const getGapX = (wrap) => {
     const cs = getComputedStyle(wrap);
-    const g = (cs.columnGap && cs.columnGap !== "normal") ? cs.columnGap : cs.gap;
+    const g = cs.columnGap && cs.columnGap !== "normal" ? cs.columnGap : cs.gap;
     const first = (g || "0px").toString().trim().split(" ")[0];
     const n = parseFloat(first);
     return Number.isFinite(n) ? n : 0;
@@ -867,13 +1037,13 @@
 
   window.__findexFilterHug = {
     destroy() {
-      try { ro.disconnect(); } catch (e) {}
+      try {
+        ro.disconnect();
+      } catch (e) {}
       window.removeEventListener("resize", measureAll);
       panel.removeEventListener("transitionend", measureAll);
       cancelAnimationFrame(raf);
       delete window.__findexFilterHug;
-    }
+    },
   };
 })();
-
-  
