@@ -10,8 +10,8 @@
     el.style.setProperty("--mx", `${(x / r.width) * 100}%`);
     el.style.setProperty("--my", `${(y / r.height) * 100}%`);
 
-    const dx = (x / r.width) - 0.5;
-    const dy = (y / r.height) - 0.5;
+    const dx = x / r.width - 0.5;
+    const dy = y / r.height - 0.5;
 
     el.style.setProperty("--ry", `${dx * MAX_TILT}deg`);
     el.style.setProperty("--rx", `${-dy * MAX_TILT}deg`);
@@ -97,16 +97,16 @@
     ],
 
     // Area gradient (4 stops + angle)
-    areaColorTop: "#000000",     // ※ "#000000" は透明扱いにする（下の helper 参照）
+    areaColorTop: "#000000", // treat as transparent top (helper converts)
     areaColorTopMid: "#0b1441",
     areaColorMid: "#1740ba",
     areaColorBottom: "#c7dfff",
 
     areaStopTop: 0.41,
-    areaStopTopMid: 0.53,        // Top と Mid の間の追加 stop
+    areaStopTopMid: 0.53, // extra stop between Top and Mid
     areaStopMid: 0.60,
     areaStopBottom: 0.62,
-    areaAngleDeg: 83,            // 0=縦、90=横（左→右）
+    areaAngleDeg: 83, // IMPORTANT: 0=横, 90=縦 (StackBlitz convention)
 
     // Stroke
     strokeColor: "rgba(0,0,0,0)",
@@ -117,7 +117,7 @@
     noiseOpacity: 0.13,
     vignetteOpacity: 0.18,
 
-    // Grid (見た目に関係ないところは維持)
+    // Grid
     gridEnabled: true,
     gridGapPx: 56,
     gridThicknessPx: 1,
@@ -130,7 +130,7 @@
     gridBlendMode: "overlay",
     gridOverallOpacity: 0.95,
 
-    // BG tint (これも既存の“雰囲気”要素なので維持。ただし色源は area 側に寄せる)
+    // BG tint
     bgTintEnabled: true,
     bgTintOpacity: 0.45,
     bgTintBlendMode: "screen",
@@ -145,6 +145,7 @@
     NASDAQCOM: { label: "NASDAQ" },
     SP500: { label: "S&P 500" },
     NIKKEI225: { label: "Nikkei 225" },
+
     DJIA: { label: "Dow Jones" },
     VIXCLS: { label: "VIX" },
     DGS10: { label: "US 10Y Yield" },
@@ -285,7 +286,7 @@
   const octx = overlay.getContext("2d");
   if (!mctx || !gctx || !octx) return;
 
-  // noise tile (keep)
+  // noise tile
   const noiseTile = document.createElement("canvas");
   noiseTile.width = 128;
   noiseTile.height = 128;
@@ -423,7 +424,7 @@
     glow.height = Math.floor(oh * dpr);
     gctx.setTransform(dpr, 0, 0, dpr, 0, 0);
 
-    // chart blur reflect (in case later changed)
+    // chart blur reflect (in case changed)
     glow.style.filter = `blur(${SETTINGS.chartBlurPx}px)`;
 
     return { w, h };
@@ -458,12 +459,37 @@
     return col;
   }
 
-  // angled linear gradient creator
-  // angleDeg: 0 = vertical(top->bottom), 90 = horizontal(left->right)
+  function clamp01(n) {
+    const v = Number(n);
+    if (!Number.isFinite(v)) return 0;
+    return Math.max(0, Math.min(1, v));
+  }
+
+  function makeAreaStops() {
+    const a = [
+      { stop: clamp01(SETTINGS.areaStopTop), color: normalizeTopColorMaybeTransparent(SETTINGS.areaColorTop) },
+      { stop: clamp01(SETTINGS.areaStopTopMid), color: SETTINGS.areaColorTopMid },
+      { stop: clamp01(SETTINGS.areaStopMid), color: SETTINGS.areaColorMid },
+      { stop: clamp01(SETTINGS.areaStopBottom), color: SETTINGS.areaColorBottom },
+    ].sort((p, q) => p.stop - q.stop);
+
+    const out = [];
+    for (const it of a) {
+      const prev = out[out.length - 1];
+      if (!prev || Math.abs(prev.stop - it.stop) > 1e-6) out.push(it);
+      else out[out.length - 1] = it;
+    }
+    return out;
+  }
+
+  // ★★★ ここが修正点 ★★★
+  // angleDeg: 0 = horizontal(left->right), 90 = vertical(top->bottom)  ※StackBlitzと同じ
   function createAngledLinearGradient(ctx, cx, cy, w, h, angleDeg) {
     const rad = (Number(angleDeg) || 0) * (Math.PI / 180);
-    const dx = Math.sin(rad);
-    const dy = Math.cos(rad);
+
+    // ✅ 0=横, 90=縦
+    const dx = Math.cos(rad);
+    const dy = Math.sin(rad);
 
     const L = Math.max(w, h) * 1.35;
     const x0 = cx - dx * (L / 2);
@@ -472,31 +498,6 @@
     const y1 = cy + dy * (L / 2);
 
     return ctx.createLinearGradient(x0, y0, x1, y1);
-  }
-
-  function clamp01(n) {
-    const v = Number(n);
-    if (!Number.isFinite(v)) return 0;
-    return Math.max(0, Math.min(1, v));
-  }
-
-  function makeAreaStops() {
-    // ensure ascending (don’t break if user tweaks values later)
-    const a = [
-      { stop: clamp01(SETTINGS.areaStopTop), color: normalizeTopColorMaybeTransparent(SETTINGS.areaColorTop) },
-      { stop: clamp01(SETTINGS.areaStopTopMid), color: SETTINGS.areaColorTopMid },
-      { stop: clamp01(SETTINGS.areaStopMid), color: SETTINGS.areaColorMid },
-      { stop: clamp01(SETTINGS.areaStopBottom), color: SETTINGS.areaColorBottom },
-    ].sort((p, q) => p.stop - q.stop);
-
-    // de-dup identical stops (Canvas gradient can be finicky)
-    const out = [];
-    for (const it of a) {
-      const prev = out[out.length - 1];
-      if (!prev || Math.abs(prev.stop - it.stop) > 1e-6) out.push(it);
-      else out[out.length - 1] = it;
-    }
-    return out;
   }
 
   function drawBackground(w, h) {
@@ -568,10 +569,11 @@
     const drawW = w + SETTINGS.bleedX * 2;
     const jitter = SETTINGS.subtleJitter ? (SEED - 0.5) * 18 : 0;
 
-    // ★ angled area gradient
+    // ★ angled area gradient (0=横, 90=縦)
     const gradCenterX = w * 0.5;
     const gradCenterY = chartY - chartH * 0.5;
     const area = createAngledLinearGradient(gctx, gradCenterX, gradCenterY, w, chartH, SETTINGS.areaAngleDeg);
+
     const stops = makeAreaStops();
     for (const s of stops) area.addColorStop(s.stop, s.color);
 
@@ -603,18 +605,13 @@
     gctx.strokeStyle = SETTINGS.strokeColor;
     gctx.lineWidth = SETTINGS.strokeWidth;
 
-    // shadow glow
     gctx.shadowBlur = (SETTINGS.strokeShadowBlur || 0) * (SETTINGS.glowStrength || 1);
     gctx.shadowColor = SETTINGS.strokeColor;
 
-    // only draw if not fully transparent
-    if (String(SETTINGS.strokeColor).includes("0)") === false && String(SETTINGS.strokeColor).includes(",0)") === false) {
-      gctx.stroke();
-    } else {
-      // if transparent, still stroke lightly with last stop color (optional)
-      // 何もいらないならここを消してOK
-      // gctx.shadowBlur = 0;
-    }
+    // If stroke is transparent, skip stroking
+    const sc = String(SETTINGS.strokeColor || "");
+    const isTransparentStroke = sc.includes("rgba") && (sc.endsWith(",0)") || sc.endsWith(", 0)"));
+    if (!isTransparentStroke) gctx.stroke();
 
     gctx.shadowBlur = 0;
     gctx.restore();
@@ -784,7 +781,7 @@
   window.addEventListener("orientationchange", onViewportLikelyChanged, { passive: true });
   if (vv) vv.addEventListener("resize", onViewportLikelyChanged, { passive: true });
 
-  // debug api (keep)
+  // debug api
   window.__bgFix = {
     status() {
       const canv = [...el.querySelectorAll("canvas")].map((c, i) => ({
@@ -837,10 +834,7 @@
 (() => {
   const CHARS = "0123456789!?#$%&*-_+=/";
 
-  function shuffleReveal(
-    el,
-    { duration = 600, fps = 60, startRatio = 0.15, chars = CHARS } = {}
-  ) {
+  function shuffleReveal(el, { duration = 600, fps = 60, startRatio = 0.15, chars = CHARS } = {}) {
     const finalText = el.dataset.finalText || el.textContent;
     el.dataset.finalText = finalText;
 
@@ -853,10 +847,7 @@
 
     const tick = () => {
       frame++;
-      const prog = Math.min(
-        1,
-        Math.max(0, (frame - startFrame) / (totalFrames - startFrame))
-      );
+      const prog = Math.min(1, Math.max(0, (frame - startFrame) / (totalFrames - startFrame)));
       const fixedCount = Math.floor(len * prog);
 
       let out = "";
@@ -916,9 +907,7 @@
       document.querySelector('[fs-list-element="scroll-anchor-pagination"]') ||
       document.querySelector('[fs-list-element="scroll-anchor"]');
 
-    const y = anchor
-      ? Math.max(0, anchor.getBoundingClientRect().top + window.pageYOffset)
-      : 0;
+    const y = anchor ? Math.max(0, anchor.getBoundingClientRect().top + window.pageYOffset) : 0;
 
     window.scrollTo({ top: y, left: 0, behavior: "auto" });
     setTimeout(() => window.scrollTo({ top: y, left: 0, behavior: "auto" }), 50);
