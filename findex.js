@@ -105,7 +105,7 @@
     areaStopTop: 0.41,
     areaStopTopMid: 0.53, // extra stop between Top and Mid
     areaStopMid: 0.66,
-    areaStopBottom: 0.80,
+    areaStopBottom: 0.75,
     areaAngleDeg: 83, // IMPORTANT: 0=横, 90=縦 (StackBlitz convention)
 
     // Stroke
