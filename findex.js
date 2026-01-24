@@ -1036,3 +1036,58 @@
     },
   };
 })();
+
+
+
+(() => {
+  const norm = (s) =>
+    (s || "").toLowerCase().replace(/\s+/g, " ").replace(/[＃#]/g, "").trim();
+
+  function run() {
+    const currentWrap = document.querySelector("[data-current-tags]");
+    const similarWrap = document.querySelector("[data-similar-wrap]");
+    if (!currentWrap || !similarWrap) return;
+
+    const items = Array.from(similarWrap.querySelectorAll("[data-related-item]"));
+    if (!items.length) return;
+
+    const currentTags = Array.from(currentWrap.querySelectorAll("[data-tag]"))
+      .map(el => norm(el.textContent))
+      .filter(Boolean);
+    const currentSet = new Set(currentTags);
+
+    // まず全候補を非表示
+    items.forEach(el => (el.style.display = "none"));
+
+    let shown = 0;
+    items.forEach(item => {
+      const tagsWrap = item.querySelector("[data-related-tags]") || item;
+      const tags = Array.from(tagsWrap.querySelectorAll("[data-tag]"))
+        .map(el => norm(el.textContent))
+        .filter(Boolean);
+
+      let match = 0;
+      for (const t of tags) {
+        if (currentSet.has(t)) match++;
+        if (match >= 2) break;
+      }
+
+      if (match >= 2 && shown < 3) {
+        item.style.display = "";
+        shown++;
+      }
+    });
+
+    // 0件ならセクションごと消す
+    similarWrap.style.display = (shown === 0) ? "none" : "";
+
+    // ★ここで「準備完了」を付ける（絞り込み後）
+    document.body.classList.add("similar-ready");
+  }
+
+  window.addEventListener("load", () => {
+    setTimeout(run, 0);    // まず一回すぐ実行
+    setTimeout(run, 300);  // ネストCMS対策
+    setTimeout(run, 900);  // 保険
+  });
+})();
