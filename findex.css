@@ -174,5 +174,12 @@
 
 a,
 a:visited {
-  color: inherit;          /* 親要素の文字色を引き継ぐ */
+  color: inherit;
+  text-decoration: underline;
+  transition: color .2s ease;
+}
+
+a:hover {
+  color: #8e6fff;
+  text-decoration: none;
 }
