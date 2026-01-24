@@ -172,3 +172,7 @@
     filter .2s ease;
 }
 
+a,
+a:visited {
+  color: inherit;          /* 親要素の文字色を引き継ぐ */
+}
