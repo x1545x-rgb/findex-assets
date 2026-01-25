@@ -13,7 +13,7 @@ FIELD_TITLE = os.environ.get("FIELD_TITLE", "title")
 FIELD_SHORT = os.environ.get("FIELD_SHORT", "description")
 FIELD_LONG  = os.environ.get("FIELD_LONG", "description_long")
 FIELD_URL   = os.environ.get("FIELD_URL", "url")
-FIELD_SLUG  = os.environ.get("FIELD_SLUG", "slug")  # 念のため残す
+FIELD_SLUG  = os.environ.get("FIELD_SLUG", "slug")  # 任意（URL生成の保険）
 
 SITE_BASE_URL = os.environ.get("SITE_BASE_URL", "https://www.finde.space/article/")
 MAX_LONG_CHARS = int(os.environ.get("MAX_LONG_CHARS", "8000"))
@@ -24,7 +24,7 @@ WEBFLOW_TOKEN = os.environ.get("WEBFLOW_TOKEN", "")
 WEBFLOW_COLLECTION_ID = os.environ.get("WEBFLOW_COLLECTION_ID", "")
 WEBFLOW_IMAGE_FIELD = os.environ.get("WEBFLOW_IMAGE_FIELD", "mainimage")
 
-# ★ ここがポイント：結合キーを Airtable Record ID にする
+# ★ 結合キー：Webflow側の fieldData にある Airtable record id 用フィールド
 WEBFLOW_JOIN_FIELD = os.environ.get("WEBFLOW_JOIN_FIELD", "airtable-record-id")
 
 def clean_text(s: str) -> str:
@@ -91,7 +91,6 @@ def fetch_webflow_join_to_image():
     }
 
     join_to_img = {}
-
     limit = 100
     offset = 0
 
@@ -104,14 +103,11 @@ def fetch_webflow_join_to_image():
         data = r.json()
 
         items = data.get("items", []) or []
-
         for it in items:
             field_data = it.get("fieldData", {}) or {}
-
             join_key = stringify(field_data.get(WEBFLOW_JOIN_FIELD, "")).strip()
             img_val = field_data.get(WEBFLOW_IMAGE_FIELD)
             img_url = normalize_webflow_image(img_val)
-
             if join_key:
                 join_to_img[join_key] = img_url
 
@@ -155,7 +151,6 @@ def main():
         if MAX_LONG_CHARS and len(long) > MAX_LONG_CHARS:
             long = long[:MAX_LONG_CHARS]
 
-        # ★ AirtableのレコードIDで結合
         airtable_rec_id = rec.get("id", "")
         image_url = join_to_img.get(airtable_rec_id, "")
 
@@ -170,8 +165,6 @@ def main():
             "description": short,
             "description_long": long,
             "url": url,
-            "slug": slug,                 # デバッグ用（不要なら消してOK）
-            "airtable_record_id": airtable_rec_id,  # デバッグ用（不要なら消してOK）
             "image_url": image_url
         })
 
