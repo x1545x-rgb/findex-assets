@@ -1,27 +1,9 @@
 [
   {
-    "title": "",
-    "descriotion": "Finimizeは投資や資産形成に関する情報を提供するメディアサイトです。初心者にも分かりやすい解説が特徴です。",
-    "description_long": "Finimizeは投資や資産形成に関する情報を集約する英国のメディアです。投資初心者や個人投資家を主な想定読者とし、金融知識をわかりやすく学べるコンテンツを提供しています。市場動向や投資戦略の比較、最新ニュースの解説を通じて、読者が自身の資産形成に役立つ情報を効率的に探せる点が特徴です。記事は専門用語を噛み砕き、日常的な言葉で説明されているため、金融リテラシー向上に貢献します。さらに、モバイル対応やメール配信など多様なチャネルで情報を届けています。",
-    "url": "https://finimize.com/"
-  },
-  {
-    "title": "",
-    "descriotion": "AI投資 ROBOPRO（ロボプロ）は、FOLIOが提供するAIによる将来予測を活用し、投資配分を柔軟に変更してパフォーマンス最大化を目指すロボアドバイザーです。",
-    "description_long": "AI投資 ROBOPRO（ロボプロ）は、FOLIOが提供するロボアドバイザーサービスです。AIによる将来予測を活用し、その予測に基づいて投資配分を柔軟に変更することで、パフォーマンスの最大化を目指します。主な特徴は、AIが市場環境の変化を分析し、最適な資産配分を自動で調整する点と、ユーザーの投資成果向上に貢献する点です。投資初心者から経験者まで幅広い投資家が、効率的な資産形成を目指す際に利用できます。FOLIOの証券口座と連携して利用可能で、手軽にAI投資を始められる点も強みです。",
-    "url": "https://ai.folio-sec.com/"
-  },
-  {
     "title": "payy",
     "descriotion": "Payyはオンチェーンの消費者向け銀行サービスです。ステーブルコインやプライバシー保護型ブロックチェーン、グローバルな法定通貨の入出金、DeFiを統合し、シンプルなアプリで提供します。",
     "description_long": "Payyは、ステーブルコインを軸にしたオンチェーンバンキングを掲げるセルフカストディ型ウォレットです。アプリからリンク（Payyリンク）やQRで送金でき、受け取り側はリンクを開くだけで受領できる設計。送金時に一時的なエフェメラルウォレットを介して資金を移す仕組みで、送金者・受取人の直接的なトレースが残りにくい点も特徴です。法定通貨⇄ステーブルコインの入出金は提携ランプを通じて提供されます。",
     "url": "https://payy.link/"
-  },
-  {
-    "title": "AI音声による自動架電システムを手がけるnocall、Coreline Venturesから資金調達",
-    "descriotion": "",
-    "description_long": "",
-    "url": "https://thebridge.jp/2025/12/nocall-raises-funding-from-coreline-ventures-to-accelerate-generative-ai-phone-system"
   },
   {
     "title": "CMCC Global",
@@ -36,34 +18,10 @@
     "url": "https://spiral-cap.com/"
   },
   {
-    "title": "公共のタッチ端末をアクセシブルに。視覚障がい者を補助する「タッチアライ」",
-    "descriotion": "",
-    "description_long": "",
-    "url": "https://www.axismag.jp/posts/2023/07/548307.html"
-  },
-  {
-    "title": "証券インフラのアルパカ、シリーズDで1億5,000万ドル調達——評価額11.5億ドルでユニコーンに",
-    "descriotion": "",
-    "description_long": "",
-    "url": "https://thebridge.jp/2026/01/alpacajapan-raises-series-d-funding-becomes-unicorn"
-  },
-  {
     "title": "イチカ - 天理市から、あたらしい地域の通貨が始まります",
     "descriotion": "イチカは天理市で始まる新しい地域通貨のサービスです。地域経済の活性化を目指しています。",
     "description_long": "イチカは、天理市で始まる新しい地域通貨のサービスです。このサービスは地域経済の活性化を目指し、地元の商業活動を支援します。イチカを利用することで、地域内での取引が促進され、住民や事業者が直接的な利益を享受できる仕組みを提供します。地域通貨の導入により、地元の特産品やサービスの利用が促進され、地域全体の経済循環が活性化されることが期待されています。",
     "url": "https://tenri-ichica.com/"
-  },
-  {
-    "title": "衛星データとAIを活用した不動産探索ツールWHERE、みずほ銀行など5つの金融機関から4.6億円調達",
-    "descriotion": "株式会社WHEREは衛星データとAI技術を活用し、不動産取引情報の収集や災害・住宅に関する科学データ観測を行う企業です。",
-    "description_long": "",
-    "url": "https://thebridge.jp/2025/12/where-raises-460m-yen-debt-from-five-financial-institutions"
-  },
-  {
-    "title": "",
-    "descriotion": "スパイラルキャピタルは、ジェネラルファンドとCVCファンドの運営を通じて成長の渦を生み出す投資会社です。",
-    "description_long": "スパイラルキャピタルは、ジェネラルファンドとコーポレートベンチャーキャピタル（CVC）ファンドの運営を通じて成長企業への投資を行う投資会社です。主にベンチャー企業の成長支援を目的とし、多様な業界に対して資金提供と経営支援を実施しています。独自のファンド運営により、投資先企業の持続的な成長の渦を生み出すことを強みとしています。これにより、投資家と企業双方に価値を提供し、エコシステム全体の活性化を目指しています。",
-    "url": "https://spiral-cap.com/"
   },
   {
     "title": "cash.app",
@@ -96,12 +54,6 @@
     "url": "https://www.thoughtmachine.net/"
   },
   {
-    "title": "",
-    "descriotion": "デジタル証券「renga」は、金融機関などの資産運用のプロが投資する商品に小口投資できる、安定と利回りを両立したデジタル証券サービスです。",
-    "description_long": "rengaは、株式会社デジタル証券が提供するデジタル証券サービスです。金融機関などの資産運用のプロが投資している商品に対して、小口からの投資を可能にし、安定性と利回りの両立を目指しています。主な特徴は、専門家が選定した商品にアクセスできる点と、デジタル技術を活用した利便性の高さです。これにより、個人投資家が従来の資産運用では難しかった分散投資や資産形成を実現できます。主な利用者は、安定した収益を求める個人投資家や資産形成を志向する方々です。",
-    "url": "https://renga.digitalsecurities.jp/"
-  },
-  {
     "title": "Plaid: Enabling all companies to build fintech solutions",
     "descriotion": "Plaidは米国のフィンテック企業で、企業が安全かつ信頼性の高い方法で金融データをアプリやサービスに接続できるよう支援します。",
     "description_long": "Plaidは、米国のフィンテック企業で、企業が安全かつ信頼性の高い方法で金融データをアプリやサービスに接続できるよう支援します。主に、金融データの接続を簡素化するAPIを提供し、開発者が迅速にフィンテックソリューションを構築できる環境を整えています。Plaidの強みは、データのセキュリティと信頼性にあり、ユーザーが安心して金融情報を共有できる仕組みを提供しています。これにより、企業は顧客に対してより良いサービスを提供し、金融業界のデジタル化を推進することが可能になります。",
@@ -124,12 +76,6 @@
     "descriotion": "Treasury Primeは銀行向けのAPIプラットフォームで、組み込み型バンキングやBaaSクライアントを支援し、新たな収益源や低コストの預金成長を実現します。",
     "description_long": "米国のTreasury Primeは、銀行向けのAPIプラットフォームを提供する企業です。組み込み型バンキングやBaaS（Banking as a Service）クライアントを支援し、金融機関が新たな収益源を開拓する手助けをします。主な特徴として、低コストでの預金成長を促進する機能や、現代的な決済システムの提供があります。また、パートナーとの統合を容易にし、顧客に対してより良い金融体験を提供することを目指しています。",
     "url": "https://www.treasuryprime.com/"
-  },
-  {
-    "title": "Meta、汎用AIエージェント開発のManusを買収——WSJ報道で20億ドル超、AI投資を加速",
-    "descriotion": "",
-    "description_long": "",
-    "url": "https://thebridge.jp/2025/12/meta-acquires-ai-agent-startup-manus"
   },
   {
     "title": "Home | Sequoia Capital",
@@ -174,34 +120,10 @@
     "url": "https://www.bekventures.com/"
   },
   {
-    "title": "",
-    "descriotion": "Revolutは英国のフィンテック企業で、70万人以上のユーザーに多通貨対応の送金や支払い、資産管理サービスを提供しています。",
-    "description_long": "Revolutは英国を拠点とするフィンテック企業です。多通貨対応の送金や支払い、資産管理を中心に、貯蓄やクレジットなど多様な金融サービスを提供しています。世界中で7000万人以上のユーザーが利用し、160以上の国に送金可能で、アプリ内で最大36通貨を保有、150通貨以上での支払いに対応しています。これにより、グローバルな資金移動や多通貨管理の利便性を高めています。革新的な金融体験を通じて、ユーザーの資産運用や日常の決済ニーズに応えています。",
-    "url": "https://www.revolut.com/"
-  },
-  {
-    "title": "Z Venture Capital、韓国ディープテック投資の Bluepoint に出資",
-    "descriotion": "",
-    "description_long": "",
-    "url": "https://thebridge.jp/2025/12/zvc-invests-in-bluepoint-to-jointly-scale-korean-deep-tech-globally"
-  },
-  {
-    "title": "Joris & Ringis",
-    "descriotion": "",
-    "description_long": "",
-    "url": "https://www.behance.net/gallery/241729967/Joris-Ringis"
-  },
-  {
     "title": "Trade Republic. Invest, spend and bank.",
     "descriotion": "Trade Republicは投資、支払い、銀行サービスを提供するフィンテック企業のサービスです。シンプルで使いやすいプラットフォームが特徴です。",
     "description_long": "ドイツのTrade Republicは、投資、支払い、銀行サービスを提供するフィンテック企業です。ユーザーはシンプルで使いやすいプラットフォームを通じて、株式やETFへの投資が可能です。また、手数料が低く、透明性のある料金体系を採用しているため、初心者から経験者まで幅広いユーザーに支持されています。さらに、モバイルアプリを通じて、いつでもどこでも取引ができる利便性を提供しています。Trade Republicは、デジタルバンキングの機能も備えており、ユーザーは資産管理を一元化することができます。",
     "url": "https://traderepublic.com/en-de"
-  },
-  {
-    "title": "",
-    "descriotion": "VitaDAOは、コミュニティが所有する組織で、初期段階の長寿科学研究への資金提供と推進を目的としています。",
-    "description_long": "VitaDAOは、コミュニティが所有する自律分散型組織（DAO）です。主に初期段階の長寿科学研究に対する資金提供と推進を目的としています。ブロックチェーン技術を活用し、透明性の高い意思決定と資金管理を実現しています。研究者や投資家、一般参加者が協力して長寿に関わる革新的なプロジェクトを支援する仕組みを提供しています。これにより、従来の研究資金調達の枠組みを超えた新たな価値創造を目指しています。",
-    "url": "https://www.vitadao.com/"
   },
   {
     "title": "コロンビア・アセットマネジメント株式会社",
@@ -228,18 +150,6 @@
     "url": "https://www.nextbank.ph/"
   },
   {
-    "title": "ブランド古着の宅配買取・販売事業のKLD、mintなど出資",
-    "descriotion": "",
-    "description_long": "",
-    "url": "https://thebridge.jp/2025/12/kld-raises-equity-funding-for-raas-expansion"
-  },
-  {
-    "title": "AI採用プラットフォーム運営のプランスホールディングス、DEEPCOREのリードでシード調達",
-    "descriotion": "",
-    "description_long": "",
-    "url": "https://thebridge.jp/2025/12/prance-raises-seed-round-ai-hiring-platform-led-by-deepcore"
-  },
-  {
     "title": "IFA Leading | 資産運用を、 もっと透明に",
     "descriotion": "株式会社IFA Leadingは、確かな金融知識と倫理観を持ち、よりよい金融の在り方を追求する金融機関です。",
     "description_long": "株式会社IFA Leadingは、日本の金融機関であり、確かな金融知識と倫理観を持って、より良い金融の在り方を追求しています。主に資産運用や投資に関するサービスを提供し、顧客のニーズに応じた透明性の高い金融ソリューションを提供することを目指しています。IFA Leadingは、顧客との信頼関係を重視し、専門的なアドバイスを通じて資産形成をサポートします。金融業界における倫理的な行動を重視し、持続可能な金融サービスの提供に努めています。",
@@ -250,18 +160,6 @@
     "descriotion": "Wallet Station（ウォレットステーション）は企業のオリジナルPayを構築できるスマホ決済プラットフォームです。",
     "description_long": "Wallet Stationは、企業が自社のオリジナルPayを構築できるスマホ決済プラットフォームです。企業のニーズに応じたカスタマイズが可能で、独自の決済システムを簡単に導入できます。主な特徴として、ユーザーが直感的に操作できるインターフェースと、セキュリティ対策が施された安心の決済環境を提供しています。これにより、企業は顧客に対してスムーズな決済体験を提供し、業務効率を向上させることが可能です。特に、デジタル決済の普及が進む中で、Wallet Stationは企業の競争力を高めるための重要なツールとなります。",
     "url": "https://infcurion.com/walletstation/"
-  },
-  {
-    "title": "家具ブランドのCAGUUU、シリーズBで15億円超を調達——設立1年半で累計25億円に",
-    "descriotion": "",
-    "description_long": "",
-    "url": "https://thebridge.jp/2025/12/caguuu-raises-over-1-5-billion-yen-series-b-total-funding-reaches-2-5-billion"
-  },
-  {
-    "title": "NTT西日本「出資確約型」プログラムSpark-Edgeで採択の推し活支援のBEAMINGに出資",
-    "descriotion": "",
-    "description_long": "",
-    "url": "https://thebridge.jp/2025/12/ntt-finance-invests-in-beaming-through-spark-edge-program"
   },
   {
     "title": "Atlético Dallas by Moniker",
@@ -280,12 +178,6 @@
     "descriotion": "Echoは早期段階のスタートアップやトークンプロジェクトへの投資を支援するサービスです。プロの投資コミュニティと共にプライベートファンディングに参加できます。",
     "description_long": "Echoは、早期段階のスタートアップやトークンプロジェクトへの投資を支援するサービスです。プロの投資コミュニティと共にプライベートファンディングに参加できるプラットフォームを提供しています。主な特徴として、投資家は新たなスタートアップやトークンプロジェクトの資金調達ラウンドにアクセスでき、専門的な投資グループと連携することが可能です。また、Echoは経験豊富な暗号資産投資家向けに設計されており、質の高い投資機会を提供します。これにより、投資家は市場の動向を把握し、戦略的な投資判断を行うことができます。",
     "url": "https://echo.xyz/"
-  },
-  {
-    "title": "特定技能外国人紹介のLivCo、みずほ銀行などから1.8億円を調達",
-    "descriotion": "",
-    "description_long": "",
-    "url": "https://thebridge.jp/2026/01/livco-raises-180-million-yen-debt-financing"
   },
   {
     "title": "Polymorphic Capital",
@@ -336,24 +228,6 @@
     "url": "https://www.smfg.co.jp/sustainability/atelier/"
   },
   {
-    "title": "",
-    "descriotion": "SlushはSui上で安全に稼ぎ、交換し、資産を管理できるサービスです。手間なく資産運用を始めたいユーザーに適しています。",
-    "description_long": "Slushは株式会社が提供するSuiブロックチェーン上の暗号資産管理サービスです。ユーザーが安全に資産を稼ぎ、交換し、管理できる環境を提供します。手間をかけずに資産運用を始められる点が特徴で、直感的な操作性とセキュリティの高さを兼ね備えています。主に暗号資産のスワップや収益獲得を目的とする個人投資家やWeb3ユーザーに適しています。Sui上での利用に特化し、煩雑な手続きなしに資産形成を支援します。",
-    "url": "https://slush.app/"
-  },
-  {
-    "title": "",
-    "descriotion": "",
-    "description_long": "",
-    "url": "https://okanechips.mei-kyu.com/"
-  },
-  {
-    "title": "在宅血液透析装置を開発「フィジオロガス・テクノロジーズ」シリーズAで京都iCAPらから追加資金調達",
-    "descriotion": "",
-    "description_long": "",
-    "url": "https://thebridge.jp/2026/01/physiologas-completes-series-a-second-close-funding-from-kyoto-icap"
-  },
-  {
     "title": "IG証券ブランドサイト",
     "descriotion": "IG証券は英国ロンドンに本社を置くIGグループの日本拠点で、FXや株式、株価指数、商品など多様な資産クラスを先進金融商品で提供しています。",
     "description_long": "IG証券は、イギリスのロンドンに本社を構えるIGグループの日本拠点です。50年以上の歴史を持つオンライン金融サービスのリーディングカンパニーとして、FXや日本・海外の個別株、世界の株価指数、商品、債券先物など、多様な資産クラスを提供しています。CFDやノックアウト・オプションなどの先進的な金融商品を通じて、投資家のニーズに応えています。IG証券は、顧客に対して高い透明性と信頼性を提供し、投資の可能性を広げることを目指しています。",
@@ -382,12 +256,6 @@
     "descriotion": "株式会社GRITは不動産と金融の良質な架け橋を目指し、住信SBIネット銀行の銀行代理業として誰でも簡単に利用できるサービスを提供しています。",
     "description_long": "株式会社GRITは、不動産と金融の良質な架け橋を目指す企業です。住信SBIネット銀行の銀行代理業を行い、誰でも簡単に利用できるサービスを提供しています。主な事業領域には、不動産投資のサポートや金融商品に関する情報提供が含まれます。GRITの強みは、顧客のニーズに応じた柔軟なサービスを展開し、安心して利用できる環境を整えている点です。",
     "url": "https://www.gritbank.jp/"
-  },
-  {
-    "title": "TitanGate Equity",
-    "descriotion": "",
-    "description_long": "",
-    "url": "https://titangatequity.com/"
   },
   {
     "title": "fundnote | 匠のファンドマネジメント",
@@ -450,18 +318,6 @@
     "url": "https://www.delight-ventures.com/"
   },
   {
-    "title": "シュウゾウ・アヅチ・ガリバーの活動を紹介する 「消息の将来」展が横浜で開催",
-    "descriotion": "",
-    "description_long": "",
-    "url": "https://www.axismag.jp/posts/2022/10/497644.html"
-  },
-  {
-    "title": "Senior Designer, Moniker, San Francisco",
-    "descriotion": "",
-    "description_long": "",
-    "url": "https://bpando.org/2025/12/23/senior-designer-moniker-san-francisco/"
-  },
-  {
     "title": "みんなのBaaS - ｢+金融｣であたらしい顧客体験を｜みんなの銀行",
     "descriotion": "みんなのBaaSはみんなの銀行が提供する法人向けサービスで、APIを通じて金融機能をパートナー企業に提供し、新たな顧客体験を共創します。",
     "description_long": "みんなの銀行は、法人向けサービス「みんなのBaaS」を展開する銀行です。このサービスは、APIを通じてパートナー企業に金融機能を提供し、顧客体験の向上を目指しています。具体的には、パートナー企業のサービスに金融機能を組み込むことで、ユーザーに新たな価値を提供します。これにより、企業は自社のサービスを強化し、顧客との関係を深めることが可能になります。みんなのBaaSは、金融サービスのデジタル化を推進し、より多様な顧客ニーズに応えることを目指しています。",
@@ -486,12 +342,6 @@
     "url": "https://folio-hd.com/"
   },
   {
-    "title": "中南米向け越境ECプラットフォーム「J-Planet」がシード調達",
-    "descriotion": "",
-    "description_long": "",
-    "url": "https://thebridge.jp/2026/01/andes-raises-seed-funding-for-j-planet-cross-border-ec-platform"
-  },
-  {
     "title": "Fin/D（ファインド）お金のサービスを賢く選ぼう",
     "descriotion": "Fin/D（ファインド）は、お金に関する情報を知り、比較し、賢く選択して行動するための情報サイトです。",
     "description_long": "Fin/D（ファインド）は、日本に拠点を置く情報サイトであり、お金に関するさまざまな情報を提供しています。ユーザーが「知る・比較して選ぶ・行動に移す」ことを支援することを目的としています。主な事業領域には、金融商品やサービスの比較、資産形成に関する情報提供が含まれます。特に、NISAやiDeCoなどの制度に関する情報も取り扱っており、利用者が賢い選択をするためのサポートを行っています。Fin/Dは、金融リテラシーの向上を目指し、ユーザーが自分に最適なお金のサービスを見つけられるような価値を提供しています。",
@@ -514,12 +364,6 @@
     "descriotion": "AlpacaTechは金融業界向けに投資・運用・調査・分析・システム連携のソリューションを提供するテクノロジー企業です。",
     "description_long": "AlpacaTechは、金融業界向けに投資・運用・調査・分析・システム連携のソリューションを開発するテクノロジー企業です。最先端のテクノロジーと金融における知見を融合させ、お客様の高い基準を満たすソリューションを提供しています。具体的には、投資戦略の最適化や運用効率の向上を図るためのシステムを構築し、データ分析を通じて意思決定を支援します。これにより、顧客は市場の変化に迅速に対応できるようになります。",
     "url": "https://www.alpaca-tech.ai/"
-  },
-  {
-    "title": "ファッションデザインソフトウェア開発のSynflux、5.2億円調達——EU最上位クラスのサステナブル投資家からの日本初出資を含む",
-    "descriotion": "",
-    "description_long": "",
-    "url": "https://thebridge.jp/2026/01/synflux-raises-520m-yen-for-algorithmic-couture"
   },
   {
     "title": "Chainlink: The Industry-Standard Oracle Platform",
@@ -594,12 +438,6 @@
     "url": "https://www.ginco.co.jp/"
   },
   {
-    "title": "有名店社食サービスを展開するみんなの社食、1億2,000万円をシード調達",
-    "descriotion": "",
-    "description_long": "",
-    "url": "https://thebridge.jp/2025/12/minna-no-shashoku-raises-120-million-yen-seed-1st-close-led-by-lotte-ventures-japan"
-  },
-  {
     "title": "Consensys - Building the Era of Decentralized Finance",
     "descriotion": "Consensysはブロックチェーンソフトウェア企業で、分散型金融の新時代を支えるツールやインフラ、研究を提供しています。",
     "description_long": "Consensysは、ブロックチェーンソフトウェア企業です。分散型金融の新時代を支えるために、ツールやインフラ、研究を提供しています。主な事業領域には、Ethereumの開発支援、分散型アプリケーションの構築、そしてブロックチェーン技術の普及が含まれます。Consensysの強みは、開発者向けのリソースやプラットフォームを提供し、より安全でオープンな経済を実現することにあります。",
@@ -624,34 +462,10 @@
     "url": "https://www.airtree.vc/"
   },
   {
-    "title": "AI時代は時間投資マインドのプランナーだけが生き残る？ スーパージェネラリスト待望論～",
-    "descriotion": "生成AIが検索行動を変え、計測・ターゲティングの制約も強まる中で、これまでの「検索→クリック」依存の広告モデルは揺らいでいる。イグナイト代表でAdvertising Week Asiaアドバイザリーカウンシルの笠松良彦氏は、この変化を「人の知恵と工夫がより試される時代の到来」と捉え、AIでタイパを高めた先に何へ時間を投資できるかがプランナーの生存条件になると説く。 The post AI時代は時間投資マインドのプランナーだけが生き残る？ スーパージェネラリスト待望論～ first appeared on AdverTimes.（アドタイ） by 宣伝会議 .",
-    "description_long": "",
-    "url": "https://www.advertimes.com/20260107/article530476/"
-  },
-  {
     "title": "Sight Banking",
     "descriotion": "Sight Bankingは、資産管理と貯蓄を支援するモバイルバンキングサービスです。使いやすいアプリでお金の管理を簡単に行えます。",
     "description_long": "Sight Bankingは、資産管理と貯蓄を支援するモバイルバンキングサービスです。ユーザーは、使いやすいアプリを通じてお金の管理を簡単に行うことができます。主な機能には、リアルタイムでの取引履歴の確認や、貯蓄目標の設定が含まれています。また、視覚的にわかりやすいインターフェースを提供し、ユーザーが自身の財務状況を把握しやすくしています。特に、若年層やデジタルネイティブ世代に向けたサービス設計がされており、スマートフォンを活用した効率的な資産管理を実現しています。",
     "url": "https://sight-banking.webflow.io/"
-  },
-  {
-    "title": "Yoii、2026年スタートアップ資金調達の市況意識調査を公表——VCとスタートアップの認識に約2倍の乖離",
-    "descriotion": "",
-    "description_long": "",
-    "url": "https://thebridge.jp/2026/01/yoii-2026-startup-fundraising-sentiment-survey-results"
-  },
-  {
-    "title": "",
-    "descriotion": "Wio Personalは多通貨対応の無料口座やバーチャル・実物カード、為替手数料ゼロ、最大2%のキャッシュバックを提供するデジタルバンキングサービスです。",
-    "description_long": "Wio Personalは、多通貨対応の無料口座とバーチャルおよび実物カードを提供するデジタルバンキングサービスです。為替手数料がゼロで、最大2%のキャッシュバックを受けられる点が特徴です。ユーザーはアプリを通じて口座管理やカード利用をシームレスに行え、海外送金や決済のコスト削減に寄与します。多様な通貨を扱うことで国際的な資金管理を効率化し、個人の金融ニーズに応えます。",
-    "url": "https://wio.io/"
-  },
-  {
-    "title": "セキュリティトークン（ST）資産運用のデジタル証券がシリーズA追加で3億円調達、日本郵政キャピタルら出資",
-    "descriotion": "",
-    "description_long": "",
-    "url": "https://thebridge.jp/2025/12/digital-securities-series-a-3rd-close-3-billion-yen"
   },
   {
     "title": "Xapo Bank",
@@ -672,22 +486,10 @@
     "url": "https://wise.com/platform/"
   },
   {
-    "title": "無菌人工土壌「クリスタルグレイン」のラテラ、京都iCAPから5,000万円を調達",
-    "descriotion": "",
-    "description_long": "",
-    "url": "https://thebridge.jp/2026/01/laterra-raises-funding-from-kyoto-icap-for-crystal-grain"
-  },
-  {
     "title": "NIKKEI BLEND",
     "descriotion": "NIKKEI BLENDは日本経済新聞社が提供する、日経平均株価のリアルタイムデータを反映した独自のコーヒーブレンドと連動するイベントです。",
     "description_long": "NIKKEI BLENDは、日本経済新聞社が提供するユニークなイベントです。このイベントは、日経平均株価のリアルタイムデータを基にした独自のコーヒーブレンドを体験できる仕組みを持っています。参加者は、特別に開発されたコーヒーマシンを通じて、経済の動向に応じて味が変化するコーヒーを楽しむことができます。具体的には、日経平均株価のデータを取得し、5種類のコーヒー豆のブレンドを自動で制御することで、味わいがリアルタイムで変わります。また、コーヒーの提供時には、日経平均株価の変化がデザインされたロゴが印刷され、参加者はその時点の経済状況を視覚的に感じることができます。さらに、コーヒーカップには当日の新聞記事が印刷され、経済の動向を味わいながら読み解くことが可能です。NIKKEI BLENDは、経済を「味覚」で感じる新しい体験を提供するイベントです。",
     "url": "https://adweb.nikkei.co.jp/blend/"
-  },
-  {
-    "title": "“ちゃぼそう”起用で「おうち推し活」訴求 Uber Eats、『タイプロ2』とSNS特別広告",
-    "descriotion": "Uber Eatsは1月5日、Netflixで同月9日から配信開始となる新番組『timelesz project -REAL-』（以下、『タイプロ 2』）とのSNS特別広告「タイプロ2観るなら、Uber Eatsでいーんじゃない？」を発表した。 The post “ちゃぼそう”起用で「おうち推し活」訴求 Uber Eats、『タイプロ2』とSNS特別広告 first appeared on AdverTimes.（アドタイ） by 宣伝会議 .",
-    "description_long": "",
-    "url": "https://www.advertimes.com/20260108/article530631/"
   },
   {
     "title": "Nexo: Your Wealth Platform for Digital Assets",
@@ -714,12 +516,6 @@
     "url": "https://www.caso-patrimoine.fr/"
   },
   {
-    "title": "建設業向け「AI積算」H2Corporation、NEA主導でプレシリーズA追加を実施",
-    "descriotion": "",
-    "description_long": "",
-    "url": "https://thebridge.jp/2025/12/h2corporation-raises-pre-series-a-extension-led-by-nea"
-  },
-  {
     "title": "Letter",
     "descriotion": "Letterは高額資産家向けに設計された、金融管理・銀行業務・資産運用を一体化したモダンなプライベートバンキングサービスです。",
     "description_long": "Letterは、米国の高額資産家向けに設計された、金融管理、銀行業務、資産運用を一体化したモダンなプライベートバンキングサービスです。従来のプライベートバンクが提供するサービスの遅さや高コストを解消し、全ての高額資産家に対して、効率的で包括的な金融管理を提供します。Letterは、資産管理、融資、投資の全てを一つのプラットフォームで管理できるように設計されており、ユーザーは複数のアカウントを一元管理し、リアルタイムで財務状況を把握できます。さらに、専門家による個別のアドバイスや、迅速な資金調達の機会を提供し、ユーザーが本当に重要なことに集中できる環境を整えています。",
@@ -730,24 +526,6 @@
     "descriotion": "Fireblocksはデジタル資産の運用を安全かつ効率的に管理できるプラットフォームです。スケール対応とセキュリティを重視しています。",
     "description_long": "Fireblocksは、デジタル資産の運用を安全かつ効率的に管理できるプラットフォームです。特に、グローバルな安定コインの決済を迅速かつ安全に行うことができる機能を提供しています。また、デジタル資産の運用を自動化し、管理するためのテクノロジーを備えています。さらに、ウォレットサービスを提供し、暗号資産の保護、スケーリング、最適化を実現します。これにより、企業は消費者向けや小売アプリ向けにホワイトラベルのウォレットを簡単に作成できます。Fireblocksは、金融業界におけるデジタル資産の管理を革新するためのインフラを提供しています。",
     "url": "https://www.fireblocks.com/"
-  },
-  {
-    "title": "",
-    "descriotion": "Main Pageは特定の情報やサービスの詳細が記載されていないウェブサイトです。",
-    "description_long": "",
-    "url": "https://arion.li/"
-  },
-  {
-    "title": "端材マッチングアプリ「はざいっぽ」運営のZAI、Y2 Incubateから資金調達",
-    "descriotion": "",
-    "description_long": "",
-    "url": "https://thebridge.jp/2026/01/zai-raises-funding-for-hazaippo"
-  },
-  {
-    "title": "ロボット向け汎用AI基盤モデル開発のSkild AI、ソフトバンクグループのリードで約14億ドル調達",
-    "descriotion": "",
-    "description_long": "",
-    "url": "https://thebridge.jp/2026/01/skild-ai-raises-1-4b-series-c-for-robotics-foundation-model"
   },
   {
     "title": "TRUELAYER",
@@ -766,12 +544,6 @@
     "descriotion": "株式会社Kyashは、人々のライフスタイルに寄り添い、新しいお金の文化を創造する決済インフラの構築を目指す企業です。",
     "description_long": "株式会社Kyashは、（日本）のフィンテック企業であり、人々のライフスタイルに寄り添った新しいお金の文化を創造することを目指しています。主な事業領域としては、決済インフラの構築や価値移動のインフラづくりが挙げられます。Kyashは、ユーザーが自由に価値観や思いを届けられる仕組みを提供し、利便性の高いサービスを展開しています。特に、家計簿機能や法人向け送金サービスなど、多様なニーズに応える機能を備えています。",
     "url": "https://www.kyash.co/recruit"
-  },
-  {
-    "title": "Artta",
-    "descriotion": "",
-    "description_long": "",
-    "url": "https://www.behance.net/gallery/240918913/Artta"
   },
   {
     "title": "株式会社モニクル | 誰もが使える金融サービスプラットフォームを社会に実装する",
@@ -810,12 +582,6 @@
     "url": "https://www.weyaybank.com/"
   },
   {
-    "title": "モビリティ事業のエアシェア、株式投資型クラウドファンディングで成長資金の募集を開始",
-    "descriotion": "",
-    "description_long": "",
-    "url": "https://thebridge.jp/2026/01/airshare-restarts-equity-crowdfunding-on-ecrowd-for-driva-growth-funding"
-  },
-  {
     "title": "株式会社MILIZE",
     "descriotion": "株式会社MILIZEはAIエンジニアや金融DX人材がビッグデータを活用し、生成AIや金融工学を駆使した金融サービスやプラットフォームを提供しています。",
     "description_long": "株式会社MILIZEは、AIとフィンテックを融合させたサービスを展開する企業です。AIエンジニアや金融DX人材が集まり、ビッグデータを活用して生成AIや金融工学を駆使した金融サービスやプラットフォームを提供しています。特に、金融業務に関する深い知見を活かし、顧客のニーズに応じた多様なソリューションを創造することに注力しています。これにより、次世代の金融ウェブサービスを実現し、顧客の資産形成や運用を支援することを目指しています。",
@@ -846,12 +612,6 @@
     "url": "https://www.wirexapp.com/"
   },
   {
-    "title": "Olive、感情推定プラットフォーム「LaCause」で東邦ガス CVC ファンドから資金調達",
-    "descriotion": "",
-    "description_long": "",
-    "url": "https://thebridge.jp/2026/01/olive-raises-funding-from-toho-gas-cvc-for-lacause"
-  },
-  {
     "title": "Foundation | Real Estate Investment",
     "descriotion": "Foundationは不動産投資を専門とするサービスです。投資家向けに資産形成を支援します。",
     "description_long": "Foundationは、不動産投資を専門とするサービスです。投資家向けに資産形成を支援し、安定した収益を目指す投資機会を提供します。主な特徴として、透明性のある投資プロセスと、専門家による市場分析を通じたリスク管理があります。これにより、投資家は安心して資産を増やすことができます。特に、米国市場における不動産投資に強みを持ち、幅広い物件選択肢を提供しています。",
@@ -868,12 +628,6 @@
     "descriotion": "株式会社LayerXは「すべての経済活動を、デジタル化する。」をミッションに、AI SaaS事業やAI DX事業を提供しています。",
     "description_long": "株式会社LayerXは、「すべての経済活動を、デジタル化する。」をミッションに掲げる企業です。AI SaaS事業として「バクラク」や「Ai Workforce」を提供し、企業の業務効率化を支援しています。また、AI DX事業では「三井物産デジタル・アセットマネジメント」を展開し、デジタル技術を活用した資産管理の最適化を図っています。これにより、顧客のニーズに応じた柔軟なソリューションを提供し、デジタル化の推進に寄与しています。",
     "url": "https://layerx.co.jp/"
-  },
-  {
-    "title": "【求人情報】デザイン＆ブランディングエージェンシーの株式会社ConcePioneが、デザインアシスタント・ジュニアデザイナーなど3職種を募集",
-    "descriotion": "株式会社ConcePioneが、デザインアシスタント・ジュニアデザイナー、ブランドマネージャー、エグゼクティブアシスタントを募集している。 同社は、デザイナー・一法師拓門によって設立された新進気鋭のデザイン＆ブランディン […] 投稿 【求人情報】デザイン＆ブランディングエージェンシーの株式会社ConcePioneが、デザインアシスタント・ジュニアデザイナーなど3職種を募集 は デザイン情報サイト[JDN] に最初に表示されました。 #PR",
-    "description_long": "",
-    "url": "https://www.japandesign.ne.jp/news/2026/01/86029/"
   },
   {
     "title": "Solaris",
@@ -912,24 +666,6 @@
     "url": "https://recruit.moneyforward.com/"
   },
   {
-    "title": "独自のカフェイン除去技術を開発するストーリーライン、1億5,000万円を調達",
-    "descriotion": "",
-    "description_long": "",
-    "url": "https://thebridge.jp/2025/12/storyline-raises-150-million-yen-in-equity-and-debt-to-scale-its-proprietary-decaf-technology"
-  },
-  {
-    "title": "池田エライザが「俺」の後輩に⁉ 生田斗真・江口洋介も「同僚」 AI不動産投資「RENOSY」新CM",
-    "descriotion": "GA technologies（GAテクノロジーズ）は1月1日、AI不動産投資「RENOSY（リノシー）」の新テレビCM4篇を放映開始した。 The post 池田エライザが「俺」の後輩に⁉ 生田斗真・江口洋介も「同僚」 AI不動産投資「RENOSY」新CM first appeared on AdverTimes.（アドタイ） by 宣伝会議 .",
-    "description_long": "",
-    "url": "https://www.advertimes.com/20260102/article530187/"
-  },
-  {
-    "title": "新型車の乗り比べサービスを展開のCarjany、シリーズA調達を実施",
-    "descriotion": "",
-    "description_long": "",
-    "url": "https://thebridge.jp/2026/01/carjany-raises-series-a-funding"
-  },
-  {
     "title": "Databento",
     "descriotion": "Databentoはリアルタイムおよび過去の株式、先物、オプションなどの市場データAPIを提供するサービスです。単一の統合で多様なデータにアクセスでき、$125分の無料クレジットがあります。",
     "description_long": "Databentoは、米国のDatabento, Inc.が提供するリアルタイムおよび過去の市場データAPIサービスです。株式、先物、オプションなどの多様なデータにアクセスできる統合プラットフォームを提供し、ユーザーは簡単に必要なデータを取得できます。特に、データはコロケーションサイトから直接取得され、迅速かつ効率的に利用可能です。利用者は、従量課金制のセルフサービスモデルを通じて、必要なデータを必要な分だけ利用できるため、コスト効率も高いです。さらに、初回登録時には$125分の無料クレジットが提供され、サービスを試すことができます。",
@@ -948,40 +684,16 @@
     "url": "https://surge.xyz/"
   },
   {
-    "title": "",
-    "descriotion": "",
-    "description_long": "",
-    "url": "https://www.finde.space/article/p-408"
-  },
-  {
-    "title": "株式会社アバントグループ",
-    "descriotion": "株式会社アバントグループは「BE GLOBAL」をビジョンに掲げ、世界に通用するソフトウエア会社を目指し社会経済の発展に貢献します。",
-    "description_long": "",
-    "url": "https://www.avantgroup.com/ja/index.html"
-  },
-  {
     "title": "Increase",
     "descriotion": "Increaseは米国の企業向けに、プログラムで資金の保管・移動・照合を可能にするエンタープライズ向け銀行APIを提供しています。",
     "description_long": "Increaseは、米国の企業向けにエンタープライズグレードの銀行APIを提供するフィンテック企業です。主に、テクノロジー企業が資金をプログラムで保管、移動、照合するための現代的な銀行インフラを構築しています。IncreaseのAPIは、企業が効率的に資金管理を行うための強力なツールを提供し、ビジネスの成長をサポートします。特に、プログラム的な資金の移動や照合機能により、ユーザーは迅速かつ正確に金融取引を行うことが可能です。これにより、企業は業務の効率化を図り、競争力を高めることができます。",
     "url": "https://increase.com/"
   },
   {
-    "title": "灯白社、プレシリーズ A ラウンドで資金調達を実施——三菱UFJキャピタルが資本参画",
-    "descriotion": "",
-    "description_long": "",
-    "url": "https://thebridge.jp/2026/01/tohakusha-raises-pre-series-a-funding-mucap-joins"
-  },
-  {
     "title": "NTTVC",
     "descriotion": "NTTVCはスタートアップ支援に特化したベンチャーキャピタルです。変化の時代に未来を見据えた起業家を支援します。",
     "description_long": "NTTVCは、スタートアップ支援に特化したベンチャーキャピタルです。変化の時代において、未来を見据えた起業家を支援することを使命としています。具体的には、革新的なビジネスモデルやテクノロジーを持つ企業に対して、資金提供や経営支援を行い、成長を促進します。NTTVCは、起業家のビジョンに共感し、彼らが描く未来の実現に向けて強力なパートナーとなることを目指しています。",
     "url": "https://nttvc.com/"
-  },
-  {
-    "title": "【求人情報】エシカルな文具や雑貨を企画開発する株式会社ペノンが、デザイナーなど3職種を募集",
-    "descriotion": "株式会社ペノンが、デザイナー、デザイナー／プレイングマネージャー、デザイナー（アルバイト）を募集している。 同社は、環境に配慮したサステナブルな商品を開発する文具メーカー。使うほどに森林が増え、プラ削減を目指せる画期的な […] 投稿 【求人情報】エシカルな文具や雑貨を企画開発する株式会社ペノンが、デザイナーなど3職種を募集 は デザイン情報サイト[JDN] に最初に表示されました。 #PR",
-    "description_long": "",
-    "url": "https://www.japandesign.ne.jp/news/2026/01/86031/"
   },
   {
     "title": "スルガ銀行 Recruiting Site",
@@ -996,22 +708,10 @@
     "url": "https://tickertalk.co.jp/"
   },
   {
-    "title": "Spiral Capital",
-    "descriotion": "",
-    "description_long": "",
-    "url": "https://responsive-jp.com/16496.html"
-  },
-  {
     "title": "Digital Fraud Prevention &amp; Risk-Based Authentication | Sift",
     "descriotion": "Siftは不正対策やリスク管理に特化したサービスです。企業のオンライン取引の安全性向上を支援します。",
     "description_long": "Siftは、デジタル不正対策とリスクベースの認証を提供する企業です。オンライン取引における不正行為を防止し、企業が安全に取引を行えるよう支援します。主な特徴として、リアルタイムのデータ分析を活用した不正検知と、ユーザーの行動に基づくリスク評価を行うことが挙げられます。これにより、企業は不正リスクを軽減しつつ、顧客体験を向上させることが可能です。特に、米国を拠点としたサービス展開により、多様な業界のニーズに応えるソリューションを提供しています。",
     "url": "https://sift.com/"
-  },
-  {
-    "title": "LINEでクーポン発行「働く人のミカタ自販機」で社内コミュニケーションを円滑に",
-    "descriotion": "",
-    "description_long": "",
-    "url": "https://predge.jp/335100/"
   },
   {
     "title": "あかつき証券",
@@ -1030,12 +730,6 @@
     "descriotion": "Revolutのカードは、物理カードとバーチャルカードを用途に合わせて選べるサービスです。",
     "description_long": "Revolutは、フィンテック領域で多様な金融サービスを提供する企業です。物理カードとバーチャルカードを選べるサービスを展開し、ユーザーのニーズに応じた柔軟な決済手段を提供します。これにより、国内外でのショッピングやオンライン取引をスムーズに行うことが可能です。Revolutのカードは、特に旅行者やオンラインショッピングを頻繁に利用するユーザーにとって便利な選択肢となります。さらに、カード利用に伴う特典や管理機能も充実しており、ユーザーは自分の支出を簡単に把握できます。",
     "url": "https://www.revolut.com/en-JP/cards/"
-  },
-  {
-    "title": "OVA - Investment Fund and Creator of Sustainable Value",
-    "descriotion": "",
-    "description_long": "",
-    "url": "https://land-book.com/websites/86695-ova-investment-fund-and-creator-of-sustainable-value"
   },
   {
     "title": "FGI - FinTech Global Incorporated",
@@ -1066,12 +760,6 @@
     "descriotion": "住信SBIネット銀行は、定期預金や外貨預金、住宅ローン、カードローンなど多彩なサービスを提供する初心者にもおすすめのネット銀行です。",
     "description_long": "住信SBIネット銀行は、日本のネット銀行であり、定期預金、外貨預金、住宅ローン、カードローンなど多彩な金融サービスを提供しています。特に初心者向けに設計されており、手軽に利用できるインターネットバンキングの利便性を活かしています。定期預金や外貨預金では、競争力のある金利を提供し、住宅ローンやカードローンにおいても柔軟な選択肢を用意しています。また、振込や振替、スマホ決済サービスなど、日常的な金融ニーズにも対応しており、ユーザーにとって使いやすい環境を整えています。",
     "url": "https://www.netbk.co.jp/contents/"
-  },
-  {
-    "title": "",
-    "descriotion": "Nexoはデジタル資産の運用プラットフォームです。暗号資産の増やす・取引・借入・利息獲得を一括で提供しています。",
-    "description_long": "Nexoは、デジタル資産向けの総合的な運用プラットフォームを提供するサービスです。暗号資産の増やす、取引、借入、利息獲得といった資産運用の多様なニーズを一括で解決します。主要な特徴として、ユーザーは保有するデジタル資産を活用して即時に借入が可能であり、また利息を得ながら資産を増やすことができます。さらに、取引機能により暗号資産の売買もスムーズに行えます。これにより、暗号資産投資家や資産形成を目指す個人が、効率的かつ柔軟にデジタル資産を管理・運用できる環境を提供しています。",
-    "url": "https://nexo.com/"
   },
   {
     "title": "gsacapital",
@@ -1122,12 +810,6 @@
     "url": "https://monicleresearch.co.jp/"
   },
   {
-    "title": "aethra",
-    "descriotion": "aethraはカーボンリムーバルへの投資を通じて、澄んだ空を守ることを目指すサービスです。",
-    "description_long": "",
-    "url": "https://aethra.xyz/"
-  },
-  {
     "title": "Wealthsimple",
     "descriotion": "Wealthsimpleはカナダのフィンテック企業で、低手数料の資産運用や手数料無料の株式取引、高金利の口座などを提供しています。",
     "description_long": "Wealthsimpleは、カナダのトロントに拠点を置くフィンテック企業です。主に低手数料の資産運用、手数料無料の株式取引、高金利の口座を提供しています。特に、スマートな投資商品とパーソナライズされたアドバイスを通じて、長期的な富の構築をサポートします。顧客は、管理された投資や高金利の当座預金口座を利用でき、手数料の透明性が高いことが特徴です。また、Wealthsimple Tradeでは、株式やETFの取引を手数料なしで行うことができ、投資初心者から経験者まで幅広いユーザーに対応しています。",
@@ -1152,18 +834,6 @@
     "url": "https://www.chibabank.co.jp/"
   },
   {
-    "title": "ハイブリッドロケットエンジンや無溶接タンクの開発・量産に取り組むMSW、JAXA宇宙戦略基金に採択",
-    "descriotion": "",
-    "description_long": "",
-    "url": "https://thebridge.jp/2026/01/msw-selected-for-jaxa-space-strategy-fund-1-8-billion-yen-rd-over-4-years"
-  },
-  {
-    "title": "歩いてクリーンな電力を作り出す タイル「Pavegen」を紹介",
-    "descriotion": "",
-    "description_long": "",
-    "url": "https://www.axismag.jp/posts/2021/12/439060.html"
-  },
-  {
     "title": "Crezco: Embedded Payments API - Crezco",
     "descriotion": "Crezco: Embedded Payments APIは、組み込み型の決済APIを提供するサービスです。開発者向けに設計されています。",
     "description_long": "Crezcoは、組み込み型の決済APIを提供するサービスです。ユーザーがプラットフォームを離れることなく、スムーズに資金を移動できることを目指しています。このサービスは、開発者向けに設計されており、シンプルで直感的なインターフェースを特徴としています。CrezcoのAPIは、迅速な決済処理を実現し、企業が自社のサービスに決済機能を統合する際の手間を軽減します。特に、スタートアップや中小企業にとって、コスト効率の良い決済ソリューションを提供することが強みです。",
@@ -1180,12 +850,6 @@
     "descriotion": "ClearBankは英国の銀行で、フィンテック企業やデジタル資産向けの決済インフラや銀行口座サービスを提供しています。",
     "description_long": "ClearBankは、英国のフィンテック企業向けに特化した銀行です。主にデジタル資産や決済インフラの提供を行い、銀行口座サービスを通じて顧客のニーズに応えています。特に、迅速かつ効率的な決済処理を実現するための技術力が強みです。また、顧客に対して柔軟なサービスを提供し、革新的な金融ソリューションを追求しています。ClearBankは、ゲームチェンジャーとしての役割を果たすことを目指し、業界の変革を促進しています。",
     "url": "https://clear.bank/"
-  },
-  {
-    "title": "Proto",
-    "descriotion": "Protoは先進的なフォントファミリーを提供するサービスです。多様なウェイトとスタイルでデザインの自由度を高めます。",
-    "description_long": "",
-    "url": "https://proto.xyz/"
   },
   {
     "title": "SMBC DESIGN：三井住友銀行",
@@ -1212,22 +876,10 @@
     "url": "https://souzoku-hot.com/"
   },
   {
-    "title": "介護施設向けDXサービス等を提供のEMC Healthcare、5.9億円をシリーズB調達",
-    "descriotion": "",
-    "description_long": "",
-    "url": "https://thebridge.jp/2026/01/emc-healthcare-raises-series-b-funding-for-owlcare"
-  },
-  {
     "title": "PAY.JP",
     "descriotion": "PAY.JPは、事業者向けのフルスクラッチ型オンライン決済サービスです。業界最低水準の決済手数料でスムーズな取引を支援します。",
     "description_long": "PAY.JPは、オンライン決済をスムーズに導入したい事業者向けのフルスクラッチ型オンライン決済サービスです。業界最低水準の決済手数料を提供し、購入者との取引を円滑に進めることを支援します。これにより、事業者はビジネスの成長を促進することが可能です。特に、シンプルな導入プロセスと高いカスタマイズ性が特徴で、様々な業種に対応した決済ソリューションを提供しています。",
     "url": "https://pay.jp/"
-  },
-  {
-    "title": "建築家 イオ・ミン・ペイの本格的な回顧展 香港の視覚文化美術館「M+」にて開催",
-    "descriotion": "",
-    "description_long": "",
-    "url": "https://www.axismag.jp/posts/2024/05/587950.html"
   },
   {
     "title": "Beach Point",
@@ -1248,12 +900,6 @@
     "url": "https://www.lfaf.jp/recruit/saiyo/"
   },
   {
-    "title": "大規模修繕の一括見積スマート修繕、JAFCO・JR東日本等より資金調達",
-    "descriotion": "",
-    "description_long": "",
-    "url": "https://thebridge.jp/2026/01/smart-shuzen-raises-funding-from-jafco-global-brain"
-  },
-  {
     "title": "株式会社スマートバンク | SmartBank, Inc.",
     "descriotion": "株式会社スマートバンクは「人々が本当に欲しかったものをつくる」テクノロジーカンパニーです。ワンバンクを通じてお金に悩まない未来を目指しています。",
     "description_long": "株式会社スマートバンクは、テクノロジーを駆使して「人々が本当に欲しかったものをつくる」ことを目指す企業です。主に「ワンバンク」というサービスを通じて、お金に悩まない未来を実現するための新しい常識を提案しています。スマートバンクは、ユーザーのニーズに応じた金融サービスを提供し、利便性と安心感を重視しています。特に、デジタル決済や送金において、迅速かつ安全な取引を実現することに注力しています。これにより、ユーザーはより自由にお金を管理できる環境を手に入れることができます。",
@@ -1266,27 +912,9 @@
     "url": "https://corporate.saisoncard.co.jp/company/brand/font/"
   },
   {
-    "title": "カード型リアル投げ銭「Kimochiru」運営のぺこり、プレシードで資金調達を実施",
-    "descriotion": "",
-    "description_long": "",
-    "url": "https://thebridge.jp/2026/01/peccori-raises-preseed-funding-for-kimochiru"
-  },
-  {
     "title": "NLC | New Layer Capital",
     "descriotion": "New Layer Capitalは、ビットコインを基盤とした革新的なテクノロジー企業への投資を行う投資会社です。",
     "description_long": "New Layer Capitalは、米国の投資会社であり、ビットコインを基盤とした革新的なテクノロジー企業への投資を行っています。主に、ブロックチェーン技術やデジタル資産に関連するスタートアップに焦点を当て、成長の可能性を秘めた企業を支援します。新しい技術の発展を促進することで、投資家に対して高いリターンを提供することを目指しています。特に、ビットコインを活用したプロジェクトに特化しており、業界の変革を推進する役割を果たしています。",
     "url": "https://nlc.obys.agency/"
-  },
-  {
-    "title": "",
-    "descriotion": "みずほフィナンシャルグループの5社合同新卒採用サイトです。グループの特徴や採用情報、社風などを紹介しています。",
-    "description_long": "みずほフィナンシャルグループは、みずほ銀行、みずほ信託銀行、みずほ証券、みずほリサーチ＆テクノロジーズを含むグループ5社による合同新卒採用を実施しています。グループ一体経営を推進し、金融業界における多様な役割を担う各社の連携を強みとしています。採用サイトでは、グループの事業内容や社風、トップメッセージ、キャリア形成の支援など、学生の疑問に応える情報を提供しています。オープンでフラットな社風を特徴とし、変化に対応しながら自分らしい道を歩むことを重視しています。新卒採用に関する募集要項や選考フロー、FAQも案内しています。",
-    "url": "https://www.mizuho-fg.co.jp/saiyou/group/index.html"
-  },
-  {
-    "title": "個人事業主向け確定申告アプリ開発タックスナップ、シリーズA総額13億円の資金調達",
-    "descriotion": "",
-    "description_long": "",
-    "url": "https://thebridge.jp/2026/01/taxsnap-raises-series-a-funding-for-tax-filing-app"
   }
 ]
