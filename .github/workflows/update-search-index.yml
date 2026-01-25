@@ -1,9 +1,10 @@
 name: Update search-index.json from Airtable
 
 on:
-  workflow_dispatch: {}
+  workflow_dispatch:
   schedule:
-    - cron: "0 3 * * *" # UTC 03:00（日本時間だと12:00）。好みで変更
+    # JST 03:00 = UTC 18:00
+    - cron: "0 18 * * *"
 
 permissions:
   contents: write
@@ -11,6 +12,7 @@ permissions:
 jobs:
   build:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -29,21 +31,25 @@ jobs:
         env:
           AIRTABLE_TOKEN: ${{ secrets.AIRTABLE_TOKEN }}
           AIRTABLE_BASE_ID: ${{ secrets.AIRTABLE_BASE_ID }}
-          AIRTABLE_TABLE: ${{ secrets.AIRTABLE_TABLE }}
-          AIRTABLE_VIEW: ${{ secrets.AIRTABLE_VIEW }}
-          SITE_BASE_URL: ${{ secrets.SITE_BASE_URL }}
-          FIELD_TITLE: ${{ secrets.FIELD_TITLE }}
-          FIELD_SHORT: ${{ secrets.FIELD_SHORT }}
-          FIELD_LONG: ${{ secrets.FIELD_LONG }}
-          FIELD_URL: ${{ secrets.FIELD_URL }}
-          FIELD_SLUG: ${{ secrets.FIELD_SLUG }}
+          AIRTABLE_TABLE: Articles
+
+          # Airtable fields
+          FIELD_TITLE: title
+          FIELD_SHORT: description
+          FIELD_LONG: description_long
+          FIELD_URL: url
+          FIELD_SLUG: slug
+
+          # Optional
+          SITE_BASE_URL: https://www.finde.space/article/
+          MAX_LONG_CHARS: "8000"
+          OUTPUT_PATH: search-index.json
+
+          # Webflow (image join)
           WEBFLOW_TOKEN: ${{ secrets.WEBFLOW_TOKEN }}
           WEBFLOW_COLLECTION_ID: ${{ secrets.WEBFLOW_COLLECTION_ID }}
-          WEBFLOW_SLUG_FIELD: ${{ secrets.WEBFLOW_SLUG_FIELD }}
-          WEBFLOW_IMAGE_FIELD: ${{ secrets.WEBFLOW_IMAGE_FIELD }}
-          WEBFLOW_JOIN_FIELD: ${{ secrets.WEBFLOW_JOIN_FIELD }}
-          MAX_LONG_CHARS: ${{ secrets.MAX_LONG_CHARS }}
-          OUTPUT_PATH: search-index.json
+          WEBFLOW_IMAGE_FIELD: mainimage
+          WEBFLOW_JOIN_FIELD: airtable-record-id
         run: |
           python scripts/build_search_index_from_airtable.py
 
@@ -51,10 +57,15 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          if git diff --quiet; then
+          git add search-index.json
+          if git diff --cached --quiet; then
             echo "No changes."
             exit 0
           fi
-          git add search-index.json
           git commit -m "Update search-index.json"
           git push
+
+      - name: Purge jsDelivr cache
+        run: |
+          curl -s "https://purge.jsdelivr.net/gh/x1545x-rgb/findex-assets@main/search-index.json" >/dev/null
+          echo "Requested jsDelivr purge."
