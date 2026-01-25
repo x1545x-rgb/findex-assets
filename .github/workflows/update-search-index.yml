@@ -37,6 +37,11 @@ jobs:
           FIELD_LONG: ${{ secrets.FIELD_LONG }}
           FIELD_URL: ${{ secrets.FIELD_URL }}
           FIELD_SLUG: ${{ secrets.FIELD_SLUG }}
+          WEBFLOW_TOKEN: ${{ secrets.WEBFLOW_TOKEN }}
+          WEBFLOW_COLLECTION_ID: ${{ secrets.WEBFLOW_COLLECTION_ID }}
+          WEBFLOW_SLUG_FIELD: ${{ secrets.WEBFLOW_SLUG_FIELD }}
+          WEBFLOW_IMAGE_FIELD: ${{ secrets.WEBFLOW_IMAGE_FIELD }}
+
           MAX_LONG_CHARS: ${{ secrets.MAX_LONG_CHARS }}
           OUTPUT_PATH: search-index.json
         run: |
