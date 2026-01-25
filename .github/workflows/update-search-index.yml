@@ -1,0 +1,55 @@
+name: Update search-index.json from Airtable
+
+on:
+  workflow_dispatch: {}
+  schedule:
+    - cron: "0 3 * * *" # UTC 03:00（日本時間だと12:00）。好みで変更
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install deps
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Build search index
+        env:
+          AIRTABLE_TOKEN: ${{ secrets.AIRTABLE_TOKEN }}
+          AIRTABLE_BASE_ID: ${{ secrets.AIRTABLE_BASE_ID }}
+          AIRTABLE_TABLE: ${{ secrets.AIRTABLE_TABLE }}
+          AIRTABLE_VIEW: ${{ secrets.AIRTABLE_VIEW }}
+          SITE_BASE_URL: ${{ secrets.SITE_BASE_URL }}
+          FIELD_TITLE: ${{ secrets.FIELD_TITLE }}
+          FIELD_SHORT: ${{ secrets.FIELD_SHORT }}
+          FIELD_LONG: ${{ secrets.FIELD_LONG }}
+          FIELD_URL: ${{ secrets.FIELD_URL }}
+          FIELD_SLUG: ${{ secrets.FIELD_SLUG }}
+          MAX_LONG_CHARS: ${{ secrets.MAX_LONG_CHARS }}
+          OUTPUT_PATH: search-index.json
+        run: |
+          python scripts/build_search_index_from_airtable.py
+
+      - name: Commit & push if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          if git diff --quiet; then
+            echo "No changes."
+            exit 0
+          fi
+          git add search-index.json
+          git commit -m "Update search-index.json"
+          git push
