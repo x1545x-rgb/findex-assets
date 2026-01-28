@@ -4,8 +4,6 @@
     "description": "Payyはオンチェーンの消費者向け銀行サービスです。ステーブルコインやプライバシー保護型ブロックチェーン、グローバルな法定通貨の入出金、DeFiを統合し、シンプルなアプリで提供します。",
     "description_long": "Payyは、ステーブルコインを軸にしたオンチェーンバンキングを掲げるセルフカストディ型ウォレットです。アプリからリンク（Payyリンク）やQRで送金でき、受け取り側はリンクを開くだけで受領できる設計。送金時に一時的なエフェメラルウォレットを介して資金を移す仕組みで、送金者・受取人の直接的なトレースが残りにくい点も特徴です。法定通貨⇄ステーブルコインの入出金は提携ランプを通じて提供されます。",
     "url": "https://payy.link/",
-    "slug": "p-394",
-    "airtable_record_id": "rec17VMnaKXRWKbWD",
     "image_url": "https://cdn.prod.website-files.com/661fb6045e9e2d962afc4c6c/69743509d35f79c149af6722_QSMoYF27tYxZJxNf2KNZrgF1tV7BHF2waPjKKmW0xnU.png"
   },
   {
@@ -13,8 +11,6 @@
     "description": "CMCC Globalはアジア初のブロックチェーン技術に特化したベンチャーキャピタルで、北米とアジアに拠点を持ちます。",
     "description_long": "CMCC Globalは、アジア初のブロックチェーン技術に特化したベンチャーキャピタルです。北米とアジアに拠点を持ち、ブロックチェーン関連の企業やプロジェクトへの投資を行っています。CMCC Globalは、革新的な技術を持つスタートアップに対して資金提供を行い、成長を支援することを目指しています。また、専門的な知識とネットワークを活かし、投資先企業の成功を促進するためのサポートも提供しています。",
     "url": "https://www.cmcc.vc/",
-    "slug": "p-321",
-    "airtable_record_id": "rec2wztHdV0ofS0ob",
     "image_url": "https://cdn.prod.website-files.com/661fb6045e9e2d962afc4c6c/697434defe1e81718aff8ea3_tiitsxMysLbZm7aJSgU5HM3iSO1_SaRISVTMFEcz7pA.png"
   },
   {
@@ -22,8 +18,6 @@
     "description": "Spiral CapitalはジェネラルファンドとCVCファンドの運営を通じて、大きな成長の渦を生み出す投資会社です。",
     "description_long": "スパイラルキャピタルは、ジェネラルファンドとCVCファンドの運営を行う投資会社です。日本を拠点に、成長企業への投資を通じて大きな成長の渦を生み出すことを目指しています。投資先企業の成長を支援するために、資金提供だけでなく、経営支援やネットワークの活用も行います。これにより、投資先企業の競争力を高め、持続可能な成長を実現することに貢献しています。",
     "url": "https://spiral-cap.com/",
-    "slug": "p-303",
-    "airtable_record_id": "rec37xIoGNm9wNuTX",
     "image_url": "https://cdn.prod.website-files.com/661fb6045e9e2d962afc4c6c/697434d3d72f5a3cc7f2080c_u31VI28cT16PLl3oCjPKjTLnz7YtI7wxpmgNA_6ODkA.png"
   },
   {
@@ -31,8 +25,6 @@
     "description": "イチカは天理市で始まる新しい地域通貨のサービスです。地域経済の活性化を目指しています。",
     "description_long": "イチカは、天理市で始まる新しい地域通貨のサービスです。このサービスは地域経済の活性化を目指し、地元の商業活動を支援します。イチカを利用することで、地域内での取引が促進され、住民や事業者が直接的な利益を享受できる仕組みを提供します。地域通貨の導入により、地元の特産品やサービスの利用が促進され、地域全体の経済循環が活性化されることが期待されています。",
     "url": "https://tenri-ichica.com/",
-    "slug": "p-509",
-    "airtable_record_id": "rec3dlrSaOMYrthP9",
     "image_url": "https://cdn.prod.website-files.com/661fb6045e9e2d962afc4c6c/6974f373a17bf6b9a3b2c0f6_6nKCetcy4SbuWpbmJzV8hoNcI3JRyvkbbL6ATq6webU.png"
   },
   {
@@ -40,26 +32,13 @@
     "description": "Cash Appは米国のSquare社が提供する決済・送金アプリです。即時送金や投資、ビットコイン購入など多機能に対応しています。",
     "description_long": "Cash Appは、米国のSquare社が提供する決済・送金アプリです。ユーザーは、即時送金や資金の受け取りが可能で、Cash Appカードを使って支出を管理できます。また、ビットコインの購入や株式投資も行える多機能なプラットフォームです。特に、個人の財務管理を簡素化することに重点を置いており、使いやすいインターフェースが特徴です。これにより、幅広いユーザーが手軽に金融サービスを利用できる環境を提供しています。",
     "url": "https://cash.app/",
-    "slug": "p-299",
-    "airtable_record_id": "rec4SV3tpvgEvxBX5",
     "image_url": "https://cdn.prod.website-files.com/661fb6045e9e2d962afc4c6c/697434d2f46a105ad56ac5c8_8q6qrHi-vz9LxqeQFr65aA_miyTX_3xLFxdK3hgBaDM.png"
-  },
-  {
-    "title": "世界のAI支出、2026年に2.5兆ドルへ 前年比44%増、投資の主戦場はインフラ",
-    "description": "米ガートナーは、2026年の世界におけるAI支出が前年比44%増の2兆5278億ドルに達する見通しを発表した。 The post 世界のAI支出、2026年に2.5兆ドルへ 前年比44%増、投資の主戦場はインフラ first appeared on AdverTimes.（アドタイ） by 宣伝会議 .",
-    "description_long": "",
-    "url": "https://www.advertimes.com/20260123/article532153/",
-    "slug": "p-514",
-    "airtable_record_id": "rec4UJnLVUsd0nz7j",
-    "image_url": ""
   },
   {
     "title": "VitaDAO | The Longevity DAO",
     "description": "VitaDAOは、コミュニティが所有する組織で、初期段階の長寿科学研究への資金提供と推進を目的としています。",
     "description_long": "VitaDAOは、コミュニティが所有する組織で、初期段階の長寿科学研究への資金提供と推進を目的としています。具体的には、老化に関する問題を解決するための自律的な組織として機能し、科学的な研究を支援することで人々の生活を向上させることを目指しています。VitaDAOは、長寿に関連するプロジェクトや研究を集約し、資金を提供することで、革新的な解決策を模索しています。また、VitaDAOは、暗号資産を活用した資金調達の仕組みを導入しており、参加者がプロジェクトに貢献できるようなプラットフォームを提供しています。これにより、研究者や投資家が協力し、長寿科学の進展に寄与することが期待されています。",
     "url": "https://www.vitadao.com/",
-    "slug": "p-457",
-    "airtable_record_id": "rec4aIuhPAfa4rwB2",
     "image_url": "https://cdn.prod.website-files.com/661fb6045e9e2d962afc4c6c/6974352042e03ec409417923_7SVmMQUyyAVFohZ33ACaQGwVWbxtXX5O3ke4WtTMQjs.png"
   },
   {
@@ -67,8 +46,6 @@
     "description": "ゼロから学べるアイザワ投資大学は、投資初心者向けに基礎知識や最新情報をわかりやすく提供するメディアです。",
     "description_long": "アイザワ投資大学は、投資初心者向けにお金の知識を提供するメディアです。投資に対する「モヤモヤ」を「ナルホド」に変えることを目指し、基礎知識から最新情報までをわかりやすく解説します。国内投資ゼミや海外投資ゼミなど、さまざまな学びの場を設けており、特に海外投資に関する情報も充実しています。利用者は、投資の基礎を学ぶための段階的なコンテンツや、特別なセミナーを通じて実践的な知識を得ることができます。投資に関心のあるすべての人にとって、役立つ情報源となることを目指しています。",
     "url": "https://www.aizawasec-univ.jp/",
-    "slug": "p-376",
-    "airtable_record_id": "rec5D3uCk7MrWbmpl",
     "image_url": "https://cdn.prod.website-files.com/661fb6045e9e2d962afc4c6c/6974350081b375d9e9ca700b_ORcw4d7gLQKDYNmB_BI_ltf9542Mov5y96iY7EjSA9U.png"
   },
   {
@@ -76,8 +53,6 @@
     "description": "Thought MachineのVaultは、銀行向けのクラウドネイティブなコアバンキングプラットフォームです。柔軟性と制御性を提供し、多くの大手銀行に採用されています。",
     "description_long": "Thought Machineは、銀行向けのクラウドネイティブなコアバンキングプラットフォーム「Vault」を展開する企業です。Vaultは、銀行が必要とする柔軟性と制御性を提供し、顧客が自由にシステムを構築できるよう設計されています。多くの大手銀行がこのプラットフォームを技術スタックの基盤として採用しており、顧客のニーズに応じたカスタマイズが可能です。Thought Machineは、顧客に対して選択肢とパワーを与えることを重視しており、銀行業務のデジタル化を推進しています。",
     "url": "https://www.thoughtmachine.net/",
-    "slug": "p-443",
-    "airtable_record_id": "rec5Ew7v6a794oAM9",
     "image_url": "https://cdn.prod.website-files.com/661fb6045e9e2d962afc4c6c/6974351ad5bf29e863fccd7e_LpN96QGB0PniEyaFkMm4PXWapxqy6B0_tJTQBJJpwQ4.png"
   },
   {
@@ -85,8 +60,6 @@
     "description": "Plaidは米国のフィンテック企業で、企業が安全かつ信頼性の高い方法で金融データをアプリやサービスに接続できるよう支援します。",
     "description_long": "Plaidは、米国のフィンテック企業で、企業が安全かつ信頼性の高い方法で金融データをアプリやサービスに接続できるよう支援します。主に、金融データの接続を簡素化するAPIを提供し、開発者が迅速にフィンテックソリューションを構築できる環境を整えています。Plaidの強みは、データのセキュリティと信頼性にあり、ユーザーが安心して金融情報を共有できる仕組みを提供しています。これにより、企業は顧客に対してより良いサービスを提供し、金融業界のデジタル化を推進することが可能になります。",
     "url": "https://plaid.com/",
-    "slug": "p-355",
-    "airtable_record_id": "rec67hUNrnnOEUHZ5",
     "image_url": "https://cdn.prod.website-files.com/661fb6045e9e2d962afc4c6c/697434f384b98fbebddf9e3b_yMKpDSuhC6msSlrE6Gx5Q3fr43M77Obfzo2Y3TmgYwM.png"
   },
   {
@@ -94,8 +67,6 @@
     "description": "Apple CardはAppleが提供するクレジットカードサービスです。最大3％のデイリーキャッシュバックが特徴で、申請時の信用スコアへの影響はありません。",
     "description_long": "Apple Cardは、米国のAppleが提供するクレジットカードサービスです。最大3％のデイリーキャッシュバックを提供し、手数料は一切発生しません。申請時には信用スコアに影響を与えないため、安心して申し込むことができます。Apple Cardは、Appleのエコシステムと連携しており、iPhoneやApple Watchを通じて簡単に管理できるのが特徴です。ユーザーは、リアルタイムで支出を追跡し、予算を設定することが可能です。",
     "url": "https://www.apple.com/apple-card/",
-    "slug": "p-374",
-    "airtable_record_id": "rec6GWsQBCMhKFduL",
     "image_url": "https://cdn.prod.website-files.com/661fb6045e9e2d962afc4c6c/697434ff42e03ec4094160ee_Fi30JOpXg1tose2eaoOkZN2DA-fL1M8Yea1rZJWOUL4.png"
   },
   {
@@ -103,8 +74,6 @@
     "description": "Standify（スタンディファイ）は、次世代のおこづかい帳を中心に子どもと家族のマネーリテラシーを育む金融教育サンドボックスです。",
     "description_long": "Standify（スタンディファイ）は、次世代のおこづかい帳を中心に、子どもと家族のマネーリテラシーを育む金融教育サンドボックスです。家族間での対話を促進し、学びの環境を提供することで、金融に関する知識を深めることを目指しています。具体的には、子どもが自分のお金を管理し、使い方を学ぶためのツールを提供し、親子でのコミュニケーションを強化します。Standifyは、金融教育を通じて、将来の経済的自立を支援することに特化しています。",
     "url": "https://standify.app/",
-    "slug": "p-505",
-    "airtable_record_id": "rec6meXVtR03kixrB",
     "image_url": "https://cdn.prod.website-files.com/661fb6045e9e2d962afc4c6c/6974f3713cba3bce2b50af54_bYLg60UIR5SlBE_spI5_ZLyS6P7tgyAkHozeP024eug.png"
   },
   {
@@ -112,8 +81,6 @@
     "description": "Treasury Primeは銀行向けのAPIプラットフォームで、組み込み型バンキングやBaaSクライアントを支援し、新たな収益源や低コストの預金成長を実現します。",
     "description_long": "米国のTreasury Primeは、銀行向けのAPIプラットフォームを提供する企業です。組み込み型バンキングやBaaS（Banking as a Service）クライアントを支援し、金融機関が新たな収益源を開拓する手助けをします。主な特徴として、低コストでの預金成長を促進する機能や、現代的な決済システムの提供があります。また、パートナーとの統合を容易にし、顧客に対してより良い金融体験を提供することを目指しています。",
     "url": "https://www.treasuryprime.com/",
-    "slug": "p-439",
-    "airtable_record_id": "rec865rhkaygm4sYD",
     "image_url": "https://cdn.prod.website-files.com/661fb6045e9e2d962afc4c6c/6974351842e03ec4094174af_JWK_iVG9mBYmr_dP2ZGQpt92MecKKKCVX5xjXM-veR0.png"
   },
   {
@@ -121,8 +88,6 @@
     "description": "Sequoia Capitalは米国のベンチャーキャピタルで、アイデア段階からIPOまで大胆な企業の成長を支援します。",
     "description_long": "Sequoia Capitalは、米国のベンチャーキャピタルであり、企業のアイデア段階からIPOまでの成長を支援します。主にテクノロジー、ヘルスケア、金融サービスなどの分野に焦点を当て、革新的な企業の育成に貢献しています。Sequoia Capitalの強みは、長年の経験と広範なネットワークを活かし、スタートアップに対して資金提供だけでなく、戦略的なアドバイスも行う点です。これにより、企業は市場での競争力を高め、持続可能な成長を実現することが可能になります。",
     "url": "https://sequoiacap.com/",
-    "slug": "p-334",
-    "airtable_record_id": "rec8SrSrGfpt0nwFY",
     "image_url": "https://cdn.prod.website-files.com/661fb6045e9e2d962afc4c6c/697434e722b4272ab1825105_dQsau0ChGIFT5eAwqek3gWny58x8Gsr-mAJHnTw69ek.png"
   },
   {
@@ -130,8 +95,6 @@
     "description": "Kyashは年会費無料で使えるVisaプリペイドカードサービスです。アプリで利用履歴を自動分類し、使いすぎを防止でき、最大1%のポイント還元もあります。",
     "description_long": "Kyashは、日本の決済事業者であり、年会費無料のVisaプリペイドカードサービスを提供しています。このサービスは、ユーザーがどこでも簡単にお支払いを行えることを目的としています。アプリを通じて利用履歴が自動で分類され、使いすぎを防ぐ機能が備わっています。また、最大1%のポイント還元があり、利用者にとっての経済的なメリットも提供しています。さらに、カードの利用停止もアプリから簡単に行えるため、安全性も確保されています。",
     "url": "https://www.kyash.co/",
-    "slug": "p-340",
-    "airtable_record_id": "rec8ZKvphbcooyzr1",
     "image_url": "https://cdn.prod.website-files.com/661fb6045e9e2d962afc4c6c/697434eab0d89e8dd8301ac6_w7zxnjxr7gFEuy8d-qQxhv9Ga7YLjTNAYNs0XDOvKkU.png"
   },
   {
@@ -139,8 +102,6 @@
     "description": "AltitudeはAIを活用し、金融分野の複雑な意思決定を迅速かつ正確に支援するサービスです。",
     "description_long": "Altitudeは、AIを活用したプラットフォームで、金融チームの業務を変革するサービスです。金融分野における複雑な意思決定を迅速かつ正確に支援し、リサーチの自動化やワークフローの効率化を実現します。これにより、ユーザーはより良い意思決定を迅速に行うことが可能になります。主に銀行や投資家を対象とし、彼らが競争に勝つためのサポートを提供します。",
     "url": "https://www.altitude.so/",
-    "slug": "p-388",
-    "airtable_record_id": "rec8rsIysxOLy3DCE",
     "image_url": "https://cdn.prod.website-files.com/661fb6045e9e2d962afc4c6c/69743506b0d89e8dd8302704_XG-qztGlnTJLQClALnKyE5-vo2vu9nb8J5ESjeLABp0.png"
   },
   {
@@ -148,8 +109,6 @@
     "description": "Startale GroupはSoneium、Startale App、Astar Networkを通じて次世代のオンチェーン体験を提供し、新たな文明の構築を目指す企業です。",
     "description_long": "Startaleは、次世代のオンチェーン体験を提供する企業で、Soneium、Startale App、Astar Networkを通じて新たな文明の構築を目指しています。日本拠点のこの企業は、暗号資産やWeb3事業に特化し、ブロックチェーン技術を活用した革新的なソリューションを展開しています。特に、Soneiumはユーザーに対して新しいデジタル体験を提供し、Startale Appは利便性の高いプラットフォームを提供します。また、Astar Networkは、開発者が分散型アプリケーションを構築するための基盤を提供し、エコシステム全体の成長を促進します。これにより、Startaleはユーザーに対して価値あるサービスを提供し、持続可能な未来を築くことを目指しています。",
     "url": "https://startale.com/en",
-    "slug": "p-367",
-    "airtable_record_id": "rec8zUYhgIqZ0cWbk",
     "image_url": "https://cdn.prod.website-files.com/661fb6045e9e2d962afc4c6c/697434fab0d89e8dd83021e8_vajbykC3DYOWOGVh8kRaAcwovYwJfCulJ00cVRt7grY.png"
   },
   {
@@ -157,8 +116,6 @@
     "description": "八十二長野銀行は長野県のトップバンクとして、信州の未来に向けた金融・非金融の多様なプロジェクトや働く環境、採用情報を提供しています。",
     "description_long": "八十二長野銀行は、長野県のトップバンクとして信州の未来に貢献する会社です。金融および非金融の多様なプロジェクトを通じて地域社会に寄与しています。具体的には、サステナブル融資プロジェクトや八十二Link Naganoの立ち上げ、信州ミライ会議などを展開し、地域の発展を目指しています。また、若手行員によるディスカッションやインタビューを通じて、働く環境やキャリア形成の情報も提供しています。採用情報では、募集要項や選考フロー、インターンシップ情報などを詳しく掲載し、未来を変える人材を求めています。",
     "url": "https://bank.82group.jp/recruit/",
-    "slug": "p-414",
-    "airtable_record_id": "rec9B6HrRH2SBf9Rh",
     "image_url": "https://cdn.prod.website-files.com/661fb6045e9e2d962afc4c6c/6974351181b375d9e9ca75f9_vHXlJG5QWN3v8As1KIrBI7kz045JXoYxnJ2kzG_sipU.png"
   },
   {
@@ -166,8 +123,6 @@
     "description": "BankBlackUSAは、ブラックコミュニティの経済的自立を支援するために資金の活用を促進する米国の運動です。",
     "description_long": "米国のBankBlackUSAは、ブラックコミュニティの経済的自立を促進するための運動です。この組織は、資金の活用を通じてコミュニティの経済力を高めることを目指しています。具体的には、地域のビジネスやプロジェクトへの投資を奨励し、資金の流れをコミュニティ内で循環させることに重点を置いています。また、金融教育やリソースの提供を通じて、個人や家族が経済的に自立できるよう支援しています。BankBlackUSAは、コミュニティの力を引き出し、持続可能な経済成長を実現するための重要な役割を果たしています。",
     "url": "https://bankblackusa.org/",
-    "slug": "p-462",
-    "airtable_record_id": "rec9EJHstPZEzuuVZ",
     "image_url": "https://cdn.prod.website-files.com/661fb6045e9e2d962afc4c6c/696cf55af583f9eb04507836_0Q7lMjo8fTPRnheG0uZKRay6QzV_oYzLiiGVYL4bBNE.png"
   },
   {
@@ -175,8 +130,6 @@
     "description": "Bekは英国のベンチャーキャピタル企業で、主に初期段階のテクノロジースタートアップに投資し、成長支援を行っています。",
     "description_long": "Bekは、英国ロンドンに拠点を置くベンチャーキャピタル企業です。主に初期段階のテクノロジースタートアップに投資し、特にフィンテック、セキュリティ、開発者ツール、B2Bソフトウェアなどの分野に注力しています。Bekは、優れた創業者とパートナーシップを結び、成功する企業を構築するための投資と支援を提供します。設立は2013年で、静かに活動しつつも、重要な瞬間には積極的に関与する姿勢を持っています。",
     "url": "https://www.bekventures.com/",
-    "slug": "p-396",
-    "airtable_record_id": "rec9JbACQHHUEwAlA",
     "image_url": "https://cdn.prod.website-files.com/661fb6045e9e2d962afc4c6c/6974350ad35f79c149af67a4_UqOOY4imPPFljSQh1dp4w00pEdkLGqTb7gsKwealZHY.png"
   },
   {
@@ -184,8 +137,6 @@
     "description": "Trade Republicは投資、支払い、銀行サービスを提供するフィンテック企業のサービスです。シンプルで使いやすいプラットフォームが特徴です。",
     "description_long": "ドイツのTrade Republicは、投資、支払い、銀行サービスを提供するフィンテック企業です。ユーザーはシンプルで使いやすいプラットフォームを通じて、株式やETFへの投資が可能です。また、手数料が低く、透明性のある料金体系を採用しているため、初心者から経験者まで幅広いユーザーに支持されています。さらに、モバイルアプリを通じて、いつでもどこでも取引ができる利便性を提供しています。Trade Republicは、デジタルバンキングの機能も備えており、ユーザーは資産管理を一元化することができます。",
     "url": "https://traderepublic.com/en-de",
-    "slug": "p-365",
-    "airtable_record_id": "recAXKcX4c6U9Xkre",
     "image_url": "https://cdn.prod.website-files.com/661fb6045e9e2d962afc4c6c/697434f9e526950a17e8fa95_d-Xk8EmFAUi7dx_nhb7x0WFG5_tNbuVih3mMfoF-VM4.png"
   },
   {
@@ -193,8 +144,6 @@
     "description": "コロンビア・アセットマネジメント株式会社は信頼性の高い資産運用と保全を通じて、不動産開発や管理のノウハウを活かし魅力的な投資機会を提供します。",
     "description_long": "コロンビア・アセットマネジメント株式会社は、信頼性の高い資産運用を提供する運用会社です。不動産開発や管理のノウハウを活かし、クライアントの未来を支えることを目指しています。具体的には、資産の保全を通じて魅力的な投資機会を提供し、クライアントのニーズに応じたサービスを展開しています。特に不動産金融に特化したアプローチを採用し、安定した運用を実現しています。",
     "url": "https://columbia-am.jp/",
-    "slug": "p-322",
-    "airtable_record_id": "recAffwIV5T7FX4e0",
     "image_url": "https://cdn.prod.website-files.com/661fb6045e9e2d962afc4c6c/697434dffe1e81718aff8ee1_3koHpd904J67qED4jPy2ZdpSMyXbtjPoct4QWskagKw.png"
   },
   {
@@ -202,8 +151,6 @@
     "description": "AQM²は、人とAIの協働により株式市場とプライベート・エクイティへの投資を行う投資ファームです。",
     "description_long": "AQM²は、スイスの投資ファームであり、人とAIの協働を通じて株式市場とプライベート・エクイティへの投資を行っています。主なサービスは、クライアントに対して圧倒的な価値を共創することに焦点を当てています。AI技術を活用し、データ分析や市場予測を行うことで、投資判断の精度を高め、リスク管理を強化しています。また、クライアントのニーズに応じた柔軟な投資戦略を提供し、持続可能な成長を目指しています。",
     "url": "https://aqm2.ai/ja/",
-    "slug": "p-378",
-    "airtable_record_id": "recAnnBJpjk9BHiHH",
     "image_url": "https://cdn.prod.website-files.com/661fb6045e9e2d962afc4c6c/6974350181b375d9e9ca7083_O9abramtU6ZSZu4-sli9p5UUiGQOdYLjKg-ptcB3c5I.png"
   },
   {
@@ -211,8 +158,6 @@
     "description": "株式会社マネーフォワードのデザイナーサイトです。ユーザーに寄り添い、人生や世界を前に進めるデザインを提供します。",
     "description_long": "株式会社マネーフォワードは、ユーザーに寄り添ったデザインを提供する企業です。私たちは「User Focus」を理念に掲げ、ユーザーの人生や世界を前に進めることを目指しています。デザインの力を通じて、より良い体験を創出し、生活の質を向上させることに貢献しています。多様なデザインプロジェクトを通じて、ユーザーのニーズに応えるための革新的なアプローチを追求しています。",
     "url": "https://design.moneyforward.com/",
-    "slug": "p-497",
-    "airtable_record_id": "recAyAr1sxWHeH3pW",
     "image_url": "https://cdn.prod.website-files.com/661fb6045e9e2d962afc4c6c/6974f36b786657c02e67a8ac_QmiJHVFbt8PIauqM_E4ZUPNvuYMPw5w39hXQT2RLjZ0.png"
   },
   {
@@ -220,8 +165,6 @@
     "description": "Nextbankはクラウドソフトウェアを提供し、モダンな銀行運営を支援するフィリピンのサービスです。",
     "description_long": "フィリピンのNextbankは、クラウドソフトウェアを提供する銀行です。モダンな銀行運営を支援し、効率的な金融サービスを実現することを目指しています。Nextbankは、顧客のニーズに応じた柔軟なソリューションを提供し、デジタルバンキングの進化を促進します。特に、ユーザーエクスペリエンスを重視し、使いやすさとセキュリティを兼ね備えたプラットフォームを構築しています。これにより、フィリピン国内の金融機関や企業が、より迅速かつ効果的にサービスを提供できるようサポートしています。",
     "url": "https://www.nextbank.ph/",
-    "slug": "p-461",
-    "airtable_record_id": "recBJvyjlWuocrg50",
     "image_url": "https://cdn.prod.website-files.com/661fb6045e9e2d962afc4c6c/69743523ead337506230d5b9_YSekzMeF3iUUh-Rb-ahWl4usilAge-tnTsejJC1Si4s.png"
   },
   {
@@ -229,8 +172,6 @@
     "description": "株式会社IFA Leadingは、確かな金融知識と倫理観を持ち、よりよい金融の在り方を追求する金融機関です。",
     "description_long": "株式会社IFA Leadingは、日本の金融機関であり、確かな金融知識と倫理観を持って、より良い金融の在り方を追求しています。主に資産運用や投資に関するサービスを提供し、顧客のニーズに応じた透明性の高い金融ソリューションを提供することを目指しています。IFA Leadingは、顧客との信頼関係を重視し、専門的なアドバイスを通じて資産形成をサポートします。金融業界における倫理的な行動を重視し、持続可能な金融サービスの提供に努めています。",
     "url": "https://ifa-leading.com/",
-    "slug": "p-508",
-    "airtable_record_id": "recBXZ2OHI8nq6fye",
     "image_url": "https://cdn.prod.website-files.com/661fb6045e9e2d962afc4c6c/6974f373db303afc0164f167_C-79P1Z4xLwp0mQnDbfo8PioxLzpTDFFMbAwVS-09YM.png"
   },
   {
@@ -238,26 +179,13 @@
     "description": "Wallet Station（ウォレットステーション）は企業のオリジナルPayを構築できるスマホ決済プラットフォームです。",
     "description_long": "Wallet Stationは、企業が自社のオリジナルPayを構築できるスマホ決済プラットフォームです。企業のニーズに応じたカスタマイズが可能で、独自の決済システムを簡単に導入できます。主な特徴として、ユーザーが直感的に操作できるインターフェースと、セキュリティ対策が施された安心の決済環境を提供しています。これにより、企業は顧客に対してスムーズな決済体験を提供し、業務効率を向上させることが可能です。特に、デジタル決済の普及が進む中で、Wallet Stationは企業の競争力を高めるための重要なツールとなります。",
     "url": "https://infcurion.com/walletstation/",
-    "slug": "p-511",
-    "airtable_record_id": "recBZCkwT6h5CnDJ2",
     "image_url": "https://cdn.prod.website-files.com/661fb6045e9e2d962afc4c6c/6974f3757d8ce99c7801c631_EQEG7tBdZ6x2UYQfTrhBs1gBWuvBRwEXhhcYbCxlqbA.png"
-  },
-  {
-    "title": "Atlético Dallas by Moniker",
-    "description": "",
-    "description_long": "",
-    "url": "https://bpando.org/2026/01/22/atletico-dallas-by-moniker/",
-    "slug": "p-515",
-    "airtable_record_id": "recD005tkRoVQmqmx",
-    "image_url": ""
   },
   {
     "title": "BlueYard Capital - blueyard.com",
     "description": "BlueYardは欧州を拠点とするベンチャーキャピタルで、テクノロジー分野のスタートアップに投資しています。",
     "description_long": "BlueYardは、ドイツのベルリンを拠点とするベンチャーキャピタルです。テクノロジー分野に特化し、革新的なスタートアップに投資を行っています。特に、デジタルプラットフォームや新しいビジネスモデルを持つ企業に注目し、成長を支援することを目指しています。BlueYardは、投資先企業との密接な連携を通じて、長期的な価値創造を重視しています。",
     "url": "https://blueyard.com/",
-    "slug": "p-317",
-    "airtable_record_id": "recDMdT84tti3QyhR",
     "image_url": "https://cdn.prod.website-files.com/661fb6045e9e2d962afc4c6c/697434dcc4b7a4e136e091c2_seWNkJSEbiItAr_yIWNcJvd61IdAzZoD-udWzDcTLJU.png"
   },
   {
@@ -265,8 +193,6 @@
     "description": "Echoは早期段階のスタートアップやトークンプロジェクトへの投資を支援するサービスです。プロの投資コミュニティと共にプライベートファンディングに参加できます。",
     "description_long": "Echoは、早期段階のスタートアップやトークンプロジェクトへの投資を支援するサービスです。プロの投資コミュニティと共にプライベートファンディングに参加できるプラットフォームを提供しています。主な特徴として、投資家は新たなスタートアップやトークンプロジェクトの資金調達ラウンドにアクセスでき、専門的な投資グループと連携することが可能です。また、Echoは経験豊富な暗号資産投資家向けに設計されており、質の高い投資機会を提供します。これにより、投資家は市場の動向を把握し、戦略的な投資判断を行うことができます。",
     "url": "https://echo.xyz/",
-    "slug": "p-390",
-    "airtable_record_id": "recDNpYOZyEUpZsxQ",
     "image_url": "https://cdn.prod.website-files.com/661fb6045e9e2d962afc4c6c/69743508d5bf29e863fcbcc0_IDRrVX3My0DYCIBtI2HTBOHVQhypRj9NuDpJhfF1kZo.png"
   },
   {
@@ -274,8 +200,6 @@
     "description": "Polymorphic Capitalは、Web3のインフラを基盤に実用的なユースケースの創出に注力するアプリケーション中心のベンチャーキャピタルです。",
     "description_long": "Polymorphic Capitalは、Web3のインフラを基盤に実用的なユースケースの創出に注力するベンチャーキャピタルです。主にアプリケーション中心の投資を行い、革新的なプロジェクトを支援します。特に、Web3技術を活用した新しいビジネスモデルの開発に力を入れており、業界の成長を促進することを目指しています。Polymorphic Capitalは、投資先企業に対して資金提供だけでなく、戦略的なサポートも行い、持続可能な成長を実現するためのパートナーシップを築いています。",
     "url": "https://polymorphic.capital/",
-    "slug": "p-420",
-    "airtable_record_id": "recDSPOZCrZ1OG2L7",
     "image_url": "https://cdn.prod.website-files.com/661fb6045e9e2d962afc4c6c/6974351442e03ec409417263_vseMFh5oqW51vUs7KXqrQsCxAKCOF_SGRM3Ut_Zp9ss.png"
   },
   {
@@ -283,8 +207,6 @@
     "description": "みんなの銀行はスマホ完結のデジタルバンクです。支払いから振込、入出金、貯蓄までスマートフォンで管理でき、新しい金融機能を提供します。",
     "description_long": "みんなの銀行は、スマホ完結のデジタルバンクです。支払い、振込、入出金、貯蓄をスマートフォンで管理できる新しい金融機能を提供します。世の中のヒト、モノ、オカネ、情報をつなぐ存在として、利用者に価値あるつながりを提供することを目指しています。特に、デジタルバンクとしての利便性を活かし、ユーザーが簡単に金融サービスを利用できる環境を整えています。これにより、従来の銀行とは異なる新たな価値を創造し、利用者の生活を豊かにすることを重視しています。",
     "url": "https://www.minna-no-ginko.com/",
-    "slug": "p-333",
-    "airtable_record_id": "recE1RNhBfa5rxy9Q",
     "image_url": "https://cdn.prod.website-files.com/661fb6045e9e2d962afc4c6c/697434e6d153bec2bb6b1cb3_2jPxhhwtRXCvbhmv-67DOXuARUaY9RdfigDT999Wu_k.png"
   },
   {
@@ -292,8 +214,6 @@
     "description": "Imprintはブランドに合わせてカスタマイズ可能なモダンな共同ブランドクレジットカードを提供するサービスです。",
     "description_long": "Imprintは、米国拠点の株式会社が提供する共同ブランドクレジットカードのサービスです。このサービスは、ブランドに合わせてカスタマイズ可能なクレジットカードを提供し、企業が独自のブランド体験を顧客に提供できるよう支援します。Imprintの主要な特徴は、ブランドに特化したデザインと機能を持つカードを迅速に展開できる点と、顧客のニーズに応じた柔軟なソリューションを提供することです。これにより、企業は顧客との関係を強化し、ブランドの認知度を向上させることが可能になります。",
     "url": "https://imprint.co/",
-    "slug": "p-369",
-    "airtable_record_id": "recERLvjd3TCSKaWo",
     "image_url": "https://cdn.prod.website-files.com/661fb6045e9e2d962afc4c6c/697434fcd35f79c149af640e_5jNjcELRP-kFbTEUlfL97fFpaDNkGg52ac3BVbaRwQA.png"
   },
   {
@@ -301,8 +221,6 @@
     "description": "スパークス・グループ株式会社は、1989年創業の独立系投信投資顧問会社です。信頼されるインベストメント・カンパニーを目指し挑戦を続けています。",
     "description_long": "スパークス・グループ株式会社は、1989年に創業した独立系の投信投資顧問会社です。日本を拠点に、資産運用や投資信託の分野で活動しています。信頼されるインベストメント・カンパニーを目指し、顧客のニーズに応えるための挑戦を続けています。特に、透明性の高い運用と顧客本位のサービスを重視し、長期的な資産形成を支援することに力を入れています。これにより、投資家の信頼を獲得し、持続可能な成長を実現することを目指しています。",
     "url": "https://www.sparx.jp/",
-    "slug": "p-341",
-    "airtable_record_id": "recEojIoCb1TGfGU8",
     "image_url": "https://cdn.prod.website-files.com/661fb6045e9e2d962afc4c6c/697434ead5bf29e863fca685_SFgc5-JF8rq0tV8Tgiet5RcBTkDF3-8shdUjunTQpII.png"
   },
   {
@@ -310,8 +228,6 @@
     "description": "Hebbiaは金融業界向けのAIプラットフォームです。資産運用会社や投資銀行、法律事務所などで利用されています。",
     "description_long": "Hebbiaは、米国の金融業界向けに特化したAIプラットフォームを提供する企業です。主に資産運用会社、投資銀行、法律事務所などで利用されており、業界のリーダーたちによって支持されています。Hebbiaのプラットフォームは、データ分析や情報処理を効率化し、意思決定を迅速に行うための強力なツールを提供します。特に、膨大な情報を迅速に処理し、洞察を得る能力に優れており、ユーザーはより良い投資判断を下すことが可能です。これにより、顧客は競争力を維持し、ビジネスの成長を促進することができます。",
     "url": "https://www.hebbia.com/",
-    "slug": "p-389",
-    "airtable_record_id": "recFJLegIB3jW037t",
     "image_url": "https://cdn.prod.website-files.com/661fb6045e9e2d962afc4c6c/69743507b0d89e8dd830274b_P6r2aEAcsdNAgszaqjC5I1NcLq-to1ubUuVuWaM9L6c.png"
   },
   {
@@ -319,8 +235,6 @@
     "description": "Checkout.comは英国の決済事業者で、決済承認率の向上やコスト削減、不正対策を支援するサービスを提供します。",
     "description_long": "Checkout.comは、英国の決済事業者であり、オンライン決済ソリューションを提供しています。主なサービスには、決済承認率の向上、処理コストの削減、不正対策が含まれます。これにより、顧客は優れたカスタマーエクスペリエンスを実現できるよう支援します。Checkout.comは、企業が効率的に決済を管理し、ビジネスの成長を促進するための強力なプラットフォームを提供しています。",
     "url": "https://www.checkout.com/",
-    "slug": "p-356",
-    "airtable_record_id": "recFYtZSDvtOHGPXR",
     "image_url": "https://cdn.prod.website-files.com/661fb6045e9e2d962afc4c6c/697434f4d35f79c149af5fa1_OKIGVUgP5LWnOiF0urjVzS4uEfPyqXejT4sLoafulHE.png"
   },
   {
@@ -328,8 +242,6 @@
     "description": "LINE Bankは連線商業銀行が提供するデジタルバンキングサービスです。スマホで簡単に口座開設や送金、定期預金、ローン申請が可能です。",
     "description_long": "台湾の連線商業銀行が提供するLINE Bankは、デジタルバンキングサービスを展開しています。ユーザーはスマートフォンを通じて、口座開設、送金、定期預金、ローン申請などの金融サービスを簡単に利用できます。特に、迅速な送金機能や、利便性の高い金融カードの提供により、ユーザーはいつでもどこでも金融取引を行うことが可能です。また、LINEポイントとの連携により、日常的な利用が促進される仕組みも整っています。これにより、LINE Bankは新しい形の金融体験を提供し、従来の銀行のイメージを覆すことを目指しています。",
     "url": "https://www.linebank.com.tw/",
-    "slug": "p-426",
-    "airtable_record_id": "recFjACq1x6JYx2MW",
     "image_url": "https://cdn.prod.website-files.com/661fb6045e9e2d962afc4c6c/6974351681b375d9e9ca770f_f5hrrdqIRAQQfu6eDpHEJYU6FcsUOTkDTiDDcoZoMmw.png"
   },
   {
@@ -337,8 +249,6 @@
     "description": "アトリエ・バンライは三井住友フィナンシャルグループが運営する、体験や好奇心を豊かにするプログラムを提供する施設です。",
     "description_long": "アトリエ・バンライは、三井住友フィナンシャルグループが運営する体験型プログラムを提供する施設です。ここでは、参加者が人生を豊かにする体験や好奇心を育むことを目的とした多様なプログラムが用意されています。特に、親子で楽しむことができる体験や地域の企業とのコラボレーションによる特別なイベントが特徴です。例えば、スターバックスとの共同プログラムでは、親子でバリスタ体験を通じて学びながら楽しむ機会が提供されます。また、定期的に開催されるイベントや体験プログラムのスケジュールも公開されており、参加者は事前に申し込みを行う必要があります。アトリエ・バンライは、地域社会とのつながりを大切にしながら、参加者に新たな発見や学びを提供する場として機能しています。",
     "url": "https://www.smfg.co.jp/sustainability/atelier/",
-    "slug": "p-412",
-    "airtable_record_id": "recFoPda4eSvvkywE",
     "image_url": "https://cdn.prod.website-files.com/661fb6045e9e2d962afc4c6c/69743510d5bf29e863fcc69f_yHMrsNnXygQ7JzxqA-0phsMs70SYZTve-mXXxQjuBYo.png"
   },
   {
@@ -346,8 +256,6 @@
     "description": "IG証券は英国ロンドンに本社を置くIGグループの日本拠点で、FXや株式、株価指数、商品など多様な資産クラスを先進金融商品で提供しています。",
     "description_long": "IG証券は、イギリスのロンドンに本社を構えるIGグループの日本拠点です。50年以上の歴史を持つオンライン金融サービスのリーディングカンパニーとして、FXや日本・海外の個別株、世界の株価指数、商品、債券先物など、多様な資産クラスを提供しています。CFDやノックアウト・オプションなどの先進的な金融商品を通じて、投資家のニーズに応えています。IG証券は、顧客に対して高い透明性と信頼性を提供し、投資の可能性を広げることを目指しています。",
     "url": "https://ig-brand.jp/",
-    "slug": "p-331",
-    "airtable_record_id": "recGmjb8i1UDpIAVr",
     "image_url": "https://cdn.prod.website-files.com/661fb6045e9e2d962afc4c6c/696a5d1365cdee7eeb18537b_U3tjFrEBBYJ4Cl4f194uDMsCfxmxHigFI_LNkk3m6PE.png"
   },
   {
@@ -355,8 +263,6 @@
     "description": "Mastercardは決済を安全でシンプルかつスマートにし、あらゆる場所で利用可能な包括的なデジタルエコノミーの実現を目指す企業です。",
     "description_long": "Mastercardは、決済業界におけるグローバルなテクノロジー企業です。韓国拠点の同社は、決済を安全でシンプル、スマートかつアクセス可能なものにすることを使命としています。これにより、あらゆる場所で全ての人に利益をもたらす包括的なデジタルエコノミーの実現を目指しています。Mastercardは、革新的な決済ソリューションを提供し、顧客のニーズに応えることで、業界のリーダーとしての地位を確立しています。さらに、同社は持続可能な成長を追求し、社会的責任を果たすことにも注力しています。",
     "url": "https://www.mastercard.co.jp/ja-jp.html",
-    "slug": "p-342",
-    "airtable_record_id": "recHNuhdzsSTe5n5Z",
     "image_url": "https://cdn.prod.website-files.com/661fb6045e9e2d962afc4c6c/697434ebd5bf29e863fca6ed_c3iNa4olF-DlKcF0NfcXXUjTJg1gxqMG-QoxnolLTyA.png"
   },
   {
@@ -364,8 +270,6 @@
     "description": "Personaはあらゆる業界の企業が顧客の身元をオンラインで収集・検証・管理できる、セキュアな本人確認ソフトウェアです。",
     "description_long": "米国のPersonaは、オンラインでの顧客の身元確認を支援するセキュアな本人確認ソフトウェアを提供する企業です。企業はこのソフトウェアを利用して、顧客の身元を収集、検証、管理することができます。Personaのサービスは、あらゆる業界に対応しており、顧客ライフサイクル全体を通じてのアイデンティティ管理を可能にします。主要な特徴として、柔軟なAPIとカスタマイズ可能なワークフローがあり、企業は自社のニーズに合わせた本人確認プロセスを構築できます。これにより、企業は不正対策やAML・KYCの要件を満たしつつ、顧客体験を向上させることができます。",
     "url": "https://withpersona.com/",
-    "slug": "p-438",
-    "airtable_record_id": "recHWvjl2CY7NoT6b",
     "image_url": "https://cdn.prod.website-files.com/661fb6045e9e2d962afc4c6c/69743517f913fb24ca724201_ImczU3vnOp0W7N1nnk8KkdBmIgPtH3JVd4iYrHixCl8.png"
   },
   {
@@ -373,8 +277,6 @@
     "description": "PolygonはEthereum互換のブロックチェーンネットワークを構築・接続するためのプロトコルおよびフレームワークです。企業や機関向けに高速でスケーラブルな資産移動を提供します。",
     "description_long": "ケイマン諸島拠点のPolygonは、Ethereum互換のブロックチェーンネットワークを構築・接続するためのプロトコルおよびフレームワークを提供する企業です。企業や機関向けに、高速でスケーラブルな資産移動を実現し、数十億の資産を瞬時に移動できるインフラを整備しています。Polygonの強みは、オープンで実績のあるスケーラビリティを持ち、さまざまな業界での利用が可能な点です。これにより、ユーザーは効率的かつ安全に取引を行うことができます。",
     "url": "https://polygon.technology/",
-    "slug": "p-345",
-    "airtable_record_id": "recHla1vJ2mUxU7DQ",
     "image_url": "https://cdn.prod.website-files.com/661fb6045e9e2d962afc4c6c/697434edc4b7a4e136e09aca_iT9I0wTaErWHQJh7DGbcIOmTQeTQojQDNMpChvb73BQ.png"
   },
   {
@@ -382,8 +284,6 @@
     "description": "株式会社GRITは不動産と金融の良質な架け橋を目指し、住信SBIネット銀行の銀行代理業として誰でも簡単に利用できるサービスを提供しています。",
     "description_long": "株式会社GRITは、不動産と金融の良質な架け橋を目指す企業です。住信SBIネット銀行の銀行代理業を行い、誰でも簡単に利用できるサービスを提供しています。主な事業領域には、不動産投資のサポートや金融商品に関する情報提供が含まれます。GRITの強みは、顧客のニーズに応じた柔軟なサービスを展開し、安心して利用できる環境を整えている点です。",
     "url": "https://www.gritbank.jp/",
-    "slug": "p-309",
-    "airtable_record_id": "recIrKZ7aon7zlqeQ",
     "image_url": "https://cdn.prod.website-files.com/661fb6045e9e2d962afc4c6c/697434d7d5bf29e863fc9927_2hLuidyArSSfll9MpnMqZOgUH8BJuKbFBQ2whEIpZ24.png"
   },
   {
@@ -391,8 +291,6 @@
     "description": "fundnote（ファンドノート）は、絶対リターン型のアクティブファンドを直販で提供するファンドプラットフォームです。個性豊かなファンドマネージャーによる運用商品を揃えています。",
     "description_long": "fundnoteは、絶対リターン型のアクティブファンドを展開するファンドプラットフォームです。マーケットを熟知した個性豊かなファンドマネージャーを揃え、運用者の顔や人柄、投資哲学が見えるブティック型の運用商品を提供しています。投資し甲斐のある日本企業を応援するファンドを、直販の形で顧客に届けることに注力しています。これにより、投資家は自らの価値観に合ったファンドを選択しやすくなり、より良い投資体験を得ることができます。",
     "url": "https://www.fundnote.co.jp/",
-    "slug": "p-507",
-    "airtable_record_id": "recIzCBedrMSORyRT",
     "image_url": "https://cdn.prod.website-files.com/661fb6045e9e2d962afc4c6c/6974f3723cba3bce2b50af78_goK8G0mq-hAFSpMx6xJ4jCQHHgd28CAX2lq2RFm-Kbo.png"
   },
   {
@@ -400,8 +298,6 @@
     "description": "TitanGate Equityは、機関投資家向けのプライベートマーケット機会への独自アクセスを提供する資産運用サービスです。",
     "description_long": "TitanGate Equityは、米国の機関投資家向けにプライベートマーケット機会への独自アクセスを提供する資産運用サービスです。このサービスは、投資家が新しい所有権の形態を通じて、より多様な投資機会を享受できるように設計されています。TitanGate Equityの主な特徴には、透明性の高い取引プロセスと、データ駆動型の投資判断が含まれます。これにより、投資家は市場の変化に迅速に対応し、リスクを最小限に抑えながら投資を行うことが可能です。特に、機関投資家や高額資産を持つ個人投資家にとって、TitanGate Equityは魅力的な選択肢となります。",
     "url": "https://titangatequity.com/",
-    "slug": "p-458",
-    "airtable_record_id": "recJOxxY03qGumHlc",
     "image_url": "https://cdn.prod.website-files.com/661fb6045e9e2d962afc4c6c/69743521a849580191d94ff5_YBLfUAfVYeJ0EEXbN6lsiCMll7LbGrlCQL5GVivDIms.png"
   },
   {
@@ -409,8 +305,6 @@
     "description": "MIZUHO DXは、みずほフィナンシャルグループが推進するデジタルトランスフォーメーション（DX）の想いや取り組みを発信するメディアです。",
     "description_long": "みずほフィナンシャルグループは、デジタルトランスフォーメーション（DX）を推進するメディア「MIZUHO DX」を展開しています。このプラットフォームでは、顧客や多様なパートナーと共に挑むDXの取り組みや想いを発信しています。具体的には、社会課題の解決に向けた独自のソリューションや最新のDX事例を紹介し、豊かな暮らしを実現するための情報を提供しています。また、AI人材の積極採用や、企業における生成AI活用に関するイベント情報も掲載されており、デジタル領域でのキャリア機会を広げています。これにより、みずほは金融業界におけるDXの最前線を担う存在としての役割を果たしています。",
     "url": "https://www.mizuho-fg.co.jp/dx/index.html",
-    "slug": "p-502",
-    "airtable_record_id": "recJSFvUc0h4wqWfi",
     "image_url": "https://cdn.prod.website-files.com/661fb6045e9e2d962afc4c6c/6974f36f3fc97c7353895180_RZ72XOkcPTY-1z8Aavj_jbhNrLwvQMaoz36YBTGUFRc.png"
   },
   {
@@ -418,8 +312,6 @@
     "description": "10 AI-driven Features That Will Revolutionize Banking UXは、AI技術が銀行のユーザー体験をどのように変革するかを紹介するプロモーションサイトです。",
     "description_long": "本サイトは、AI技術が銀行のユーザー体験をどのように変革するかに焦点を当てたプロモーションサイトです。特に、AIを活用した10の機能が銀行業務におけるユーザーエクスペリエンスを向上させる方法を紹介しています。具体的には、自動化された経費管理やシームレスな決済体験、コスト効率の良いショッピング支援など、顧客の利便性を高める機能が取り上げられています。これらの機能は、顧客のニーズに応じたパーソナライズを実現し、銀行サービスの利用をよりスムーズにすることを目指しています。AI技術の導入により、銀行業界における新たなイノベーションの機会が広がることが期待されています。",
     "url": "https://ai-in-banking-ux-design.videinfra.com/",
-    "slug": "p-302",
-    "airtable_record_id": "recJgynxv2NXS3OTD",
     "image_url": "https://cdn.prod.website-files.com/661fb6045e9e2d962afc4c6c/697434d34d35d034a37f630e_HzCkUu8kah1r5iHWGXsQdVG3ztx3X7xvtjQ6SHysyhM.png"
   },
   {
@@ -427,8 +319,6 @@
     "description": "Brexは企業向けのモダンな金融プラットフォームです。経費管理や法人カード、銀行サービスを通じて成長支援と業務自動化を実現します。",
     "description_long": "Brexは、企業向けのモダンな金融プラットフォームを提供する会社です。経費管理、法人カード、銀行サービスを通じて、企業の成長を支援し、業務の自動化を実現します。Brexは、特にスタートアップや成長企業に焦点を当てており、迅速な資金調達や効率的な経費管理を可能にする機能を備えています。ユーザーは、シンプルなインターフェースを通じて、リアルタイムでの支出追跡や分析を行うことができ、ビジネスの透明性を向上させることができます。Brexは、米国を拠点にしており、企業の財務管理を革新することを目指しています。",
     "url": "https://www.brex.com/",
-    "slug": "p-354",
-    "airtable_record_id": "recJwdbThx7pT7f8o",
     "image_url": "https://cdn.prod.website-files.com/661fb6045e9e2d962afc4c6c/697434f2d5bf29e863fcac84_GwQLhvm4aEMlftPfi6JFr0j_PeXyvQOYvrVChm_H4YM.png"
   },
   {
@@ -436,8 +326,6 @@
     "description": "マネックス証券株式会社は、新卒・中途・障がい者採用の情報を提供し、企業理念や社員紹介、働く環境についても紹介しています。",
     "description_long": "マネックス証券株式会社は、金融サービスを提供する企業であり、新卒採用、中途採用、障がい者採用の情報を発信しています。企業理念として「一歩先の未来の金融」を掲げ、未来を見据えた金融サービスの創造を目指しています。社員は多様な働き方をし、キャリア形成を行いながら、やりがいを持って業務に取り組んでいます。各部署の紹介や働く環境についても詳しく説明されており、応募者にとって魅力的な情報が提供されています。",
     "url": "https://www.monexgroup.jp/recruit/index.html",
-    "slug": "p-500",
-    "airtable_record_id": "recKdVNvF3DGd7qjl",
     "image_url": "https://cdn.prod.website-files.com/661fb6045e9e2d962afc4c6c/6974f36d30fbcf10bdfd466a_R1sljs4F6I3rZe14v-LCSxCXbrXaBVt9oe4tsneHNVQ.png"
   },
   {
@@ -445,8 +333,6 @@
     "description": "トレイダーズホールディングス株式会社は金融事業とITテクノロジーサービスを中核に展開し、FinTechを通じて未来の投資社会を目指す企業です。",
     "description_long": "トレイダーズホールディングス株式会社は、日本の金融事業とITテクノロジーサービスを中核に展開する企業です。グループは「金融を、もっと面白く」を掲げ、信頼されるFinTechグループとして、誰もが未来に投資できる社会の実現を目指しています。主な事業領域には、金融サービスの提供やIT技術の活用が含まれ、これにより顧客のニーズに応える革新的なソリューションを提供しています。トレイダーズグループは、金融業界における新たな価値創造を追求し、持続可能な成長を目指しています。",
     "url": "https://www.tradershd.com/",
-    "slug": "p-410",
-    "airtable_record_id": "recKkXJH4q7aOqtl1",
     "image_url": "https://cdn.prod.website-files.com/661fb6045e9e2d962afc4c6c/6974350fc4b7a4e136e0afea_Wr7kQVN3Mg7QOJN_3tY24PjgE9CU1_F6ewyfGlbfWD8.png"
   },
   {
@@ -454,8 +340,6 @@
     "description": "MUFG Circleは、三菱UFJフィナンシャル・グループの採用オウンドメディアで、社員インタビューや人事制度、プロジェクト紹介などを配信しています。",
     "description_long": "MUFG Circleは、三菱UFJフィナンシャル・グループの採用オウンドメディアです。社員インタビューや人事制度、プロジェクト紹介を通じて、MUFGで働く人々の成長と挑戦の様子を伝えています。新卒採用やキャリア採用に関する情報も提供しており、特に新卒者向けのインターンシップやキャリア登録の機会を強調しています。MUFGは、金融業界におけるリーダーとして、社員のキャリア形成を支援するための多様なプログラムを展開しています。",
     "url": "https://www.mysite.bk.mufg.jp/career/circle/",
-    "slug": "p-498",
-    "airtable_record_id": "recKposNMPzgRheMj",
     "image_url": "https://cdn.prod.website-files.com/661fb6045e9e2d962afc4c6c/6974f36c281a34136ec8af64_sdeHYr6qsSpON1itazEMHAjNSyv_WpW0SvwQBtTm-to.png"
   },
   {
@@ -463,8 +347,6 @@
     "description": "みずほフィナンシャルグループは銀行、信託銀行、証券、リサーチ＆テクノロジーズの5社からなる金融グループです。新卒採用情報を提供しています。",
     "description_long": "みずほフィナンシャルグループは、みずほ銀行、みずほ信託銀行、みずほ証券、みずほリサーチ＆テクノロジーズの5社からなる金融グループです。グループ一体経営を重視し、各社の役割を明確にしながら新卒採用を行っています。新卒採用サイトでは、金融業界のイメージに対する疑問や就職活動に役立つ情報を提供しています。オープンでフラットな社風を持ち、学生にとって魅力的な職場環境を目指しています。採用情報や選考の流れ、よくある質問なども掲載されており、学生が自分に合ったキャリアを見つける手助けをしています。",
     "url": "https://www.mizuho-fg.co.jp/saiyou/group/index.html",
-    "slug": "p-330",
-    "airtable_record_id": "recKv7GAN82goIisp",
     "image_url": "https://cdn.prod.website-files.com/661fb6045e9e2d962afc4c6c/697434e439268c8add114b4b_g-Nqd9Z0rG93CXQDL8ksjtQhMbi0Ku7LMiDx0bgBOfU.png"
   },
   {
@@ -472,8 +354,6 @@
     "description": "デライト・ベンチャーズは起業家が設立した独立系ベンチャーキャピタルです。起業家の視点でスタートアップ支援を行っています。",
     "description_long": "デライト・ベンチャーズは、起業家が設立した独立系ベンチャーキャピタルです。日本を拠点に、スタートアップの成長を支援することを目的としています。主な事業領域には、資金調達のサポートや経営アドバイスが含まれ、特に起業家の視点を重視した支援を行っています。デライト・ベンチャーズは、起業家自身の経験を活かし、スタートアップが直面する課題を理解し、適切なサポートを提供することに強みを持っています。",
     "url": "https://www.delight-ventures.com/",
-    "slug": "p-329",
-    "airtable_record_id": "recLFLtOB6QnX9gVm",
     "image_url": "https://cdn.prod.website-files.com/661fb6045e9e2d962afc4c6c/697434e37d8ce99c78d46fd9_x2RrvqHNeX76SPNBoqhlEAdlAd95_DFvU--fABR-9Ac.png"
   },
   {
@@ -481,8 +361,6 @@
     "description": "みんなのBaaSはみんなの銀行が提供する法人向けサービスで、APIを通じて金融機能をパートナー企業に提供し、新たな顧客体験を共創します。",
     "description_long": "みんなの銀行は、法人向けサービス「みんなのBaaS」を展開する銀行です。このサービスは、APIを通じてパートナー企業に金融機能を提供し、顧客体験の向上を目指しています。具体的には、パートナー企業のサービスに金融機能を組み込むことで、ユーザーに新たな価値を提供します。これにより、企業は自社のサービスを強化し、顧客との関係を深めることが可能になります。みんなのBaaSは、金融サービスのデジタル化を推進し、より多様な顧客ニーズに応えることを目指しています。",
     "url": "https://baas.minna-no-ginko.com/",
-    "slug": "p-512",
-    "airtable_record_id": "recM6jqKJkogVImSy",
     "image_url": "https://cdn.prod.website-files.com/661fb6045e9e2d962afc4c6c/6974f376e81c50bff6a99d39_mkUyBtSZrsfeoXU1luLtlyFbHzkLbsp4IwPebryWmmA.png"
   },
   {
@@ -490,8 +368,6 @@
     "description": "株式会社インフキュリオンは「金融×テクノロジー」の力でビジネス革新を支えるプラットフォーム提供や事業創出支援を行う会社です。",
     "description_long": "株式会社インフキュリオンは、金融とテクノロジーを融合させたビジネス革新を支えるプラットフォームを提供する会社です。主に、金融業界におけるデジタル化の推進や、新たな事業創出の支援を行っています。インフキュリオンは、さまざまな業界のプレーヤーと連携し、価値創造を実現することに注力しています。特に、金融サービスのデジタル化においては、先進的な技術を活用し、顧客のニーズに応えるソリューションを提供しています。",
     "url": "https://infcurion.com/",
-    "slug": "p-399",
-    "airtable_record_id": "recMN7M3bti2ihZNm",
     "image_url": "https://cdn.prod.website-files.com/661fb6045e9e2d962afc4c6c/6974350cd35f79c149af67fa_oYD7DUl73ddPeM52a-lY5lunoXh5DwQmgwTByjR_TYk.png"
   },
   {
@@ -499,8 +375,6 @@
     "description": "トチツーカは地域の経済や活動を活性化するデジタル地域通貨アプリです。ポイント還元やキャッシュレス決済で地域を豊かにします。",
     "description_long": "トチツーカは、北陸地域の経済を活性化するデジタル地域通貨アプリです。このアプリは、地域住民が安心してキャッシュレス決済を行える環境を提供します。ユーザーは自身の口座からチャージした「トチカ」を利用し、加盟店での決済が可能です。また、トチカの利用に応じて付与される「トチツーカポイント」や、自治体からの「トチポ」を活用することで、地域内での経済循環を促進します。トチツーカを通じて、地域の活動やサービスが活性化し、人々や町がより豊かになることを目指しています。",
     "url": "https://tochituka.com/",
-    "slug": "p-425",
-    "airtable_record_id": "recNC4hCxwbjjdZ42",
     "image_url": "https://cdn.prod.website-files.com/661fb6045e9e2d962afc4c6c/69743515d5bf29e863fcc946_uIR2STK3EbvOiHsdiqRl09rbzCU_LUg4gxUl6P4J7sU.png"
   },
   {
@@ -508,8 +382,6 @@
     "description": "FOLIOホールディングスは、多様なアイディアと革新的なテクノロジーで未来の金融を描き、より豊かな社会の実現を目指す企業です。",
     "description_long": "FOLIOホールディングスは、革新的なテクノロジーを駆使して未来の金融を描く企業です。多様なアイディアを基に、資産形成や投資に関するサービスを提供し、より豊かな社会の実現を目指しています。特に、デジタル金融サービスに注力し、ユーザーのニーズに応える柔軟なソリューションを展開しています。FOLIOホールディングスは、金融業界における新たな価値創造を追求し、顧客にとっての利便性を高めることに貢献しています。",
     "url": "https://folio-hd.com/",
-    "slug": "p-308",
-    "airtable_record_id": "recNFKLPimsDCshPl",
     "image_url": "https://cdn.prod.website-files.com/661fb6045e9e2d962afc4c6c/697434d6d5bf29e863fc98c2_3Wg97VxeTIMokRQBaNyAAvCTf7C3IhTSDRqxgu5O9II.png"
   },
   {
@@ -517,8 +389,6 @@
     "description": "Fin/D（ファインド）は、お金に関する情報を知り、比較し、賢く選択して行動するための情報サイトです。",
     "description_long": "Fin/D（ファインド）は、日本に拠点を置く情報サイトであり、お金に関するさまざまな情報を提供しています。ユーザーが「知る・比較して選ぶ・行動に移す」ことを支援することを目的としています。主な事業領域には、金融商品やサービスの比較、資産形成に関する情報提供が含まれます。特に、NISAやiDeCoなどの制度に関する情報も取り扱っており、利用者が賢い選択をするためのサポートを行っています。Fin/Dは、金融リテラシーの向上を目指し、ユーザーが自分に最適なお金のサービスを見つけられるような価値を提供しています。",
     "url": "https://fin-d.life/",
-    "slug": "p-361",
-    "airtable_record_id": "recNgtAi3g06JgsIn",
     "image_url": "https://cdn.prod.website-files.com/661fb6045e9e2d962afc4c6c/697434f7d72f5a3cc7f21546_DwB-NqBnZzWSXC8dRaQ4JmCZoVlhciB_as8LJ7rpGeI.png"
   },
   {
@@ -526,8 +396,6 @@
     "description": "Tinkは欧州のオープンバンキングプラットフォームで、6000以上の銀行や金融機関と接続し、1つのAPIで豊富で分類された金融データを提供します。",
     "description_long": "スウェーデンのTinkは、欧州のオープンバンキングプラットフォームを提供する企業です。6000以上の銀行や金融機関と接続し、1つのAPIを通じて豊富で分類された金融データを提供します。これにより、企業は顧客の金融情報を活用し、より良いサービスを提供することが可能になります。Tinkのプラットフォームは、データの取得や分析を簡素化し、ユーザーにとっての利便性を向上させることを目指しています。",
     "url": "https://tink.com/",
-    "slug": "p-445",
-    "airtable_record_id": "recP2NtgQJtM0Zdgn",
     "image_url": "https://cdn.prod.website-files.com/661fb6045e9e2d962afc4c6c/6974351cd5bf29e863fcce4a_YVyHd3Q4TWrd1BZxjAnv5RnJE35OOZ40H_1QswxxQN8.png"
   },
   {
@@ -535,8 +403,6 @@
     "description": "Yapilyは英国のオープンバンキングAPIプラットフォームです。19カ国の銀行に数分で接続し、データアクセスや決済処理を提供します。",
     "description_long": "Yapilyは、英国のオープンバンキングAPIプラットフォームです。19カ国の銀行に数分で接続でき、データアクセスや決済処理を提供します。Yapilyのサービスは、顧客にパーソナライズされた金融体験を構築するための製品、ライセンス、ツールを備えています。主な機能には、即時の資金移動を可能にする決済サービスや、迅速かつ安全な定期的な支払いを実現するVRP（変動定期支払い）があります。また、複数の支払いを一度のクリックで処理できるバルクペイメント機能も提供しています。これらの機能により、企業は顧客に対してより良いサービスを提供し、効率的な金融取引を実現できます。",
     "url": "https://www.yapily.com/",
-    "slug": "p-446",
-    "airtable_record_id": "recQ1Xz4AuYxKeUFf",
     "image_url": "https://cdn.prod.website-files.com/661fb6045e9e2d962afc4c6c/6974351dc4b7a4e136e0b5f8_3ZIRPqTUDGYAIlovHSZmv8KXO5D5VnvH7MEuwWfvBKM.png"
   },
   {
@@ -544,8 +410,6 @@
     "description": "AlpacaTechは金融業界向けに投資・運用・調査・分析・システム連携のソリューションを提供するテクノロジー企業です。",
     "description_long": "AlpacaTechは、金融業界向けに投資・運用・調査・分析・システム連携のソリューションを開発するテクノロジー企業です。最先端のテクノロジーと金融における知見を融合させ、お客様の高い基準を満たすソリューションを提供しています。具体的には、投資戦略の最適化や運用効率の向上を図るためのシステムを構築し、データ分析を通じて意思決定を支援します。これにより、顧客は市場の変化に迅速に対応できるようになります。",
     "url": "https://www.alpaca-tech.ai/",
-    "slug": "p-449",
-    "airtable_record_id": "recQAPF4Hm1V1kNfi",
     "image_url": "https://cdn.prod.website-files.com/661fb6045e9e2d962afc4c6c/6974351f84b98fbebddfa8e8_CQIcM5R-bUfo7IZN-atPdV1QQMPBGCieX-0gTa6vmVg.png"
   },
   {
@@ -553,8 +417,6 @@
     "description": "Chainlinkは分散型金融を支える業界標準のオラクルプラットフォームです。スマートコントラクトにリアルワールドデータを安全に提供します。",
     "description_long": "Chainlinkは、分散型金融を支える業界標準のオラクルプラットフォームです。ブロックチェーンとリアルワールドデータを接続し、スマートコントラクトに必要な情報を安全に提供します。Chainlinkは、国際的な金融機関や主要なDeFiプロトコルに広く採用されており、ブロックチェーンの基盤として機能しています。主な製品には、クロスチェーン相互運用性を実現するChainlink CCIP、信頼性の高いデータフィードを提供するChainlink Market、スマートコントラクトの自動化を支援するChainlink Automationなどがあります。これにより、ユーザーは透明性とセキュリティを確保しつつ、さまざまなアプリケーションにおいてリアルタイムのデータを活用できます。",
     "url": "https://chain.link/",
-    "slug": "p-347",
-    "airtable_record_id": "recQqHlVg6mDEhB9B",
     "image_url": "https://cdn.prod.website-files.com/661fb6045e9e2d962afc4c6c/697434efd35f79c149af5e34_zNe6oACI-s13IQkLKGYjHf_e9_TIR9eEoBszLe9r57k.png"
   },
   {
@@ -562,8 +424,6 @@
     "description": "Wio Personalは多通貨対応の無料口座やバーチャル・実物カード、為替手数料ゼロ、最大2%のキャッシュバックを提供するデジタルバンキングサービスです。",
     "description_long": "アラブ首長国連邦のWioは、デジタルバンキングサービスを提供する銀行です。Wio Personalは、無料の多通貨口座を持ち、バーチャルおよび実物カードを利用できるサービスです。顧客は為替手数料がゼロで、最大2%のキャッシュバックを受けることができます。アプリを通じて、資金の管理や取引がシームレスに行える点が特徴です。Wioは、貯蓄、支出、借入、投資を一つのプラットフォームで行える利便性を提供し、ユーザーの金融ニーズに応えています。",
     "url": "https://wio.io/",
-    "slug": "p-459",
-    "airtable_record_id": "recR034ICC8kyLLHy",
     "image_url": "https://cdn.prod.website-files.com/661fb6045e9e2d962afc4c6c/6974352108f760fc080d54eb_ERRdetLCx9O2IJVn7TNQ_jGo73zr1A1O7KoxfeiZUZ8.png"
   },
   {
@@ -571,8 +431,6 @@
     "description": "デジタル証券「renga」は、金融機関などの資産運用のプロが投資する商品に小口投資できる、安定と利回りを両立したデジタル証券サービスです。",
     "description_long": "デジタル証券「renga」は、日本のデジタル証券サービスで、金融機関などの資産運用のプロが投資している商品に小口投資できるプラットフォームです。安定と利回りの両立を目指し、個人投資家が手軽にプロの運用に参加できる仕組みを提供しています。特に、少額からの投資が可能で、リスクを分散しながら資産形成をサポートします。ユーザーは、専門家による厳選された投資商品にアクセスできるため、安心して資産運用を行うことができます。",
     "url": "https://renga.digitalsecurities.jp/",
-    "slug": "p-403",
-    "airtable_record_id": "recSK5ORVXws3JFK2",
     "image_url": "https://cdn.prod.website-files.com/661fb6045e9e2d962afc4c6c/6974350d08f760fc080d4e76_AE_kRvkexvjGPsXUd_jm9hPHVdVn3Mv7zg52qB7uQAE.png"
   },
   {
@@ -580,8 +438,6 @@
     "description": "モニクルフィナンシャルは「金融の力で安心を届ける」をミッションに、働く世代向けの資産診断サービス「マネイロ」や保険比較サービス「ほけんのコスパ」を提供しています。",
     "description_long": "モニクルフィナンシャルは、金融サービスを提供する会社です。主な事業として、働く世代向けの資産診断サービス「マネイロ」と、必要な保険を納得価格で選べる保険比較サービス「ほけんのコスパ」を展開しています。これらのサービスは、顧客が自身の資産状況を把握し、最適な保険を選択する手助けをすることを目的としています。モニクルフィナンシャルは、顧客に安心を届けることをミッションとしており、信頼性の高い情報とサポートを提供することで、金融に対する不安を軽減する価値を提供しています。",
     "url": "https://moniclefinancial.co.jp/",
-    "slug": "p-316",
-    "airtable_record_id": "recSPqHLrVo0CA0Y3",
     "image_url": "https://cdn.prod.website-files.com/661fb6045e9e2d962afc4c6c/697434dcb983c51332ca4120_Be6FVvzxgZySolqClRslWMgHMyL4TN0T_w5r2jHfTFw.png"
   },
   {
@@ -589,8 +445,6 @@
     "description": "Stack Asset Managementは、機関投資家向けに精緻で透明性の高いプライベートマーケットへの戦略的なアクセスを提供する、モジュール型のセクター特化型ファンドを運用する資産運用会社です。",
     "description_long": "Stack Asset Managementは、機関投資家向けにプライベートマーケットへの戦略的なアクセスを提供する資産運用会社です。モジュール型のセクター特化型ファンドを運用し、透明性の高い投資機会を提供します。これにより、投資家は精緻な資産配分を行うことが可能になります。Stackは、特に機関投資家のニーズに応じた柔軟なソリューションを提供し、投資の透明性と戦略的な選択肢を重視しています。",
     "url": "https://www.stack.vc/",
-    "slug": "p-304",
-    "airtable_record_id": "recSXsbThx2Eh7zG2",
     "image_url": "https://cdn.prod.website-files.com/661fb6045e9e2d962afc4c6c/697434d4c725bd3056e7ea56_QbT-kUxAY1z7dfM3Kjh9vqJ7224j99W35Zkvj9OqkeI.png"
   },
   {
@@ -598,8 +452,6 @@
     "description": "General Catalystは米国のベンチャーキャピタル企業です。成長企業への投資を通じてイノベーションを支援しています。",
     "description_long": "General Catalystは、米国のベンチャーキャピタル企業です。成長企業への投資を通じてイノベーションを支援し、テクノロジーやヘルスケア、消費者向けサービスなど多様な分野での企業を対象としています。投資先企業の成長を促進するために、戦略的なサポートやネットワークを提供することに強みを持っています。これにより、起業家や企業が市場での競争力を高める手助けを行っています。",
     "url": "https://www.generalcatalyst.com/",
-    "slug": "p-359",
-    "airtable_record_id": "recSZsHd77W7SnnDh",
     "image_url": "https://cdn.prod.website-files.com/661fb6045e9e2d962afc4c6c/697434f6d5bf29e863fcb017_4LfDIzjl-JOxEV_ffd0yupT_bzuWSoekfMiQSuIS1EQ.png"
   },
   {
@@ -607,8 +459,6 @@
     "description": "KOMOJUは世界中の事業者向けに、簡単にグローバル決済を導入できる決済ゲートウェイサービスです。",
     "description_long": "KOMOJUは、グローバル決済ゲートウェイサービスを提供する企業です。日本を拠点に、世界中の事業者が簡単にオンライン決済を導入できるよう支援しています。KOMOJUは、迅速な決済処理と多様な決済手段を提供し、顧客のニーズに応じた柔軟な対応が可能です。特に、国際的な取引を行う企業にとって、シンプルで使いやすいインターフェースが強みとなっています。これにより、事業者は手間をかけずにグローバルな顧客基盤を拡大することができます。",
     "url": "https://en.komoju.com/",
-    "slug": "p-448",
-    "airtable_record_id": "recSoxN1WwaeT7jZZ",
     "image_url": "https://cdn.prod.website-files.com/661fb6045e9e2d962afc4c6c/6974351efe1e81718affad68_ZJNTzukQTty4KmZx2fLDTueks_28aNXfNQmMBwYA6VQ.png"
   },
   {
@@ -616,8 +466,6 @@
     "description": "Affirmは米国の決済事業者が提供するサービスで、手数料なしの分割払いを可能にし、柔軟な支払いプランを提供します。",
     "description_long": "Affirmは、米国の決済事業者が提供する決済サービスです。ユーザーは手数料なしで分割払いを利用でき、柔軟な支払いプランを選択することが可能です。主な特徴として、長期の支払いオプションと低額の支払いが挙げられ、透明性のある料金体系を提供しています。これにより、ユーザーは購入時に総コストを事前に把握でき、安心して利用することができます。主にファッション、電子機器、旅行などのカテゴリーで利用されており、幅広い消費者に対応しています。",
     "url": "https://www.affirm.com/",
-    "slug": "p-350",
-    "airtable_record_id": "recT5u68WLw83jTjJ",
     "image_url": "https://cdn.prod.website-files.com/661fb6045e9e2d962afc4c6c/697434f022b4272ab1825591_Dn2J5Qd910CvpZJay4fD11rW9EdF0kChoXUHUxeDD90.png"
   },
   {
@@ -625,8 +473,6 @@
     "description": "Ctrl Walletは、2,500以上のブロックチェーンに対応した安全で使いやすい暗号資産ウォレットです。",
     "description_long": "Ctrlは、世界中で利用される安全で強力な暗号資産ウォレットです。2,500以上のブロックチェーンに対応しており、ユーザーは一つのウォレットで全ての暗号資産を管理できます。使いやすさとセキュリティを兼ね備えた設計により、初心者から経験者まで幅広いユーザーに支持されています。特に、暗号資産の管理や取引を簡素化する機能が充実しており、ユーザーは自分の資産を容易にコントロールできます。Ctrlは、暗号資産の未来を見据えた革新的なソリューションを提供しています。",
     "url": "https://ctrl.xyz/",
-    "slug": "p-364",
-    "airtable_record_id": "recTK4Bk73ILSiOdh",
     "image_url": "https://cdn.prod.website-files.com/661fb6045e9e2d962afc4c6c/697434f9a849580191d94182_tyeeIo4ObfI0x4gQjoK9WtZskSInXZFD_QCF_I6OhPE.png"
   },
   {
@@ -634,8 +480,6 @@
     "description": "cashari（カシャリ）はガレージバンク株式会社が提供する、モノの価値を画像で査定し、必要なときに現金化できるアプリです。",
     "description_long": "ガレージバンク株式会社が提供するcashari（カシャリ）は、モノの価値を画像で査定し、必要なときに現金化できるアプリです。ユーザーは、手持ちのアイテムを撮影することで、その価値を簡単に確認できます。このサービスは、特に急な資金が必要な際に役立ちます。cashariは、査定の迅速さと手軽さが特徴で、ユーザーが自宅にある資産を有効活用できる手段を提供します。アプリは無料で利用でき、スマートフォンから簡単にアクセス可能です。",
     "url": "https://cashari.jp/",
-    "slug": "p-503",
-    "airtable_record_id": "recU4wGLs9kbfqGU8",
     "image_url": "https://cdn.prod.website-files.com/661fb6045e9e2d962afc4c6c/6974f36f7465f7e747a909d2_XPhoOprFiievrAzrOjJshYfza_PGvie1Tdcsy04z0Kw.png"
   },
   {
@@ -643,8 +487,6 @@
     "description": "Cardlessは組み込み型クレジットカードプラットフォームです。モジュラーAPIや分析機能、インフラを提供し、製品体験に信用を組み込めます。",
     "description_long": "Cardlessは、組み込み型クレジットカードプラットフォームを提供する企業です。モジュラーAPIや事前構築されたコンポーネント、分析機能を活用し、製品体験に信用を組み込むことができます。これにより、企業は顧客に対してシームレスな決済体験を提供し、ビジネスの成長を促進します。特に、フルサービスのインフラを備えているため、開発者は迅速にサービスを展開できる点が強みです。米国市場において、Cardlessは革新的な金融ソリューションを通じて、企業のニーズに応えることを目指しています。",
     "url": "https://www.cardless.com/",
-    "slug": "p-358",
-    "airtable_record_id": "recU7iHoumRa3ncNx",
     "image_url": "https://cdn.prod.website-files.com/661fb6045e9e2d962afc4c6c/697434f522b4272ab182587f_P8sl5LEPd-QaRLihk0QPB2ACi13AEDBP953tJIQEpS8.png"
   },
   {
@@ -652,8 +494,6 @@
     "description": "株式会社Gincoはブロックチェーンのプロフェッショナルとして企業のWeb3事業を支援する開発会社です。",
     "description_long": "株式会社Gincoは、ブロックチェーン技術を専門とする企業で、企業のWeb3事業を支援する開発会社です。ブロックチェーンのプロフェッショナルとして、クライアントのニーズに応じたソリューションを提供し、デジタル資産の管理や取引の効率化を実現します。Gincoは、信頼性の高いプラットフォームを構築し、企業が新たなビジネスモデルを展開するための基盤を提供します。多くの著名企業との提携実績があり、業界内での信頼を築いています。",
     "url": "https://www.ginco.co.jp/",
-    "slug": "p-400",
-    "airtable_record_id": "recU9ZKwtSHW6TgHD",
     "image_url": "https://cdn.prod.website-files.com/661fb6045e9e2d962afc4c6c/6974350d228a6244b19d4729_lo_P2d5kbCtIuvUSnwmlEeFwNk7RL0TDDQT7bc2nT9U.png"
   },
   {
@@ -661,8 +501,6 @@
     "description": "Consensysはブロックチェーンソフトウェア企業で、分散型金融の新時代を支えるツールやインフラ、研究を提供しています。",
     "description_long": "Consensysは、ブロックチェーンソフトウェア企業です。分散型金融の新時代を支えるために、ツールやインフラ、研究を提供しています。主な事業領域には、Ethereumの開発支援、分散型アプリケーションの構築、そしてブロックチェーン技術の普及が含まれます。Consensysの強みは、開発者向けのリソースやプラットフォームを提供し、より安全でオープンな経済を実現することにあります。",
     "url": "https://consensys.io/",
-    "slug": "p-349",
-    "airtable_record_id": "recUHcGviaGCMhBZZ",
     "image_url": "https://cdn.prod.website-files.com/661fb6045e9e2d962afc4c6c/697434efc4b7a4e136e09e2d_RQHovkEoAcolXq_6Kg5NP_9QfgIyAFnHXEsIu9xNV9k.png"
   },
   {
@@ -670,8 +508,6 @@
     "description": "Evervaultは強力な暗号化モデルで支払いデータを保護し、柔軟かつ安全な決済体験を提供するサービスです。",
     "description_long": "アイルランドのダブリンに拠点を置くEvervaultは、強力な暗号化モデルを提供する決済サービスです。主に、支払いデータの保護を目的としており、ユーザーはデータの完全な制御と柔軟性を維持しながら、安全な決済体験を享受できます。Evervaultの特徴には、データの暗号化を通じてセキュリティを強化することと、顧客のニーズに応じたカスタマイズ可能な決済ソリューションの提供が含まれます。これにより、決済事業者は安心して自社のサービスを展開できる環境が整います。",
     "url": "https://evervault.com/",
-    "slug": "p-314",
-    "airtable_record_id": "recUPD6wMtkMYqNUT",
     "image_url": "https://cdn.prod.website-files.com/661fb6045e9e2d962afc4c6c/697434dad5bf29e863fc9d08_5xR-Zqrx47369iNT61T2E-sd9qVGk9WTMHLDf-Rlah4.png"
   },
   {
@@ -679,8 +515,6 @@
     "description": "深谷市地域通貨ネギー（negi）は、深谷市で利用できるデジタル地域通貨サービスです。地域の人と街をつなぐ特徴があります。",
     "description_long": "深谷市の地域通貨ネギー（negi）は、地域の人々と街をつなぐデジタル通貨サービスです。このサービスは、深谷市内での利用を促進し、地域経済の活性化を目指しています。ネギーは、地域の店舗やサービスでお得に利用できる特徴を持ち、地元の人々にとって便利な決済手段となっています。利用者は、ネギーを通じて地域の特産品やサービスを享受でき、地域のつながりを深めることができます。地域通貨の導入により、深谷市のコミュニティがより強固になり、持続可能な経済圏の形成が期待されています。",
     "url": "https://negi-currency.jp/",
-    "slug": "p-510",
-    "airtable_record_id": "recV0wYRzWdrBNW3f",
     "image_url": "https://cdn.prod.website-files.com/661fb6045e9e2d962afc4c6c/6974f3747465f7e747a90c6d_QU5s68wkZ2KEF8tjh1-Puz4i99aggGfCGBvCRbVOK-A.png"
   },
   {
@@ -688,8 +522,6 @@
     "description": "Airtreeはオーストラリアとニュージーランドの起業家を支援する、初期段階に特化したベンチャーキャピタルです。",
     "description_long": "Airtreeは、オーストラリアとニュージーランドの起業家を支援する初期段階に特化したベンチャーキャピタルです。主にテクノロジー企業の創出を目指し、革新的なアイデアを持つスタートアップに投資を行います。Airtreeは、資金提供だけでなく、起業家に対して戦略的なサポートやネットワークを提供し、成長を促進します。特に、オーストラリアとニュージーランドの市場における深い理解を活かし、地域の特性に応じた支援を行うことが強みです。",
     "url": "https://www.airtree.vc/",
-    "slug": "p-311",
-    "airtable_record_id": "recV5NPkbobxqHefW",
     "image_url": "https://cdn.prod.website-files.com/661fb6045e9e2d962afc4c6c/697434d839268c8add113111_eOd5-nis2W2HTKsOq49eKtTPZjnsQQWcqDFVqfCDg-I.png"
   },
   {
@@ -697,8 +529,6 @@
     "description": "Sight Bankingは、資産管理と貯蓄を支援するモバイルバンキングサービスです。使いやすいアプリでお金の管理を簡単に行えます。",
     "description_long": "Sight Bankingは、資産管理と貯蓄を支援するモバイルバンキングサービスです。ユーザーは、使いやすいアプリを通じてお金の管理を簡単に行うことができます。主な機能には、リアルタイムでの取引履歴の確認や、貯蓄目標の設定が含まれています。また、視覚的にわかりやすいインターフェースを提供し、ユーザーが自身の財務状況を把握しやすくしています。特に、若年層やデジタルネイティブ世代に向けたサービス設計がされており、スマートフォンを活用した効率的な資産管理を実現しています。",
     "url": "https://sight-banking.webflow.io/",
-    "slug": "p-326",
-    "airtable_record_id": "recVMiSGddqoFyK5S",
     "image_url": "https://cdn.prod.website-files.com/661fb6045e9e2d962afc4c6c/697434e139268c8add114864_nsxW3CVINeNg28PU86LCsEfAxgi480A8xVYObkkCY1Y.png"
   },
   {
@@ -706,8 +536,6 @@
     "description": "Xapo Bankは、ビットコインと米ドルを一つのアプリで管理できる、グローバル対応のデジタルバンクです。",
     "description_long": "Xapo Bankは、ジブラルタルに拠点を置くデジタルバンクです。ビットコインと米ドルを一つのアプリで管理できるサービスを提供し、ユーザーが暗号資産と法定通貨をシームレスに扱える環境を整えています。主な特徴として、資産の安全性を確保しながら取引が可能であること、そしてビットコインの資産形成を支援する機能があります。これにより、ユーザーは未来の銀行業務を体験し、資産を成長させることができます。",
     "url": "https://www.xapobank.com/en",
-    "slug": "p-312",
-    "airtable_record_id": "recWYyNJPzVPgCBGN",
     "image_url": "https://cdn.prod.website-files.com/661fb6045e9e2d962afc4c6c/697434d9fe1e81718aff8a84_qv3HNx3tmwZm5nOHims95_6D4hwUgpe_OazrkXxmWbQ.png"
   },
   {
@@ -715,8 +543,6 @@
     "description": "Revolutは英国のフィンテック企業で、複数通貨の管理や国際送金など多彩な金融サービスを提供しています。",
     "description_long": "Revolutは、英国のフィンテック企業で、様々な金融サービスを提供しています。主なサービスには、複数通貨の管理、国際送金、貯蓄やクレジット機能が含まれ、世界中の数百万の顧客に利用されています。Revolutは、最大36種類の通貨をアプリ内で保持でき、150以上の通貨での支出が可能です。これにより、ユーザーは国際的な取引を簡単に行うことができ、効率的な資金管理を実現します。",
     "url": "https://www.revolut.com/",
-    "slug": "p-335",
-    "airtable_record_id": "recWZUH7yOvZ7N5V1",
     "image_url": "https://cdn.prod.website-files.com/661fb6045e9e2d962afc4c6c/697434e7c4b7a4e136e09678_zARNHNSPDWQyXHh6zmZoyaqKo8Bmf2EUm4zuOCSfIys.png"
   },
   {
@@ -724,8 +550,6 @@
     "description": "Wise PlatformはWiseが提供する決済インフラサービスです。銀行や金融機関、企業が自社製品内で迅速かつ透明な国際送金を実現できます。",
     "description_long": "イギリスのWiseは、決済インフラサービス「Wise Platform」を提供しています。このサービスは、銀行や金融機関、企業が自社の製品内で迅速かつ透明な国際送金を実現するためのソリューションです。Wise Platformは、グローバルな決済ソリューションにシームレスに接続できる機能を備えており、ユーザーは自社のエコシステム内で信頼性の高い送金を行うことができます。これにより、企業は国境を越えた取引を簡素化し、顧客に対してより良いサービスを提供することが可能になります。",
     "url": "https://wise.com/platform/",
-    "slug": "p-463",
-    "airtable_record_id": "recWhIcSSKSoG17Qk",
     "image_url": "https://cdn.prod.website-files.com/661fb6045e9e2d962afc4c6c/696cf55be3963c0681a5b562_f-kHUtfByhigMqr6OEfuuzxC4Wj9PMzvi3EHt4NCe9c.png"
   },
   {
@@ -733,8 +557,6 @@
     "description": "NIKKEI BLENDは日本経済新聞社が提供する、日経平均株価のリアルタイムデータを反映した独自のコーヒーブレンドと連動するイベントです。",
     "description_long": "NIKKEI BLENDは、日本経済新聞社が提供するユニークなイベントです。このイベントは、日経平均株価のリアルタイムデータを基にした独自のコーヒーブレンドを体験できる仕組みを持っています。参加者は、特別に開発されたコーヒーマシンを通じて、経済の動向に応じて味が変化するコーヒーを楽しむことができます。具体的には、日経平均株価のデータを取得し、5種類のコーヒー豆のブレンドを自動で制御することで、味わいがリアルタイムで変わります。また、コーヒーの提供時には、日経平均株価の変化がデザインされたロゴが印刷され、参加者はその時点の経済状況を視覚的に感じることができます。さらに、コーヒーカップには当日の新聞記事が印刷され、経済の動向を味わいながら読み解くことが可能です。NIKKEI BLENDは、経済を「味覚」で感じる新しい体験を提供するイベントです。",
     "url": "https://adweb.nikkei.co.jp/blend/",
-    "slug": "p-383",
-    "airtable_record_id": "recY53Q9CPC6PGPMs",
     "image_url": "https://cdn.prod.website-files.com/661fb6045e9e2d962afc4c6c/69743504228a6244b19d4468_3GPkCSMP9nrjI2OCm7ZwNVfPAZt-DscPh6C_KXkg8cE.png"
   },
   {
@@ -742,8 +564,6 @@
     "description": "Nexoはデジタル資産の運用プラットフォームです。ユーザーは暗号資産の運用、取引、借入、利息獲得ができます。",
     "description_long": "Nexoは、デジタル資産の運用プラットフォームを提供する企業です。ユーザーは暗号資産の運用、取引、借入、利息獲得を行うことができます。Nexoの強みは、ユーザーがデジタル資産を効率的に管理できる環境を整えている点です。具体的には、資産の成長を促進するための多様な金融サービスを提供し、ユーザーが必要な資金を迅速に借り入れることができる仕組みを整えています。また、Nexoは、暗号資産の取引を簡単に行えるインターフェースを持ち、ユーザーが直感的に操作できるよう配慮されています。これにより、初心者から経験者まで幅広いユーザーに対応したサービスを展開しています。",
     "url": "https://nexo.com/",
-    "slug": "p-419",
-    "airtable_record_id": "recYM8GV5dW5c47G7",
     "image_url": "https://cdn.prod.website-files.com/661fb6045e9e2d962afc4c6c/69743514d5bf29e863fcc879_8_DK-wvvdiucOpgrqlyHhnlKWkM8CgzAg0hFcKilLaU.png"
   },
   {
@@ -751,8 +571,6 @@
     "description": "Sia Partnersはデジタルを基盤とし、データサイエンスと創造性を活用した新しい形の経営コンサルティンググループです。",
     "description_long": "Sia Partnersは、デジタルを基盤とした経営コンサルティンググループです。データサイエンスと創造性を活用し、クライアントの課題解決に取り組んでいます。主な事業領域には、戦略・マネジメントコンサルティング、AIを活用したソリューション、環境・社会・ガバナンス（ESG）に関するコンサルティングが含まれます。Sia Partnersは、責任あるビジネスの推進を重視し、持続可能な成長を目指しています。グローバルな視点を持ち、様々な業界において価値を提供することが強みです。",
     "url": "https://www.sia-partners.com/ja",
-    "slug": "p-366",
-    "airtable_record_id": "recYi320bkr89206X",
     "image_url": "https://cdn.prod.website-files.com/661fb6045e9e2d962afc4c6c/697434fac725bd3056e7f040_c1x7hcwiGLleKNho9Vt6tJXbCNM707uyKcjchJEZI5A.png"
   },
   {
@@ -760,8 +578,6 @@
     "description": "KicSpaceAcceleratorは、きらぼし銀行が運営する天空橋駅直結の会員制スタートアップ拠点です。金融支援やメンタリング、ピッチイベントで新規事業創出を支援します。",
     "description_long": "きらぼし銀行が運営するKicSpaceAcceleratorは、羽田空港に近接した天空橋駅直結の会員制スタートアップ拠点です。この拠点では、新規事業の創出を支援するために、金融支援の提案や勉強会、ベンチャーキャピタルによるメンタリング、ピッチイベントなど多様なサービスを提供しています。特に、スタートアップ企業に対しては、資金調達のサポートやビジネスモデルの構築に役立つリソースを提供し、成長を促進することを目指しています。KicSpaceAcceleratorは、スタートアップにとっての重要なハブとして機能し、革新的なアイデアを実現するための環境を整えています。",
     "url": "https://kicspace.com/accelerator/",
-    "slug": "p-496",
-    "airtable_record_id": "recYphSfbJoVp5k6P",
     "image_url": "https://cdn.prod.website-files.com/661fb6045e9e2d962afc4c6c/6974f36a30fbcf10bdfd459e_GqidUQJXe_7vDaemXG2Tn1O99CTxAkHczNxQVAdnZUA.png"
   },
   {
@@ -769,8 +585,6 @@
     "description": "Caso Patrimoineはトゥールーズ、パリ、ボルドーを拠点とする家族経営の不動産会社です。地域に根ざした資産運用を提供しています。",
     "description_long": "Caso Patrimoineは、フランスのトゥールーズ、パリ、ボルドーを拠点とする家族経営の不動産会社です。主に不動産投資と資産運用を手掛け、地域に根ざしたサービスを提供しています。顧客のニーズに応じた柔軟な資産管理を行い、信頼性の高い情報を基にした投資戦略を提案します。地域の特性を活かした物件選定や、長期的な視点での資産形成を重視しており、顧客との密なコミュニケーションを大切にしています。",
     "url": "https://www.caso-patrimoine.fr/",
-    "slug": "p-306",
-    "airtable_record_id": "recZn2xxcjdTOL4tZ",
     "image_url": "https://cdn.prod.website-files.com/661fb6045e9e2d962afc4c6c/697434d5f46a105ad56ac655_U4j0Ar3NHQ0YaUz47Nr0gTKu-qgXUj98Vy43DyKLjyU.png"
   },
   {
@@ -778,8 +592,6 @@
     "description": "Letterは高額資産家向けに設計された、金融管理・銀行業務・資産運用を一体化したモダンなプライベートバンキングサービスです。",
     "description_long": "Letterは、米国の高額資産家向けに設計された、金融管理、銀行業務、資産運用を一体化したモダンなプライベートバンキングサービスです。従来のプライベートバンクが提供するサービスの遅さや高コストを解消し、全ての高額資産家に対して、効率的で包括的な金融管理を提供します。Letterは、資産管理、融資、投資の全てを一つのプラットフォームで管理できるように設計されており、ユーザーは複数のアカウントを一元管理し、リアルタイムで財務状況を把握できます。さらに、専門家による個別のアドバイスや、迅速な資金調達の機会を提供し、ユーザーが本当に重要なことに集中できる環境を整えています。",
     "url": "https://letter.co/",
-    "slug": "p-381",
-    "airtable_record_id": "recaAUzGHkKWJ0ov5",
     "image_url": "https://cdn.prod.website-files.com/661fb6045e9e2d962afc4c6c/69743503c725bd3056e7f331_2AAyIDV20g6M4WWdUAjf1vnEIm3VI0QIdDjB5OfAgr0.png"
   },
   {
@@ -787,8 +599,6 @@
     "description": "Fireblocksはデジタル資産の運用を安全かつ効率的に管理できるプラットフォームです。スケール対応とセキュリティを重視しています。",
     "description_long": "Fireblocksは、デジタル資産の運用を安全かつ効率的に管理できるプラットフォームです。特に、グローバルな安定コインの決済を迅速かつ安全に行うことができる機能を提供しています。また、デジタル資産の運用を自動化し、管理するためのテクノロジーを備えています。さらに、ウォレットサービスを提供し、暗号資産の保護、スケーリング、最適化を実現します。これにより、企業は消費者向けや小売アプリ向けにホワイトラベルのウォレットを簡単に作成できます。Fireblocksは、金融業界におけるデジタル資産の管理を革新するためのインフラを提供しています。",
     "url": "https://www.fireblocks.com/",
-    "slug": "p-344",
-    "airtable_record_id": "recaKWYSlcdzOZlXV",
     "image_url": "https://cdn.prod.website-files.com/661fb6045e9e2d962afc4c6c/697434eca849580191d93d8c_p7s9L6WIiwPejafiF0aHgObjjqvmrF0T-UuuaP43dQU.png"
   },
   {
@@ -796,8 +606,6 @@
     "description": "TrueLayerは欧州を拠点とするオープンバンキングプラットフォームで、迅速かつ安全なオンライン決済を支援します。",
     "description_long": "イギリス拠点のTrueLayerは、オープンバンキングプラットフォームを提供する企業です。主に迅速かつ安全なオンライン決済を実現するためのインフラを構築しています。TrueLayerのサービスは、ユーザーのオンボーディング、決済の受け入れ、そして迅速な支払いを可能にすることに特化しています。これにより、企業は顧客に対してスムーズな取引体験を提供できるようになります。また、TrueLayerは、APIを通じて金融機関との接続を容易にし、開発者が自社のアプリケーションにオープンバンキング機能を統合することを支援しています。",
     "url": "https://truelayer.com/",
-    "slug": "p-444",
-    "airtable_record_id": "recc2RmTrP0MIUfmh",
     "image_url": "https://cdn.prod.website-files.com/661fb6045e9e2d962afc4c6c/6974351bfe1e81718affaa62_O-B04cdlGKVhBEfWlJCzoGW6UibQQXP_Lwar1Hlz6CQ.png"
   },
   {
@@ -805,8 +613,6 @@
     "description": "みんなの銀行は新卒採用やキャリア採用の情報を掲載し、魅力や事業内容、福利厚生、募集職種を紹介しています。",
     "description_long": "みんなの銀行は、銀行業務を展開する金融機関です。新卒採用やキャリア採用を通じて、優秀な人材を求めています。事業内容としては、デジタルバンキングの提供や顧客のニーズに応じた金融サービスの開発が挙げられます。働く環境としては、福利厚生や制度が充実しており、社員が快適に働けるよう配慮されています。募集職種には、エンジニアや営業職など多岐にわたるポジションがあり、様々なバックグラウンドを持つ人材が活躍できる場を提供しています。",
     "url": "https://corporate.minna-no-ginko.com/careers/",
-    "slug": "p-332",
-    "airtable_record_id": "reccHlj2WYs88fkle",
     "image_url": "https://cdn.prod.website-files.com/661fb6045e9e2d962afc4c6c/697434e5a849580191d93bbc_Eil2-kDGAfRDPuy2qXAWigwCBZHUzh9tGf4LX0Aav_E.png"
   },
   {
@@ -814,8 +620,6 @@
     "description": "株式会社Kyashは、人々のライフスタイルに寄り添い、新しいお金の文化を創造する決済インフラの構築を目指す企業です。",
     "description_long": "株式会社Kyashは、（日本）のフィンテック企業であり、人々のライフスタイルに寄り添った新しいお金の文化を創造することを目指しています。主な事業領域としては、決済インフラの構築や価値移動のインフラづくりが挙げられます。Kyashは、ユーザーが自由に価値観や思いを届けられる仕組みを提供し、利便性の高いサービスを展開しています。特に、家計簿機能や法人向け送金サービスなど、多様なニーズに応える機能を備えています。",
     "url": "https://www.kyash.co/recruit",
-    "slug": "p-339",
-    "airtable_record_id": "reccLNTT0hVD8oKkV",
     "image_url": "https://cdn.prod.website-files.com/661fb6045e9e2d962afc4c6c/697434e9d35f79c149af59fc_dCsOBCcup_pEALz_USSQ8g3AQ0FNk57KnuK6xo9NJI8.png"
   },
   {
@@ -823,8 +627,6 @@
     "description": "株式会社モニクルは、金融の専門知識がなくても正しい意思決定ができる人を増やすことを目指し、金融サービスプラットフォームの創出とグループ全体の経営・開発・デザイン・マーケティングを担っています。",
     "description_long": "株式会社モニクルは、金融サービスプラットフォームを提供する企業です。金融の専門知識がなくても正しい意思決定ができる人を増やすことを目指し、グループ全体の経営、プロダクト及びシステム開発、デザイン、マーケティングを担っています。モニクルグループは、ユーザーが使いやすい金融サービスを社会に実装することに注力し、幅広い金融ニーズに応えるための革新的なソリューションを提供しています。これにより、より多くの人々が金融に関する正しい知識を持ち、意思決定を行えるようになることを目指しています。",
     "url": "https://monicle.co.jp/",
-    "slug": "p-495",
-    "airtable_record_id": "recdLUAnYjJ7OBN6a",
     "image_url": "https://cdn.prod.website-files.com/661fb6045e9e2d962afc4c6c/6974f36a3d3f5bf43e455dc3_RidEc6mrJNTYOFvyWYlwwWsVQVzHZiWBAnNQf4IgwVg.png"
   },
   {
@@ -832,8 +634,6 @@
     "description": "Solanaは高速で分散化されたスケーラブルなネットワークで、インターネット上の資本市場や決済、暗号資産アプリケーションを支えます。",
     "description_long": "ソラナは、高性能なネットワークを提供する暗号資産プラットフォームです。インターネット上の資本市場や決済、暗号資産アプリケーションを支えるために設計されており、迅速で分散化されたスケーラブルなシステムを実現しています。ソラナは、エネルギー効率が高く、1秒間に数千のトランザクションを処理する能力を持っています。この特性により、開発者は多様なアプリケーションを構築し、ユーザーはスムーズな取引体験を享受できます。ソラナは、暗号資産業界において重要な役割を果たしており、革新的な技術を通じて新しい経済圏の形成を目指しています。",
     "url": "https://solana.com/",
-    "slug": "p-346",
-    "airtable_record_id": "recdsOHA28jHzfxlR",
     "image_url": "https://cdn.prod.website-files.com/661fb6045e9e2d962afc4c6c/697434eec4b7a4e136e09b3f_XFP9F5rLeD7I1ykfVNPPnN7KIG1KUlcLBpIEyDwxl8s.png"
   },
   {
@@ -841,8 +641,6 @@
     "description": "株式会社メルペイは決済サービスを中心に、多様な金融サービスを展開する企業です。新しい信用と価値の創造を目指しています。",
     "description_long": "株式会社メルペイは、決済サービスを中心に多様な金融サービスを展開する企業です。日本国内において、メルカリのプラットフォームを活用し、使わなくなったモノの売り買いを通じて新しい信用と価値を創造しています。メルペイは、単なる決済手段に留まらず、モノの循環を通じて生まれた新しいお金や信用を提供し、ユーザーの生活を豊かにすることを目指しています。これにより、ユーザーは普段の生活の中で新たな価値を享受し、より充実した体験を得ることができます。メルペイは、今後も決済サービスを皮切りに、さらなる金融サービスの拡充を図っていく方針です。",
     "url": "https://jp.merpay.com/",
-    "slug": "p-379",
-    "airtable_record_id": "recePPVAnJ0xX0GB6",
     "image_url": "https://cdn.prod.website-files.com/661fb6045e9e2d962afc4c6c/6974350222b4272ab1825a60_2gH5lt73SWVJqxm0BSlupi8RYuVRBAAHwCV4K70lc3g.png"
   },
   {
@@ -850,8 +648,6 @@
     "description": "Robinhood EUは、株式トークンや暗号資産の売買・管理を一つのプラットフォームで提供する投資サービスです。1ユーロから始められます。",
     "description_long": "ロビンフッドEUは、株式トークンと暗号資産の売買・管理を一つのプラットフォームで提供するフィンテック企業です。ユーザーは、わずか1ユーロから投資を始めることができ、手軽に資産形成を行うことが可能です。主な特徴として、株式トークンと暗号資産を同時に扱える点と、シンプルなインターフェースによる使いやすさがあります。特に、初心者から経験者まで幅広いユーザーに対応したサービスを展開しており、投資の敷居を下げることを目指しています。",
     "url": "https://robinhood.com/us/en/",
-    "slug": "p-343",
-    "airtable_record_id": "receVoR07GhIPAK7b",
     "image_url": "https://cdn.prod.website-files.com/661fb6045e9e2d962afc4c6c/697434ecd72f5a3cc7f20ef0_6RIZs3LFAt3BvTflsGInXkOXOYDShGYGpsbtuVj5sRQ.png"
   },
   {
@@ -859,8 +655,6 @@
     "description": "Finimizeは投資や資産形成に関する情報を提供するメディアサイトです。初心者にも分かりやすい解説が特徴です。",
     "description_long": "Finimizeは、投資や資産形成に関する情報を集約するメディアサイトです。主に投資初心者を対象に、分かりやすい解説を提供しています。読者は、最新の市場動向や投資戦略を学ぶことができ、情報を基にした意思決定をサポートします。特徴として、簡潔な記事形式と視覚的なコンテンツがあり、忙しい人でも短時間で理解できるよう工夫されています。また、コミュニティ機能を通じて、他の投資家と意見交換を行うことも可能です。",
     "url": "https://finimize.com/",
-    "slug": "p-377",
-    "airtable_record_id": "recfEFIGcTNdt9ZpG",
     "image_url": "https://cdn.prod.website-files.com/661fb6045e9e2d962afc4c6c/69743501a849580191d9446d_8suJ3fp5K2ePe-izpQRG60J5gBhzG_GY7ImWdRrTtWc.png"
   },
   {
@@ -868,8 +662,6 @@
     "description": "Weyay Bankはクウェート初のデジタル銀行です。スマートで安全な技術を活用し、簡単に口座開設やデジタルバンキングを提供します。",
     "description_long": "クウェートのWeyay Bankは、国内初のデジタル銀行として、革新的な金融サービスを提供しています。主な事業領域には、迅速な口座開設、デジタルバンキング、そして安全なオンライン取引が含まれます。Weyay Bankは、スマートで安全な技術を駆使し、ユーザーが簡単に銀行サービスを利用できる環境を整えています。特に、ペーパーレスでの口座開設や、モバイルアプリを通じた便利なバンキング体験が強みです。",
     "url": "https://www.weyaybank.com/",
-    "slug": "p-460",
-    "airtable_record_id": "recfNXwk4hl2tKVWw",
     "image_url": "https://cdn.prod.website-files.com/661fb6045e9e2d962afc4c6c/6974352242e03ec409417c1f_t4ZFcmPBYPikxnzkasgdHz_8HaOd--w9H22mwjHcwvc.png"
   },
   {
@@ -877,8 +669,6 @@
     "description": "株式会社MILIZEはAIエンジニアや金融DX人材がビッグデータを活用し、生成AIや金融工学を駆使した金融サービスやプラットフォームを提供しています。",
     "description_long": "株式会社MILIZEは、AIとフィンテックを融合させたサービスを展開する企業です。AIエンジニアや金融DX人材が集まり、ビッグデータを活用して生成AIや金融工学を駆使した金融サービスやプラットフォームを提供しています。特に、金融業務に関する深い知見を活かし、顧客のニーズに応じた多様なソリューションを創造することに注力しています。これにより、次世代の金融ウェブサービスを実現し、顧客の資産形成や運用を支援することを目指しています。",
     "url": "https://milize.co.jp/",
-    "slug": "p-313",
-    "airtable_record_id": "recfrY1m7ct1U1Y2z",
     "image_url": "https://cdn.prod.website-files.com/661fb6045e9e2d962afc4c6c/697434d939268c8add1131a1_thjdxqW4Ckm97XkrmOgS_4hheTUO0RC9zfQe2DHFJaI.png"
   },
   {
@@ -886,8 +676,6 @@
     "description": "ジャフコ グループ株式会社は、スタートアップ企業へのベンチャー投資と中小・中堅企業を対象としたバイアウト投資を行う未上場企業投資会社です。",
     "description_long": "ジャフコ グループ株式会社は、未上場企業投資を専門とする会社です。主にスタートアップ企業へのベンチャー投資と、中小・中堅企業を対象としたバイアウト投資を行っています。これにより、新事業の創造を支援し、企業の再成長を促進することを目指しています。ジャフコは、投資先企業の成長を共に歩むパートナーとして、資金提供だけでなく、経営支援やネットワークの活用も行い、持続的な成長を実現するための価値を提供しています。",
     "url": "https://www.jafco.co.jp/",
-    "slug": "p-337",
-    "airtable_record_id": "recg3Ho7WkvDZZiFP",
     "image_url": "https://cdn.prod.website-files.com/661fb6045e9e2d962afc4c6c/697434e922b4272ab18251f3_LNc57yyn8kH2K8A7f9SAUCpJ31LJMMpRBaifJY9l-CU.png"
   },
   {
@@ -895,8 +683,6 @@
     "description": "レイクのレは親しみやすいパステルイラストを用いた金融サポートサービスのプロモーションサイトです。",
     "description_long": "レイクのレは、金融サポートを提供するプロモーションサイトです。親しみやすさを重視したパステルイラストを用いて、ユーザーに対して視覚的に魅力的な体験を提供します。特に、融資やローンに関する情報をわかりやすく伝えることを目的としており、利用者が必要な情報を簡単に得られるよう工夫されています。モバイルファーストのデザインにより、スマートフォンからのアクセスにも最適化されており、どこでも手軽に利用できる点が特徴です。金融サービスに対する敷居を下げ、より多くの人々に利用してもらうための取り組みがなされています。",
     "url": "https://choooodoii.com/gallery/23198/",
-    "slug": "p-416",
-    "airtable_record_id": "recgcJRJu5AdlteGA",
     "image_url": "https://cdn.prod.website-files.com/661fb6045e9e2d962afc4c6c/6974351342e03ec409417168_EeiNr1JuOTZl-JIRbVHKHHcs7TQSundNznC4SnyJjPg.png"
   },
   {
@@ -904,8 +690,6 @@
     "description": "クラウドローン株式会社は複数の銀行から実際に借りられる低金利の銀行ローン提案が届く日本初のサービスを運営しています。",
     "description_long": "クラウドローン株式会社は、日本初のサービスとして複数の銀行から低金利の銀行ローン提案を受けられるプラットフォームを運営しています。ユーザーは、手軽に複数の金融機関からの借入条件を比較し、最適なローンを選択することが可能です。このサービスは、透明性のある借入プロセスを提供し、利用者のニーズに応じた柔軟な選択肢を用意しています。クラウドローンは、金融業界における革新を目指し、ユーザーにとっての利便性を追求しています。",
     "url": "https://corp.crowdloan.jp/",
-    "slug": "p-324",
-    "airtable_record_id": "recgvWXoxOtc0Ihvx",
     "image_url": "https://cdn.prod.website-files.com/661fb6045e9e2d962afc4c6c/697434dfd72f5a3cc7f20d19_4fonrjJWiUzsuB4bYg_66Go6R7J-feE_eM3_CNhlTR0.png"
   },
   {
@@ -913,8 +697,6 @@
     "description": "Wirexは暗号資産と法定通貨の両方に対応した決済サービスを提供するプラットフォームです。ユーザーは多通貨ウォレットとカードを利用できます。",
     "description_long": "Wirexは、暗号資産と法定通貨の両方に対応した決済サービスを提供するプラットフォームです。ユーザーは多通貨ウォレットを利用し、暗号資産を簡単に管理できます。また、Wirexは、暗号資産を法定通貨に変換して支払いに使用できるカードを提供しています。これにより、ユーザーは日常の買い物やオンラインショッピングで暗号資産を活用することが可能です。さらに、Wirexは、ユーザーに対して暗号資産の貸出機能も提供しており、資産を増やす手段として利用できます。これらの機能により、Wirexはユーザーにとって便利で柔軟な金融サービスを実現しています。",
     "url": "https://www.wirexapp.com/",
-    "slug": "p-360",
-    "airtable_record_id": "rech7PCfad5pHRUyy",
     "image_url": "https://cdn.prod.website-files.com/661fb6045e9e2d962afc4c6c/697434f6f913fb24ca723ac6_R16z2D83CcrkKrBOaXi68ZZyA366dQ_KF8MUAjEI5Rg.png"
   },
   {
@@ -922,8 +704,6 @@
     "description": "Foundationは不動産投資を専門とするサービスです。投資家向けに資産形成を支援します。",
     "description_long": "Foundationは、不動産投資を専門とするサービスです。投資家向けに資産形成を支援し、安定した収益を目指す投資機会を提供します。主な特徴として、透明性のある投資プロセスと、専門家による市場分析を通じたリスク管理があります。これにより、投資家は安心して資産を増やすことができます。特に、米国市場における不動産投資に強みを持ち、幅広い物件選択肢を提供しています。",
     "url": "https://www.thefoundation.house/",
-    "slug": "p-298",
-    "airtable_record_id": "recha9XpYwVHRWKDC",
     "image_url": "https://cdn.prod.website-files.com/661fb6045e9e2d962afc4c6c/697434d1c725bd3056e7e976_gJ8AtJgXjoXApYAsDCBMuRb9Mh0nntIt-Lqb3bv_uaM.png"
   },
   {
@@ -931,8 +711,6 @@
     "description": "Jetonは一つのアプリで多様な決済ニーズに対応するウォレットサービスです。シングルアカウントで複数の支払いを管理できます。",
     "description_long": "Jetonは、決済ニーズに応えるウォレットサービスを提供する企業です。シングルアカウントで複数の支払いを管理できる機能を持ち、ユーザーは一つのアプリで多様な決済を行うことができます。特に、国際的な送金やオンラインショッピングにおいて利便性を追求しており、迅速かつ安全な取引を実現しています。また、Jetonは多言語対応を行っており、様々な国のユーザーに向けたサービスを展開しています。これにより、グローバルな市場での競争力を高めています。",
     "url": "https://www.jeton.com/",
-    "slug": "p-307",
-    "airtable_record_id": "rechhedw6GpHMBgFj",
     "image_url": "https://cdn.prod.website-files.com/661fb6045e9e2d962afc4c6c/697434d6f46a105ad56ac679_kLNvAhjx53JxikfNiV2AcS1ruju0i5bEy2Io2Y66_C8.png"
   },
   {
@@ -940,8 +718,6 @@
     "description": "株式会社LayerXは「すべての経済活動を、デジタル化する。」をミッションに、AI SaaS事業やAI DX事業を提供しています。",
     "description_long": "株式会社LayerXは、「すべての経済活動を、デジタル化する。」をミッションに掲げる企業です。AI SaaS事業として「バクラク」や「Ai Workforce」を提供し、企業の業務効率化を支援しています。また、AI DX事業では「三井物産デジタル・アセットマネジメント」を展開し、デジタル技術を活用した資産管理の最適化を図っています。これにより、顧客のニーズに応じた柔軟なソリューションを提供し、デジタル化の推進に寄与しています。",
     "url": "https://layerx.co.jp/",
-    "slug": "p-368",
-    "airtable_record_id": "rechozhQ7gz5dlsA2",
     "image_url": "https://cdn.prod.website-files.com/661fb6045e9e2d962afc4c6c/697434fbd35f79c149af63e1_b9qD7E3BnB0WGHYn9bZIvn6i07Z3qoqR-2gv5-fLJ40.png"
   },
   {
@@ -949,8 +725,6 @@
     "description": "Solarisはヨーロッパ最大の組み込み型金融プラットフォームです。APIを通じてデジタルバンキングや決済サービスを自社製品にシームレスに統合できます。",
     "description_long": "ドイツのSolarisは、ヨーロッパ最大の組み込み型金融プラットフォームです。デジタルバンキングや決済サービスをAPIを通じて自社製品にシームレスに統合することが可能です。これにより、企業は迅速に金融サービスを提供できるようになります。Solarisは、顧客のニーズに応じた柔軟なソリューションを提供し、金融業界におけるイノベーションを促進しています。特に、デジタル化が進む中で、企業が競争力を維持するための重要なパートナーとなっています。",
     "url": "https://www.solarisgroup.com/en/",
-    "slug": "p-442",
-    "airtable_record_id": "reciki6mYA5WXMn8f",
     "image_url": "https://cdn.prod.website-files.com/661fb6045e9e2d962afc4c6c/6974351af913fb24ca724258_b4lOfpRRwfsxZH7HxIcLqV98YBhQwBjL6_FEcITcBaE.png"
   },
   {
@@ -958,8 +732,6 @@
     "description": "SlushはiOS/Android・Webアプリ・ブラウザ拡張から暗号資産やNFTを管理できるサービスです。 スワップやステーキング、DeFiの利用を数タップで行える設計です。",
     "description_long": "Slushは、暗号資産やNFTを管理するためのサービスです。ユーザーはiOS、Android、Webアプリ、ブラウザ拡張を通じて、資産のスワップやステーキング、DeFiの利用を簡単に行うことができます。特に、Suiプラットフォーム上での安全な取引を重視しており、手間をかけずに資産を活用できる設計が特徴です。これにより、初心者から経験者まで幅広いユーザーが利用しやすい環境を提供しています。",
     "url": "https://slush.app/",
-    "slug": "p-431",
-    "airtable_record_id": "recioWtmZkoXK9iA3",
     "image_url": "https://cdn.prod.website-files.com/661fb6045e9e2d962afc4c6c/6974351742e03ec4094173d0_W57sbNeZoMzkM0HfBk4eXMlsAPNInjw_x0fj5ccrrnU.png"
   },
   {
@@ -967,8 +739,6 @@
     "description": "Cavexはデジタルファイナンスと革新的技術を活用し、環境および社会経済的利益を必要とする人々やコミュニティに提供するサービスです。",
     "description_long": "Cavexは、デジタルファイナンスと革新的技術を活用する企業です。環境および社会経済的利益を必要とする人々やコミュニティに対して、持続可能な解決策を提供します。具体的には、気候変動に対する取り組みを支援し、資金調達の透明性を高めることを目指しています。Cavexは、投資家とプロジェクトを結びつけるプラットフォームを提供し、環境保護に貢献するプロジェクトへの投資を促進します。これにより、社会的なインパクトを生み出し、持続可能な未来を実現することを目指しています。",
     "url": "https://cavex.io/",
-    "slug": "p-427",
-    "airtable_record_id": "recixlva6wdeYZ77B",
     "image_url": "https://cdn.prod.website-files.com/661fb6045e9e2d962afc4c6c/69743516991478c3b11e299b_ZkmbLZbbPDaAkawryqvLsjR3M2ef0NPqQknp1ZlUu8A.png"
   },
   {
@@ -976,8 +746,6 @@
     "description": "Stripe IssuingはStripeが提供するサービスで、APIを使い自社のバーチャルカードや物理カードを即時に発行し、拡張可能なカードプログラムを構築できます。",
     "description_long": "Stripeは、バーチャルカードと物理カードの発行を可能にするプラットフォーム「Stripe Issuing」を提供しています。このサービスは、企業が自社のニーズに合わせたカードプログラムを迅速に構築できることを目的としています。APIを利用することで、数行のコードでカードを即時に発行し、拡張可能な機能を持つプログラムを実現します。Stripe Issuingは、企業が支払いの管理を効率化し、顧客体験を向上させるための強力なツールとなります。特に、オンラインビジネスやフィンテック企業にとって、柔軟なカード発行機能は競争力を高める要素となります。",
     "url": "https://stripe.com/jp/issuing",
-    "slug": "p-372",
-    "airtable_record_id": "recj8ltcxq808UtVO",
     "image_url": "https://cdn.prod.website-files.com/661fb6045e9e2d962afc4c6c/697434fed5bf29e863fcb61d_9nH2vACJuRgUnNuyMqD0Vu05JN3LBD-DCJHqW5Wn-kI.png"
   },
   {
@@ -985,8 +753,6 @@
     "description": "Moneybullはウィブル証券が提供する総合口座のサービスで、米ドル資金を自動運用し米国株やETFの購入が可能です。",
     "description_long": "ウィブル証券は、米国株式やETFの取引を可能にする総合口座サービス「Moneybull」を提供しています。Moneybullは、保有する米ドル資金を自動で運用し、ユーザーが手軽に米国市場にアクセスできる環境を整えています。主な特徴として、米国株やETFの購入が可能であることに加え、売却代金や配当金も自動的にMoneybullに充当される点があります。このサービスは、特に米国株式投資を希望する個人投資家にとって、資産形成の手助けとなるでしょう。",
     "url": "https://www.webull.co.jp/",
-    "slug": "p-513",
-    "airtable_record_id": "recjGWwx7fNd5vGV9",
     "image_url": "https://cdn.prod.website-files.com/661fb6045e9e2d962afc4c6c/6974f376786657c02e67abef_IGf1lhhjxq_2p_DgLEtKNDVg730T88A5ztpoWIHiYec.png"
   },
   {
@@ -994,8 +760,6 @@
     "description": "株式会社マネーフォワードは、フィンテック領域で多様なサービスを提供する企業です。採用情報や企業文化を紹介しています。",
     "description_long": "株式会社マネーフォワードは、フィンテック領域で多様なサービスを提供する企業です。事業のミッションは、ユーザーの生活をより豊かにするための金融サービスを展開することです。現在、エンジニアやデザイナー、営業職など、多数のポジションを募集しています。マネーフォワードでは、チームワークやオープンなコミュニケーションを重視し、社員が自由に意見を言えるカルチャーを大切にしています。働き方においては、リモートワークやフレックス制度を導入し、柔軟な働き方を推進しています。",
     "url": "https://recruit.moneyforward.com/",
-    "slug": "p-336",
-    "airtable_record_id": "recjIO9xOwsxhqkvB",
     "image_url": "https://cdn.prod.website-files.com/661fb6045e9e2d962afc4c6c/697434e884b98fbebddf9c95_cXKJQ_V67qxdgOsyYvjV11-A9vys1hTu6I3sjliJMUs.png"
   },
   {
@@ -1003,8 +767,6 @@
     "description": "Databentoはリアルタイムおよび過去の株式、先物、オプションなどの市場データAPIを提供するサービスです。単一の統合で多様なデータにアクセスでき、$125分の無料クレジットがあります。",
     "description_long": "Databentoは、米国のDatabento, Inc.が提供するリアルタイムおよび過去の市場データAPIサービスです。株式、先物、オプションなどの多様なデータにアクセスできる統合プラットフォームを提供し、ユーザーは簡単に必要なデータを取得できます。特に、データはコロケーションサイトから直接取得され、迅速かつ効率的に利用可能です。利用者は、従量課金制のセルフサービスモデルを通じて、必要なデータを必要な分だけ利用できるため、コスト効率も高いです。さらに、初回登録時には$125分の無料クレジットが提供され、サービスを試すことができます。",
     "url": "https://databento.com/",
-    "slug": "p-447",
-    "airtable_record_id": "reckwb9gZylvV9TdD",
     "image_url": "https://cdn.prod.website-files.com/661fb6045e9e2d962afc4c6c/6974351e39268c8add115c3c_rdl7H_hAw83QiglwNMklHXteVm8esvxSMJdoMl6ZzkM.png"
   },
   {
@@ -1012,8 +774,6 @@
     "description": "空想金融教室は、みずほフィナンシャルグループが提供する、昔話や人気コンテンツを使って投資や金融をわかりやすく学べる教育サービスです。",
     "description_long": "みずほフィナンシャルグループは、空想金融教室を提供する金融機関です。この教育サービスは、投資や金融に関する知識を、昔話や人気コンテンツを通じてわかりやすく学べることを目的としています。空想科学研究所とのコラボレーションにより、ユニークな授業が展開され、参加者は楽しく学ぶことができます。授業内容は多岐にわたり、金融リテラシーの向上を図るための工夫が凝らされています。特に、出張授業も行っており、地域の学校やコミュニティにおいても教育の機会を提供しています。",
     "url": "https://www.mizuho-fg.co.jp/sustainability/social/local/education/kyoshitsu/index.html",
-    "slug": "p-398",
-    "airtable_record_id": "recl2V7iOH0400xQ5",
     "image_url": "https://cdn.prod.website-files.com/661fb6045e9e2d962afc4c6c/6974350cd35f79c149af67d6_XHMo35sQbq8vH-uH6-mmlOt-1nnmlnfWnAHtnGFYeVU.png"
   },
   {
@@ -1021,8 +781,6 @@
     "description": "Surgeは分散型ICMプラットフォームで、スタートアップのトークン化による資金調達を支援し、創業者と投資家をつなげます。",
     "description_long": "Surgeは、分散型のICMプラットフォームです。スタートアップのトークン化を通じて資金調達を支援し、創業者と投資家をつなげることを目的としています。主な事業領域は、トークン化された資金調達の提供と、創造性と資本を結びつけることです。Surgeの強みは、資金調達の民主化を実現し、より多くの創業者が資金を得られる環境を整えることにあります。これにより、投資家は新たな投資機会を得ることができ、スタートアップは必要な資金を迅速に調達することが可能になります。",
     "url": "https://surge.xyz/",
-    "slug": "p-386",
-    "airtable_record_id": "reclftYM6VnX41xGe",
     "image_url": "https://cdn.prod.website-files.com/661fb6045e9e2d962afc4c6c/69743505228a6244b19d4562_G8S8OVO-qa1GKGvsqMJpVoFWFH4FeZhhNYpN8c7B4HA.png"
   },
   {
@@ -1030,8 +788,6 @@
     "description": "Increaseは米国の企業向けに、プログラムで資金の保管・移動・照合を可能にするエンタープライズ向け銀行APIを提供しています。",
     "description_long": "Increaseは、米国の企業向けにエンタープライズグレードの銀行APIを提供するフィンテック企業です。主に、テクノロジー企業が資金をプログラムで保管、移動、照合するための現代的な銀行インフラを構築しています。IncreaseのAPIは、企業が効率的に資金管理を行うための強力なツールを提供し、ビジネスの成長をサポートします。特に、プログラム的な資金の移動や照合機能により、ユーザーは迅速かつ正確に金融取引を行うことが可能です。これにより、企業は業務の効率化を図り、競争力を高めることができます。",
     "url": "https://increase.com/",
-    "slug": "p-380",
-    "airtable_record_id": "recmFeABP80QbKBcT",
     "image_url": "https://cdn.prod.website-files.com/661fb6045e9e2d962afc4c6c/69743503d5bf29e863fcb973_ecrIZOOxJHuRmwE1ksjH8B6CWnYOzl6cUyVk6ZBpykI.png"
   },
   {
@@ -1039,8 +795,6 @@
     "description": "NTTVCはスタートアップ支援に特化したベンチャーキャピタルです。変化の時代に未来を見据えた起業家を支援します。",
     "description_long": "NTTVCは、スタートアップ支援に特化したベンチャーキャピタルです。変化の時代において、未来を見据えた起業家を支援することを使命としています。具体的には、革新的なビジネスモデルやテクノロジーを持つ企業に対して、資金提供や経営支援を行い、成長を促進します。NTTVCは、起業家のビジョンに共感し、彼らが描く未来の実現に向けて強力なパートナーとなることを目指しています。",
     "url": "https://nttvc.com/",
-    "slug": "p-362",
-    "airtable_record_id": "recmf6QXAMUF8jrVN",
     "image_url": "https://cdn.prod.website-files.com/661fb6045e9e2d962afc4c6c/697434f8d5bf29e863fcb16a_bCDihex6_k02pzZOSiZICaYq_bWpohul6IYEzJUsWwA.png"
   },
   {
@@ -1048,8 +802,6 @@
     "description": "スルガ銀行は1895年創業の銀行です。お客さまの想いに寄り添い、課題解決に向けて当事者意識を持って取り組む人材を求めています。",
     "description_long": "スルガ銀行は、1895年に創業した日本の銀行です。お客さまの想いに寄り添い、課題解決に向けて当事者意識を持って取り組む人材を求めています。新しいことや違うことへの挑戦を通じて、「あってよかった、出会えてよかった」という価値を創造することを目指しています。スルガ銀行は、顧客のニーズに応じた金融サービスを提供し、信頼されるパートナーとしての役割を果たすことに注力しています。",
     "url": "https://www.surugabank.co.jp/surugabank/recruitment/",
-    "slug": "p-409",
-    "airtable_record_id": "recmynSxl6ItEUpRD",
     "image_url": "https://cdn.prod.website-files.com/661fb6045e9e2d962afc4c6c/6974350e228a6244b19d47b7_jwpAU39A9aU_SPilDT4IRh3CXih1VGjuQwmUlTdh49Y.png"
   },
   {
@@ -1057,8 +809,6 @@
     "description": "ティッカートークはSNS時代に対応した個人投資家向けメディアです。安全かつ最適な形でIR情報を提供し、上場会社と個人投資家の新たなコミュニケーションを支援します。",
     "description_long": "ティッカートークは、SNS時代に対応した個人投資家向けメディアです。安全かつ最適な形でIR情報を提供し、上場会社と個人投資家の新たなコミュニケーションを支援します。情報の透明性を重視し、個人投資家が必要とする情報を的確に届けることを目指しています。特に、SNSを活用した情報発信により、投資家と企業の距離を縮め、双方向のコミュニケーションを促進します。これにより、投資家はより良い意思決定を行うための情報を得ることができます。",
     "url": "https://tickertalk.co.jp/",
-    "slug": "p-371",
-    "airtable_record_id": "recnM5SZy925b57YC",
     "image_url": "https://cdn.prod.website-files.com/661fb6045e9e2d962afc4c6c/697434fdb0d89e8dd83022e9_h3NI53FJycSn0P0b-gYlAyCi0ek9D3d8Gt7oI7OLank.png"
   },
   {
@@ -1066,8 +816,6 @@
     "description": "Siftは不正対策やリスク管理に特化したサービスです。企業のオンライン取引の安全性向上を支援します。",
     "description_long": "Siftは、デジタル不正対策とリスクベースの認証を提供する企業です。オンライン取引における不正行為を防止し、企業が安全に取引を行えるよう支援します。主な特徴として、リアルタイムのデータ分析を活用した不正検知と、ユーザーの行動に基づくリスク評価を行うことが挙げられます。これにより、企業は不正リスクを軽減しつつ、顧客体験を向上させることが可能です。特に、米国を拠点としたサービス展開により、多様な業界のニーズに応えるソリューションを提供しています。",
     "url": "https://sift.com/",
-    "slug": "p-440",
-    "airtable_record_id": "recniF0k6cZnRpslA",
     "image_url": "https://cdn.prod.website-files.com/661fb6045e9e2d962afc4c6c/6974351942e03ec4094174f1_DTfvtjVEn_cbb6NIxPzs0Ho6hXVsjEKtP3B88vBPdUA.png"
   },
   {
@@ -1075,8 +823,6 @@
     "description": "あかつき証券は、お客様のビジョン実現に向けて長期的視野で最適なプランニングと資産全体の最適化をサポートする証券会社です。",
     "description_long": "あかつき証券は、顧客のビジョン実現に向けて長期的視野で最適なプランニングを行う証券会社です。国内株式や外国株式、投資信託など多様な金融商品を取り扱い、資産全体の最適化をサポートします。特に、顧客のニーズに応じた資産運用の提案を行い、安心して投資ができる環境を提供することに注力しています。あかつき証券は、顧客との信頼関係を重視し、透明性のあるサービスを通じて、資産形成を支援します。",
     "url": "https://www.akatsuki-sc.com/",
-    "slug": "p-328",
-    "airtable_record_id": "reco29P2e8U3Oao0J",
     "image_url": "https://cdn.prod.website-files.com/661fb6045e9e2d962afc4c6c/697434e242e03ec409414f5e_jI54M8xdvc5JBGwN6Aw_Y-V3uqYi_2-o2PEiUrNekiY.png"
   },
   {
@@ -1084,8 +830,6 @@
     "description": "Galileoは米国のフィンテックプラットフォームで、コアバンキング、カード発行、決済処理などのサービスを提供しています。",
     "description_long": "Galileoは、米国のフィンテックプラットフォームです。コアバンキング、カード発行、決済処理などのサービスを提供し、金融テクノロジーの進化に寄与しています。Galileoは、顧客と資金をつなぐ役割を果たし、フィンテック業界の形成に貢献しています。これにより、企業や個人がより効率的に金融サービスを利用できる環境を整えています。",
     "url": "https://www.galileo-ft.com/",
-    "slug": "p-387",
-    "airtable_record_id": "recoGYPCeCzR4qoy6",
     "image_url": "https://cdn.prod.website-files.com/661fb6045e9e2d962afc4c6c/69743506d5bf29e863fcbbc4_wNDz8kstXemHQqXbT3i3txENxDxvwc3fdhuKyO7RZn0.png"
   },
   {
@@ -1093,8 +837,6 @@
     "description": "Revolutのカードは、物理カードとバーチャルカードを用途に合わせて選べるサービスです。",
     "description_long": "Revolutは、フィンテック領域で多様な金融サービスを提供する企業です。物理カードとバーチャルカードを選べるサービスを展開し、ユーザーのニーズに応じた柔軟な決済手段を提供します。これにより、国内外でのショッピングやオンライン取引をスムーズに行うことが可能です。Revolutのカードは、特に旅行者やオンラインショッピングを頻繁に利用するユーザーにとって便利な選択肢となります。さらに、カード利用に伴う特典や管理機能も充実しており、ユーザーは自分の支出を簡単に把握できます。",
     "url": "https://www.revolut.com/en-JP/cards/",
-    "slug": "p-373",
-    "airtable_record_id": "recoeKLzgWTMbXusI",
     "image_url": "https://cdn.prod.website-files.com/661fb6045e9e2d962afc4c6c/697434fe81b375d9e9ca6f64_Shk9KmVZ_Kpmbo0qeJgVXRrnf-xFfBSeQV8yg47DTyE.png"
   },
   {
@@ -1102,8 +844,6 @@
     "description": "フィンテック グローバル株式会社は、フィンテック分野におけるサービスを提供する企業です。",
     "description_long": "フィンテック グローバル株式会社は、日本に拠点を置くフィンテック企業です。主に金融サービスのデジタル化を推進し、革新的なソリューションを提供しています。事業領域には、決済サービスや資産管理、データ分析などが含まれます。特に、顧客のニーズに応じた柔軟なサービス設計と、最新のテクノロジーを活用した効率的な運用が強みです。フィンテック分野における専門知識を活かし、顧客に価値を提供することを目指しています。",
     "url": "https://www.fgi.co.jp/",
-    "slug": "p-320",
-    "airtable_record_id": "recpIJLd0aJ6OnMeU",
     "image_url": "https://cdn.prod.website-files.com/661fb6045e9e2d962afc4c6c/697434dec1cb23c63016a1d9_oeAz6fQpl6D_FQZEamCcPg8JCJch8f5WdDILSOy2oDM.png"
   },
   {
@@ -1111,8 +851,6 @@
     "description": "おかねチップスはフリーランスや副業で働く方に向けて、お金や仕事、働き方に関する役立つ情報を発信するメディアです。",
     "description_long": "おかねチップスは、株式会社ふるさと本舗が運営するメディアです。フリーランスや副業で働く方々に向けて、お金や仕事、働き方に関する情報を提供しています。具体的には、税金や経費、契約の仕方など、実務に役立つ知識をサクサク検索できるように整理されています。特に、フリーランス初心者や新米経営者に向けたコンテンツが充実しており、実際の体験談や専門家のアドバイスを通じて、読者が直面する課題を解決する手助けをしています。おかねチップスは、情報を通じて働き方の選択肢を広げ、より良いライフスタイルを実現するためのサポートを目指しています。",
     "url": "https://okanechips.mei-kyu.com/",
-    "slug": "p-325",
-    "airtable_record_id": "recpSWAfbMqvj4OPG",
     "image_url": "https://cdn.prod.website-files.com/661fb6045e9e2d962afc4c6c/697434e0991478c3b11e1532__vqWmoVI-jBJK1JSQ3mbZChYMdTKTHqTqMV4-A6vYUo.png"
   },
   {
@@ -1120,8 +858,6 @@
     "description": "一般財団法人 社会変革推進財団は、自助・公助・共助の枠組みを超え、社会的・経済的資源循環のエコシステムをつくる組織です。",
     "description_long": "一般財団法人社会変革推進財団は、自助・公助・共助の枠組みを超え、社会的・経済的資源循環のエコシステムを構築する組織です。社会的課題の解決を目指し、持続可能な社会の実現に向けた取り組みを行っています。具体的には、資源の循環利用や地域社会の活性化を促進するプロジェクトを推進し、さまざまなステークホルダーとの連携を重視しています。これにより、社会全体の価値創造を図り、持続可能な発展に寄与することを目指しています。",
     "url": "https://www.siif.or.jp/",
-    "slug": "p-456",
-    "airtable_record_id": "recpUU5ErKO4Uh4p4",
     "image_url": "https://cdn.prod.website-files.com/661fb6045e9e2d962afc4c6c/6974351f81b375d9e9ca7df0_ZxSUsZmuIK8eHzltZetxMI7xurO_v8hn095SclRxrek.png"
   },
   {
@@ -1129,8 +865,6 @@
     "description": "UPSIDERカードは、最大10億円の限度額と年会費無料の法人カードです。利用先限定機能や不正利用補償、電子帳簿保存法対応など上場企業向けの管理機能が充実しています。",
     "description_long": "UPSIDERは、法人向けのクレジットカードサービスを提供する企業です。UPSIDERカードは、最大10億円の限度額を持ち、年会費が完全無料であることが特徴です。カードの追加発行は無料で、枚数も無制限に可能です。利用者は、最短即日でカードを利用でき、2,000万円までの不正利用補償やリアルタイムでの明細確認ができるなど、管理機能が充実しています。また、電子帳簿保存法やインボイス制度に対応しており、企業の法令遵守を支援します。特に新規上場企業の20%がUPSIDERカードを利用していることから、上場企業向けのニーズに応えたサービスであることが伺えます。",
     "url": "https://up-sider.com/",
-    "slug": "p-351",
-    "airtable_record_id": "recprQWoqtNyAJoBL",
     "image_url": "https://cdn.prod.website-files.com/661fb6045e9e2d962afc4c6c/697434f0a849580191d93e4a_C-Osz4JhGf7-pEQwmSUyR-_LhUKavr1w-lD41-5Ib3U.png"
   },
   {
@@ -1138,8 +872,6 @@
     "description": "住信SBIネット銀行は、定期預金や外貨預金、住宅ローン、カードローンなど多彩なサービスを提供する初心者にもおすすめのネット銀行です。",
     "description_long": "住信SBIネット銀行は、日本のネット銀行であり、定期預金、外貨預金、住宅ローン、カードローンなど多彩な金融サービスを提供しています。特に初心者向けに設計されており、手軽に利用できるインターネットバンキングの利便性を活かしています。定期預金や外貨預金では、競争力のある金利を提供し、住宅ローンやカードローンにおいても柔軟な選択肢を用意しています。また、振込や振替、スマホ決済サービスなど、日常的な金融ニーズにも対応しており、ユーザーにとって使いやすい環境を整えています。",
     "url": "https://www.netbk.co.jp/contents/",
-    "slug": "p-315",
-    "airtable_record_id": "recpzm8QgUyshT9RU",
     "image_url": "https://cdn.prod.website-files.com/661fb6045e9e2d962afc4c6c/697434dbfe1e81718aff8b50_oil6AKE-_LD2yi8wfK8INKCdNGMEkut-V7WKN9HCCgw.png"
   },
   {
@@ -1147,8 +879,6 @@
     "description": "GSAは定量的取引に注力するトレーディング企業です。持続的な卓越性を追求し、採用情報も公開しています。",
     "description_long": "GSAは、定量的取引に特化したトレーディング企業です。持続的な卓越性を追求し、革新的な取引戦略を展開しています。データ分析とアルゴリズムを駆使し、金融市場での競争力を高めることに注力しています。GSAは、社員にとって魅力的な職場環境を提供し、成長と発展を促進する文化を大切にしています。採用情報も公開しており、優秀な人材を求めています。",
     "url": "https://www.gsacapital.com/",
-    "slug": "p-357",
-    "airtable_record_id": "recq2QYjszrDlleKY",
     "image_url": "https://cdn.prod.website-files.com/661fb6045e9e2d962afc4c6c/697434f484b98fbebddf9eae_w410HFb8LOhYQg1K5aWk-xasSC9EMGs2wNHBm2E_6-c.png"
   },
   {
@@ -1156,8 +886,6 @@
     "description": "Marqetaは米国の決済事業者で、企業向けにカード発行と決済処理を即時に行えるオープンAPIプラットフォームを提供しています。",
     "description_long": "Marqetaは、米国の決済事業者で、企業向けにカード発行と決済処理を即時に行えるオープンAPIプラットフォームを提供しています。主な事業領域として、デジタル決済の革新や、企業が独自のカードを発行できるソリューションを展開しています。Marqetaの強みは、迅速なカード発行と柔軟な決済処理を実現する技術力にあります。これにより、企業は顧客のニーズに応じたカスタマイズが可能となり、競争力を高めることができます。",
     "url": "https://www.marqeta.com/",
-    "slug": "p-353",
-    "airtable_record_id": "recq4DXsqr0Yh8fuP",
     "image_url": "https://cdn.prod.website-files.com/661fb6045e9e2d962afc4c6c/697434f2e526950a17e8f547_aP6hKJZsUNtQbA2CTUtAmWid7E3-O5d-8pFdoZj6eh4.png"
   },
   {
@@ -1165,8 +893,6 @@
     "description": "Headlineはベンチャーキャピタルとして投資支援を行う企業です。",
     "description_long": "Headlineは、ベンチャーキャピタルとして投資支援を行う企業です。新興企業やスタートアップに対して資金提供を行い、成長を促進します。特に、テクノロジー分野に強みを持ち、革新的なビジネスモデルを持つ企業に焦点を当てています。投資先企業には、資金だけでなく、経営支援やネットワークの提供を通じて、持続可能な成長をサポートします。Headlineは、投資家と起業家を結びつける重要な役割を果たしています。",
     "url": "https://headline.com/",
-    "slug": "p-370",
-    "airtable_record_id": "recqix7TeYvUe4DqW",
     "image_url": "https://cdn.prod.website-files.com/661fb6045e9e2d962afc4c6c/697434fc81b375d9e9ca6e68_H34_SfwT5fGS1x4W-nR5o9ULuYp7RcF8bVodtnpB7Qc.png"
   },
   {
@@ -1174,8 +900,6 @@
     "description": "Unitは米国のフィンテック企業で、テック企業向けに埋め込み型の資本、銀行、請求支払いサービスを3週間で提供します。",
     "description_long": "Unitは、米国のフィンテック企業で、テクノロジー企業向けに埋め込み型の資本、銀行、請求支払いサービスを提供します。主な事業領域は、金融インフラの構築、アカウントの埋め込み、資金移動、カード発行、資本およびクレジットプログラムの提供です。Unitの強みは、これらのサービスをわずか3週間で導入できる点にあります。これにより、クライアントはよりスマートなマネー体験を提供し、ユーザーあたりの平均収益を倍増させることが可能です。",
     "url": "https://www.unit.co/",
-    "slug": "p-441",
-    "airtable_record_id": "recqlB7FiqNGhpbpT",
     "image_url": "https://cdn.prod.website-files.com/661fb6045e9e2d962afc4c6c/69743519fe1e81718affa9e4_4OD5UjbBtclhl_ddKmEjhbf-4d1pmwpb3bfhUM_wD0U.png"
   },
   {
@@ -1183,8 +907,6 @@
     "description": "セゾン投信は長期資産形成を支援する運用会社です。アワード連続受賞の実績を持ち、3つのファンドで資産形成をサポートします。",
     "description_long": "セゾン投信は、長期資産形成を支援する運用会社です。日本国内に拠点を持ち、アワード連続受賞の実績を誇ります。主に3つのファンドを通じて、個々のお客さまの資産形成をサポートしています。特に、セゾン・グローバルバランスファンド、セゾン資産形成の達人ファンド、セゾン共創日本ファンドの提供により、多様な投資ニーズに応えています。お客さま本位の業務運営を重視し、透明性のある運用体制を整えています。",
     "url": "https://www.saison-am.co.jp/",
-    "slug": "p-491",
-    "airtable_record_id": "recqo76tiyYkbwOyF",
     "image_url": "https://cdn.prod.website-files.com/661fb6045e9e2d962afc4c6c/6974f3673cba3bce2b50abb6_R1HytS_dIzViJTRb8PIG0XX7E5Po8CAE6FfNJBGXyUA.png"
   },
   {
@@ -1192,8 +914,6 @@
     "description": "株式会社TAPPは、お客様に利益をもたらすパートナーとして投資の価値を変え、投資する人の人生をワクワクにすることを理念に掲げる企業です。",
     "description_long": "株式会社TAPPは、投資の価値を変え、お客様に利益をもたらすパートナーとしての役割を果たす企業です。理念として「投資する人の人生をワクワクにする」を掲げ、まだ歴史にない新しい基準を世界に創出することを目指しています。主な事業領域には、資産形成や投資に関するサービスが含まれ、顧客のニーズに応じた多様なソリューションを提供しています。TAPPは、顧客の期待を超える価値を提供することに注力し、信頼性の高いパートナーシップを築くことを重視しています。",
     "url": "https://tapp-co.jp/",
-    "slug": "p-415",
-    "airtable_record_id": "recrdxuT00QtB93jJ",
     "image_url": "https://cdn.prod.website-files.com/661fb6045e9e2d962afc4c6c/69743512b0d89e8dd8302e51__w0MeeHL1wAmlBxak2tRyLQ75JetGZcqoYsK-11EcP8.png"
   },
   {
@@ -1201,8 +921,6 @@
     "description": "amberraはドイツの企業で、先進的なウェブデザインとユーザー体験に重点を置いたサービスを提供しています。",
     "description_long": "amberraは、ドイツの企業で、先進的なウェブデザインとユーザー体験に重点を置いたサービスを提供しています。デジタルソリューションを通じて、クライアントのブランド価値を高めることを目指しています。特に、インタラクティブなデザインとユーザー中心のアプローチにより、顧客のニーズに応えることに注力しています。また、最新の技術を活用し、クオリティの高いプロダクトを提供することで、競争力を維持しています。",
     "url": "https://amberra.de/de/",
-    "slug": "p-327",
-    "airtable_record_id": "recrkHGzXy95c8Hwp",
     "image_url": "https://cdn.prod.website-files.com/661fb6045e9e2d962afc4c6c/697434e24d35d034a37f6bbb_P_J84IiBB5dXeENW133jXP63c-rm84dz9AmXdyi5dbw.png"
   },
   {
@@ -1210,8 +928,6 @@
     "description": "株式会社モニクルリサーチは「金融の力で、安心を届ける。」をミッションに、くらしとお金に関する経済メディアを運営しています。",
     "description_long": "株式会社モニクルリサーチは、金融を通じて安心を届けることをミッションに掲げる企業です。くらしとお金に関する経済メディアを運営し、主に「LIMO」、「LIMO&Finance」、「MeChoice」、「株ワン」といったメディアを展開しています。これらのメディアは、ユーザーに対してお金に関する情報を提供し、資産形成や投資に役立つ知識を広めることを目的としています。モニクルリサーチは、情報の正確性と信頼性を重視し、利用者が安心してお金に関する意思決定を行えるようサポートしています。",
     "url": "https://monicleresearch.co.jp/",
-    "slug": "p-375",
-    "airtable_record_id": "recs3ar91P0mNZ1ID",
     "image_url": "https://cdn.prod.website-files.com/661fb6045e9e2d962afc4c6c/69743500c4b7a4e136e0a8bf_HKGvUAIZ6RKZ4qW74zf3WswShXtwdFkm8k8Ard1cWqQ.png"
   },
   {
@@ -1219,8 +935,6 @@
     "description": "Wealthsimpleはカナダのフィンテック企業で、低手数料の資産運用や手数料無料の株式取引、高金利の口座などを提供しています。",
     "description_long": "Wealthsimpleは、カナダのトロントに拠点を置くフィンテック企業です。主に低手数料の資産運用、手数料無料の株式取引、高金利の口座を提供しています。特に、スマートな投資商品とパーソナライズされたアドバイスを通じて、長期的な富の構築をサポートします。顧客は、管理された投資や高金利の当座預金口座を利用でき、手数料の透明性が高いことが特徴です。また、Wealthsimple Tradeでは、株式やETFの取引を手数料なしで行うことができ、投資初心者から経験者まで幅広いユーザーに対応しています。",
     "url": "https://www.wealthsimple.com/en-ca",
-    "slug": "p-385",
-    "airtable_record_id": "recszpdzg5cmHgovf",
     "image_url": "https://cdn.prod.website-files.com/661fb6045e9e2d962afc4c6c/6974350581b375d9e9ca7154_orMV7h_zKR1DJtzrEkAlg3wNNJoObTIlXzoWiwfN2FQ.png"
   },
   {
@@ -1228,8 +942,6 @@
     "description": "Nstock株式会社の採用サイトです。スタートアップの成長を支援するプロダクトを提供し、日本経済の発展に貢献します。",
     "description_long": "Nstock株式会社は、スタートアップの成長を支援するプロダクトを提供する企業です。日本経済の発展に寄与することを目指し、スタートアップが直面する成長のボトルネックを解消するためのソリューションを展開しています。具体的には、スタートアップエコシステム全体を活性化し、持続可能な成長を促進することに注力しています。Nstockは、スタートアップの歴史に残る事業を共に創り上げる仲間を求めています。",
     "url": "https://recruit.nstock.co.jp/",
-    "slug": "p-397",
-    "airtable_record_id": "rectPapawBcUoxUy5",
     "image_url": "https://cdn.prod.website-files.com/661fb6045e9e2d962afc4c6c/6974350bc4b7a4e136e0ac8d_xt-jcTABXenjk9sVp8w1PtJV-ouAD0mNeMnzXhmLhus.png"
   },
   {
@@ -1237,8 +949,6 @@
     "description": "Tempoは大規模な決済に最適化された中立的で許可不要なブロックチェーンです。効率的な取引と予測可能な低手数料を実現します。",
     "description_long": "Tempoは、決済処理に最適化された中立的で許可不要なブロックチェーンです。効率的な取引を実現し、予測可能な低手数料を提供します。特に、サブ秒のファイナリティを持ち、ネイティブのステーブルコインサポートを特徴としています。これにより、ユーザーは迅速かつコスト効率の高い決済を行うことが可能です。Tempoは、暗号資産やWeb3事業者にとって、スケールに対応した決済ソリューションを提供することを目指しています。",
     "url": "https://tempo.xyz/",
-    "slug": "p-395",
-    "airtable_record_id": "rectXBusBqnhWbV1L",
     "image_url": "https://cdn.prod.website-files.com/661fb6045e9e2d962afc4c6c/6974350ad5bf29e863fcbe78_I-w_eBf7Jfz9svrMWER_61nBvPGfLziaDalCR80fQtM.png"
   },
   {
@@ -1246,8 +956,6 @@
     "description": "千葉銀行は地域の皆さまに幅広い金融商品・サービスを提供する銀行です。",
     "description_long": "千葉銀行は、地域の皆さまに幅広い金融商品・サービスを提供する銀行です。個人向けには、預金、融資、投資信託などの金融商品を取り揃えています。また、法人向けには、事業資金の調達や資産運用のサポートを行っています。千葉県を中心に地域密着型のサービスを展開し、地域経済の発展に寄与しています。顧客のニーズに応じた柔軟な対応と信頼性の高いサービスを提供することが、千葉銀行の強みです。",
     "url": "https://www.chibabank.co.jp/",
-    "slug": "p-411",
-    "airtable_record_id": "rectbMQLSfKo7JlWg",
     "image_url": "https://cdn.prod.website-files.com/661fb6045e9e2d962afc4c6c/6974351022b4272ab1825fa6_9i4qA2E60ZtlBPRwUgTdJ2KgBuFYsI_Pv10yqWsIGgc.png"
   },
   {
@@ -1255,8 +963,6 @@
     "description": "Crezco: Embedded Payments APIは、組み込み型の決済APIを提供するサービスです。開発者向けに設計されています。",
     "description_long": "Crezcoは、組み込み型の決済APIを提供するサービスです。ユーザーがプラットフォームを離れることなく、スムーズに資金を移動できることを目指しています。このサービスは、開発者向けに設計されており、シンプルで直感的なインターフェースを特徴としています。CrezcoのAPIは、迅速な決済処理を実現し、企業が自社のサービスに決済機能を統合する際の手間を軽減します。特に、スタートアップや中小企業にとって、コスト効率の良い決済ソリューションを提供することが強みです。",
     "url": "https://www.crezco.com/",
-    "slug": "p-407",
-    "airtable_record_id": "rectyWx0RKzKkrb2j",
     "image_url": "https://cdn.prod.website-files.com/661fb6045e9e2d962afc4c6c/6974350ea849580191d948ec_XPwEe1NfQjM4iWWbF-VF60Qr16cbLx6EHDHLBwYipno.png"
   },
   {
@@ -1264,8 +970,6 @@
     "description": "NASDAQ100は大和アセットマネジメントが提供する、米国ナスダック市場の時価総額上位100銘柄を対象とした株価指数の情報サイトです。",
     "description_long": "大和アセットマネジメントは、米国のナスダック市場に上場している金融を除く時価総額上位100銘柄で構成される株価指数「NASDAQ100」を特集しています。この指数は、テクノロジーを中心に革新的な企業が集結しており、世界的に影響力のある企業が多数含まれています。特に、アップル、マイクロソフト、アマゾン、アルファベット（グーグルの親会社）、メタ（旧フェイスブック）、テスラ、エヌビディアなどが代表的な企業として挙げられます。NASDAQ100は1985年からの指数算出開始以来、約150倍の上昇を記録しており、米国市場全体を牽引するパフォーマンスが期待されています。投資方法や関連する投資信託の情報も提供されており、投資家にとって有益なリソースとなっています。",
     "url": "https://www.daiwa-am.co.jp/special/nasdaq100/",
-    "slug": "p-413",
-    "airtable_record_id": "recuGAYjIATgqsQDS",
     "image_url": "https://cdn.prod.website-files.com/661fb6045e9e2d962afc4c6c/69743511991478c3b11e2827__KqJycvUA_imXZN3ns6Z7ptcMuvUlmxxH2ZcXyqdH5I.png"
   },
   {
@@ -1273,8 +977,6 @@
     "description": "ClearBankは英国の銀行で、フィンテック企業やデジタル資産向けの決済インフラや銀行口座サービスを提供しています。",
     "description_long": "ClearBankは、英国のフィンテック企業向けに特化した銀行です。主にデジタル資産や決済インフラの提供を行い、銀行口座サービスを通じて顧客のニーズに応えています。特に、迅速かつ効率的な決済処理を実現するための技術力が強みです。また、顧客に対して柔軟なサービスを提供し、革新的な金融ソリューションを追求しています。ClearBankは、ゲームチェンジャーとしての役割を果たすことを目指し、業界の変革を促進しています。",
     "url": "https://clear.bank/",
-    "slug": "p-392",
-    "airtable_record_id": "recujcUuENjU4sf2J",
     "image_url": "https://cdn.prod.website-files.com/661fb6045e9e2d962afc4c6c/69743508228a6244b19d462d_cV5FvDb5X_8hRmbMEJQ_VaEarrql8tGXeFlDyhOpC7E.png"
   },
   {
@@ -1282,8 +984,6 @@
     "description": "三井住友銀行のデザインチームは、デザインの力で心地よい金融体験と社会の豊かさを創造し、共に未来の銀行を作るデザイナーを募集しています。",
     "description_long": "三井住友銀行は、デザインの力を活用して心地よい金融体験と社会の豊かさを創造することを目指す銀行です。デザインチームは、顧客の真のニーズを理解し、期待を超えるサービスを提供することを原点にしています。多様な人々に心地よい体験を提供するため、個々の状況や背景に配慮したデザインを追求しています。また、デザインを価値創造の推進力とし、組織を前進させる力を信じています。チーム文化では、本質に向き合い対話を重ねること、考え方や取り組みを発信すること、好奇心を持って新たな関係性を探求すること、そして多様なメンバーとの共創を重視しています。現在、これからの銀行を共に創っていくデザイナーを募集しています。",
     "url": "https://www.smbc-careers.com/design/",
-    "slug": "p-499",
-    "airtable_record_id": "recv5grwuszoNfbtK",
     "image_url": "https://cdn.prod.website-files.com/661fb6045e9e2d962afc4c6c/6974f36c7d8ce99c7801c2ea_Nc4ZglWtBrHJAbY48GKd_WT3y5mvO4JT0LODUyxg1Zc.png"
   },
   {
@@ -1291,8 +991,6 @@
     "description": "Cacheは大口株式ポジションの管理に特化した、現代的な証券ブローカーサービスです。",
     "description_long": "Cacheは、米国に拠点を置く現代的な証券ブローカーサービスです。大口株式ポジションの管理に特化し、投資家に対して効率的な取引環境を提供します。主な特徴として、ユーザーにとって使いやすいインターフェースと、迅速な取引執行を実現するための先進的なテクノロジーがあります。Cacheは、投資家が大規模な株式ポジションを効果的に管理できるようサポートし、資産形成を促進します。",
     "url": "https://usecache.com/about-us",
-    "slug": "p-310",
-    "airtable_record_id": "recvAQYrT0JOM4XRH",
     "image_url": "https://cdn.prod.website-files.com/661fb6045e9e2d962afc4c6c/697434d8b0d89e8dd83013c9_v1FYVlmMnnwLsVS0cN5XZ6O4yZc6RTb8G1Lacqnbsy0.png"
   },
   {
@@ -1300,8 +998,6 @@
     "description": "You, Me & Moneyはカップル向けの金融ツールキットです。パートナーとのお金の話を円滑にする会話例やアドバイスを提供します。",
     "description_long": "オーストラリアのYou, Me & Moneyは、カップル向けの金融ツールキットを提供するサービスです。このツールキットは、パートナーとのお金に関する会話を円滑に進めるための会話例や質問、アドバイスを含んでいます。特に、重要な財務の瞬間を乗り越えるために必要な情報を提供し、カップルが共にお金を管理する際のサポートを行います。利用者は、金銭的な目標を設定し、パートナーとのコミュニケーションを強化することができます。",
     "url": "https://www.youmemoney.org.au/",
-    "slug": "p-494",
-    "airtable_record_id": "recvCXbdY7PscRC5d",
     "image_url": "https://cdn.prod.website-files.com/661fb6045e9e2d962afc4c6c/6974f369dff643f95d99ea4a_ZtFKpl2-k8E8zW6jN3AaWY6AwYKS6ZSpbj3h4M59QVc.png"
   },
   {
@@ -1309,8 +1005,6 @@
     "description": "ふくおか相続税相談室ほっと！は福岡の相続税申告を専門に、節税対策や迅速な申告を低価格でサポートするサービスです。",
     "description_long": "ふくおか相続税相談室ほっと！は、福岡の相続税申告を専門とするサービスです。相続税に関する手続きや節税対策を提供し、迅速かつ低価格での申告を実現します。近年の相続税改正により、より多くの家庭が相続税の対象となる中、専門性の高いスタッフが個々のニーズに応じたサポートを行います。具体的には、相続税申告が15万円から可能で、申告手続きの手間を最小限に抑えることを目指しています。相続税に関する不安や疑問を持つ方々に対し、安心して相談できる環境を提供しています。",
     "url": "https://souzoku-hot.com/",
-    "slug": "p-501",
-    "airtable_record_id": "recvDn0s5ktq5fC1f",
     "image_url": "https://cdn.prod.website-files.com/661fb6045e9e2d962afc4c6c/6974f36eae7d0b6c9da5408c_K2Q6Eq5hTcFbl0Yll-r_OF-nSBy8cwNu5CC0eo9GdAM.png"
   },
   {
@@ -1318,8 +1012,6 @@
     "description": "PAY.JPは、事業者向けのフルスクラッチ型オンライン決済サービスです。業界最低水準の決済手数料でスムーズな取引を支援します。",
     "description_long": "PAY.JPは、オンライン決済をスムーズに導入したい事業者向けのフルスクラッチ型オンライン決済サービスです。業界最低水準の決済手数料を提供し、購入者との取引を円滑に進めることを支援します。これにより、事業者はビジネスの成長を促進することが可能です。特に、シンプルな導入プロセスと高いカスタマイズ性が特徴で、様々な業種に対応した決済ソリューションを提供しています。",
     "url": "https://pay.jp/",
-    "slug": "p-493",
-    "airtable_record_id": "recvVWspCxN63jhj3",
     "image_url": "https://cdn.prod.website-files.com/661fb6045e9e2d962afc4c6c/6974f3683cba3bce2b50ac0c_zHl7bZEmKqfUECxC-90sDEZZeA3nIRMNZX-p8nlUFA0.png"
   },
   {
@@ -1327,8 +1019,6 @@
     "description": "Beach Pointは米国の運用会社で、資産運用サービスを提供しています。",
     "description_long": "Beach Pointは、米国の運用会社です。資産運用サービスを提供し、特にクレジット市場における投資戦略に強みを持っています。多様な投資商品を通じて、顧客の資産形成をサポートします。市場の変動に柔軟に対応し、リスク管理を重視したアプローチを採用しています。",
     "url": "https://beachpoint.capital/",
-    "slug": "p-305",
-    "airtable_record_id": "recwJSEipRZKmQ5kx",
     "image_url": "https://cdn.prod.website-files.com/661fb6045e9e2d962afc4c6c/697434d442e03ec409414a0c_4KaT5lPncO2A7vJ8W-yl5CacQjHwNewxWOLbw3-BXqM.png"
   },
   {
@@ -1336,8 +1026,6 @@
     "description": "TATEKA（タテカ）はLINE上で使える立て替えや割り勘の記録・計算アプリです。会員登録不要で手軽にグループの支払い管理ができます。",
     "description_long": "TATEKA（タテカ）は、LINE上で利用できる立て替えや割り勘の記録・計算アプリです。ユーザーは会員登録やアプリのダウンロードを必要とせず、LINEの公式アカウントを追加するだけで手軽に利用を開始できます。このアプリは、カップルや友人、職場の同僚など、さまざまなグループでの支払い管理に最適です。特に、飲み会や旅行、キャンプなどのシーンで、立て替えた金額や割り勘の計算を簡単に行うことができます。TATEKAは、支払いと受け取りの回数を最小限に抑える最適化された計算ロジックを採用しており、誰が誰にいくら支払うべきかを明確に可視化します。これにより、利用者は公平にお金のやり取りを行い、混乱を避けることができます。",
     "url": "https://tateka.app/",
-    "slug": "p-504",
-    "airtable_record_id": "recwprNPMAlcogNjR",
     "image_url": "https://cdn.prod.website-files.com/661fb6045e9e2d962afc4c6c/6974f3703cba3bce2b50aec6_Mi6gEO0F7WIwPVDWSJ9df99Fc_tw6kD66hlwVxGd6SI.png"
   },
   {
@@ -1345,8 +1033,6 @@
     "description": "Ｌ＆Ｆアセットファイナンスは横浜フィナンシャルグループに属し、不動産金融を中心にお客さまの多様なニーズに寄り添うサービスを提供しています。",
     "description_long": "Ｌ＆Ｆアセットファイナンスは、横浜フィナンシャルグループに属する企業です。不動産金融を中心に、お客さまの多様なニーズに応えるサービスを提供しています。特に、家は人生において最も大きな買い物であり、個々のお客さまの状況に応じた柔軟な対応が求められます。例えば、二世帯住宅の希望や実家を手放したくないという要望、外国籍のお客さまの持ち家に関する相談など、さまざまなケースに寄り添い、希望をつなぐことを重視しています。お客さまの笑顔を大切にし、想いに応えるために全力を尽くす仲間たちが揃っています。",
     "url": "https://www.lfaf.jp/recruit/saiyo/",
-    "slug": "p-492",
-    "airtable_record_id": "recwqukwQVREAmN5w",
     "image_url": "https://cdn.prod.website-files.com/661fb6045e9e2d962afc4c6c/6974f367281a34136ec8ae00_NK7npBvD9uOsW8jL2iEuGKnVN_uNoPJic1DXz9tziVs.png"
   },
   {
@@ -1354,8 +1040,6 @@
     "description": "株式会社スマートバンクは「人々が本当に欲しかったものをつくる」テクノロジーカンパニーです。ワンバンクを通じてお金に悩まない未来を目指しています。",
     "description_long": "株式会社スマートバンクは、テクノロジーを駆使して「人々が本当に欲しかったものをつくる」ことを目指す企業です。主に「ワンバンク」というサービスを通じて、お金に悩まない未来を実現するための新しい常識を提案しています。スマートバンクは、ユーザーのニーズに応じた金融サービスを提供し、利便性と安心感を重視しています。特に、デジタル決済や送金において、迅速かつ安全な取引を実現することに注力しています。これにより、ユーザーはより自由にお金を管理できる環境を手に入れることができます。",
     "url": "https://smartbank.co.jp/",
-    "slug": "p-352",
-    "airtable_record_id": "recx9Db6rwAoKW6LB",
     "image_url": "https://cdn.prod.website-files.com/661fb6045e9e2d962afc4c6c/697434f1d72f5a3cc7f2116f_XSoL6TGdVBijBS8h70juINeppoxXGjSuDlKDQjzu_Ow.png"
   },
   {
@@ -1363,8 +1047,6 @@
     "description": "CREDIT SAISON TYPEFACEは、セゾンカードの歴史とアイデンティティを継承したオリジナル書体で、伝統と先進性を融合しています。",
     "description_long": "CREDIT SAISON TYPEFACEは、セゾンカードの歴史とアイデンティティを継承したオリジナル書体です。日本のクレジットカード業界において、伝統と先進性を融合させたデザインが特徴です。この書体は、SAISON Sansと呼ばれるフォントを基にしており、セゾンの文化を未来へつなぐ役割を果たしています。特に、視認性や使いやすさを重視した設計が施されており、ブランドのメッセージを効果的に伝えることができます。CREDIT SAISON TYPEFACEは、セゾンカードのブランド価値を高めるための重要な要素となっています。",
     "url": "https://corporate.saisoncard.co.jp/company/brand/font/",
-    "slug": "p-319",
-    "airtable_record_id": "recxZwNBzZLHMZ2dJ",
     "image_url": "https://cdn.prod.website-files.com/661fb6045e9e2d962afc4c6c/697434dd228a6244b19d3064_XtIfIuAUwlKSxzdWWtk6TzZ6zzq__4_68NFp_gdLxag.png"
   },
   {
@@ -1372,8 +1054,6 @@
     "description": "New Layer Capitalは、ビットコインを基盤とした革新的なテクノロジー企業への投資を行う投資会社です。",
     "description_long": "New Layer Capitalは、米国の投資会社であり、ビットコインを基盤とした革新的なテクノロジー企業への投資を行っています。主に、ブロックチェーン技術やデジタル資産に関連するスタートアップに焦点を当て、成長の可能性を秘めた企業を支援します。新しい技術の発展を促進することで、投資家に対して高いリターンを提供することを目指しています。特に、ビットコインを活用したプロジェクトに特化しており、業界の変革を推進する役割を果たしています。",
     "url": "https://nlc.obys.agency/",
-    "slug": "p-363",
-    "airtable_record_id": "recxvVTyeFUzCpj3v",
     "image_url": "https://cdn.prod.website-files.com/661fb6045e9e2d962afc4c6c/697434f8b0d89e8dd8302073_R6dsOP-XcUNC6Sj2HFfo7cpkuapzo2dE0nENk1y_cUk.png"
   }
 ]
