@@ -52,16 +52,21 @@ const MOUSE_RADIUS = 0.50;
 const REPEL_STRENGTH = 1.5;
 const INERTIA = 0.05;
 
-renderer.domElement.addEventListener('mousemove', (e) => {
-  const rect = renderer.domElement.getBoundingClientRect();
-  const u = (e.clientX - rect.left) / rect.width;
-  const v = (e.clientY - rect.top) / rect.height;
+// document でマウスを監視するため、z-index がマイナスで背面にあっても反応する
+function updateMouseNDC(clientX, clientY) {
+  const rect = container.getBoundingClientRect();
+  const u = (clientX - rect.left) / rect.width;
+  const v = (clientY - rect.top) / rect.height;
   if (u >= 0 && u <= 1 && v >= 0 && v <= 1) {
     mouseNDC.x = u * 2 - 1;
     mouseNDC.y = -v * 2 + 1;
+  } else {
+    mouseNDC.x = 99;
+    mouseNDC.y = 99;
   }
-});
-renderer.domElement.addEventListener('mouseleave', () => {
+}
+document.addEventListener('mousemove', (e) => updateMouseNDC(e.clientX, e.clientY));
+document.addEventListener('mouseleave', () => {
   mouseNDC.x = 99;
   mouseNDC.y = 99;
 });
@@ -197,7 +202,7 @@ async function loadObjFromUrl(url, objectScale = 1.0) {
 }
 
 // OBJ ファイルのパスは実際のサイト構成に合わせて調整してください
-loadObjFromUrl('https://cdn.jsdelivr.net/gh/x1545x-rgb/findex-assets@v1.3.2/models/object_404.obj', 0.5).catch(err => {
+loadObjFromUrl('/models/object_404.obj', 0.5).catch(err => {
   console.warn('404bg.js: OBJ load failed:', err.message);
 });
 
@@ -377,4 +382,3 @@ function animate() {
 }
 
 animate();
-
