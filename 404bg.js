@@ -202,7 +202,7 @@ async function loadObjFromUrl(url, objectScale = 1.0) {
 }
 
 // OBJ ファイルのパスは実際のサイト構成に合わせて調整してください
-loadObjFromUrl('/models/object_404.obj', 0.5).catch(err => {
+loadObjFromUrl('https://cdn.jsdelivr.net/gh/x1545x-rgb/findex-assets@v1.3.3/models/object_404.obj', 0.5).catch(err => {
   console.warn('404bg.js: OBJ load failed:', err.message);
 });
 
@@ -382,3 +382,4 @@ function animate() {
 }
 
 animate();
+
