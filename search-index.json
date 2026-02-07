@@ -259,11 +259,11 @@
     "image_url": "https://cdn.prod.website-files.com/661fb6045e9e2d962afc4c6c/696a5d1365cdee7eeb18537b_U3tjFrEBBYJ4Cl4f194uDMsCfxmxHigFI_LNkk3m6PE.png"
   },
   {
-    "title": "",
-    "description": "",
-    "description_long": "",
+    "title": "fincode byGMO | スピーディに導入できるオンライン決済サービス",
+    "description": "fincode byGMOはGMOイプシロン株式会社が提供するオンライン決済サービスです。少ない開発工数で柔軟にカスタマイズでき、ECやサブスクリプションなど幅広いビジネスを支援します。",
+    "description_long": "fincode byGMOは、GMOイプシロン株式会社が提供するオンライン決済APIプラットフォームです。日本拠点のこのサービスは、EC、SaaS、プラットフォーム、サブスクリプションなど、さまざまなビジネスモデルに対応しています。少ない開発工数で柔軟にカスタマイズ可能なため、スタートアップからエンタープライズまで幅広い企業に利用されています。fincodeは、クレジットカード決済をはじめ、口座振替や銀行振込（バーチャル口座）など複数の決済手段を提供し、特にサブスクリプション型ビジネス向けの機能も充実しています。さらに、請求書発行と決済を一体化したインボイス機能や、プラットフォーム型ビジネスに適した決済方式にも対応しており、安心のサポートとセキュリティを備えています。",
     "url": "https://www.fincode.jp/",
-    "image_url": ""
+    "image_url": "https://cdn.prod.website-files.com/661fb6045e9e2d962afc4c6c/69871f56e06af9b9a1b2205c_jqFOx-Be80yQgXYDH8NVRMSoxKWmWumowXMs87a5a5Q.png"
   },
   {
     "title": "Mastercard：決済業界におけるグローバルなテクノロジー企業",
@@ -280,11 +280,11 @@
     "image_url": "https://cdn.prod.website-files.com/661fb6045e9e2d962afc4c6c/69743517f913fb24ca724201_ImczU3vnOp0W7N1nnk8KkdBmIgPtH3JVd4iYrHixCl8.png"
   },
   {
-    "title": "",
-    "description": "",
-    "description_long": "",
+    "title": "BlueBank（ブルーバンク）",
+    "description": "BlueBankは、経営者向けの会員制オーナー専用アプリです。法人口座や請求書あと払い、ビジネスカードなどで経営判断を効率化します。",
+    "description_long": "BlueBankは、経営者向けの会員制オーナー専用アプリです。法人口座、請求書あと払い、ビジネスカードを提供し、経営判断を効率化します。特に、口座の一元管理機能や償却資産のマーケットプレイス機能を備え、資金繰りや納税対策、資産運用をワンストップで最適化します。これにより、経営者は迅速かつ効率的にビジネスを運営できる環境を整えています。特に日本市場において、経営者のニーズに応えるための機能が充実しています。",
     "url": "https://bluebank.app/",
-    "image_url": ""
+    "image_url": "https://cdn.prod.website-files.com/661fb6045e9e2d962afc4c6c/69871f57e06af9b9a1b2207f_qMXlz3GP3QVo4RhZsWO8TpEl5JdDrUu_2-Ba_yhZItw.png"
   },
   {
     "title": "Polygon | The Go-To Blockchain for Payments",
@@ -595,11 +595,11 @@
     "image_url": "https://cdn.prod.website-files.com/661fb6045e9e2d962afc4c6c/6974f36a30fbcf10bdfd459e_GqidUQJXe_7vDaemXG2Tn1O99CTxAkHczNxQVAdnZUA.png"
   },
   {
-    "title": "",
-    "description": "",
-    "description_long": "",
+    "title": "キャナルベンチャーズ株式会社",
+    "description": "キャナルベンチャーズ株式会社は、スタートアップと大企業や行政との連携を推進し、日本のデジタルトランスフォーメーションを加速する会社です。",
+    "description_long": "キャナルベンチャーズ株式会社は、日本のデジタルトランスフォーメーションを加速することを目的としたベンチャーキャピタルです。スタートアップと大企業、行政との連携を推進し、ビジネスエコシステムを形成しています。具体的には、スタートアップやアクセラレーターと協力し、新たなビジネスの連携を広げることで、革新的なサービスを実現します。これにより、未来のあたりまえとなるプラットフォームを築くことを目指しています。",
     "url": "https://www.canal-v.com/",
-    "image_url": ""
+    "image_url": "https://cdn.prod.website-files.com/661fb6045e9e2d962afc4c6c/69871f54b849960fe88a6764_TVV85fTsnZOLY56l-aWr5rmLT6wovmSvdxn-Q3JZscw.png"
   },
   {
     "title": "Caso Patrimoine",
@@ -621,13 +621,6 @@
     "description_long": "Fireblocksは、デジタル資産の運用を安全かつ効率的に管理できるプラットフォームです。特に、グローバルな安定コインの決済を迅速かつ安全に行うことができる機能を提供しています。また、デジタル資産の運用を自動化し、管理するためのテクノロジーを備えています。さらに、ウォレットサービスを提供し、暗号資産の保護、スケーリング、最適化を実現します。これにより、企業は消費者向けや小売アプリ向けにホワイトラベルのウォレットを簡単に作成できます。Fireblocksは、金融業界におけるデジタル資産の管理を革新するためのインフラを提供しています。",
     "url": "https://www.fireblocks.com/",
     "image_url": "https://cdn.prod.website-files.com/661fb6045e9e2d962afc4c6c/697434eca849580191d93d8c_p7s9L6WIiwPejafiF0aHgObjjqvmrF0T-UuuaP43dQU.png"
-  },
-  {
-    "title": "",
-    "description": "三菱UFJフィナンシャル・グループ（MUFG）の連結子会社である三菱UFJ銀行と三菱UFJニコスは、金融サービスブランド「エムット」の新テレビCMシリーズ「“エン”のある家族」を1月28日から放送開始した。CMには、木村拓哉、石原さとみ、水上恒司が三兄弟役として出演している。 The post 木村拓哉、石原さとみ、水上恒司の三兄弟が買い物に 三菱UFJ「エムット」新CM first appeared on AdverTimes.（アドタイ） by 宣伝会議 .",
-    "description_long": "",
-    "url": "https://www.bk.mufg.jp/kouza/lp/m_brand_2025/index.html",
-    "image_url": ""
   },
   {
     "title": "TRUELAYER",
@@ -791,11 +784,11 @@
     "image_url": "https://cdn.prod.website-files.com/661fb6045e9e2d962afc4c6c/697434e884b98fbebddf9c95_cXKJQ_V67qxdgOsyYvjV11-A9vys1hTu6I3sjliJMUs.png"
   },
   {
-    "title": "",
-    "description": "",
-    "description_long": "",
+    "title": "JACCS Brand Site｜株式会社ジャックス",
+    "description": "株式会社ジャックスのブランドサイトです。髙石あかりさんやimaseさん出演のCM「未来を、買ったんだ。」を公開しています。",
+    "description_long": "株式会社ジャックスは、クレジットカード事業を中心に展開する企業です。ブランドサイトでは、同社の理念やメッセージを伝えるコンテンツが提供されています。特に、髙石あかりさんやimaseさんが出演するCM「未来を、買ったんだ。」を通じて、未来を切り開くための買い物の意義を表現しています。CMは15秒と60秒のバージョンがあり、視聴者に感動を与える内容となっています。また、サイト内ではインタビューや特別な映像も公開されており、ブランドの価値観やストーリーを深く理解することができます。ジャックスは、顧客の未来を共に考え、サポートする姿勢を大切にしています。",
     "url": "https://www.jaccs.co.jp/corporate/about/brand/",
-    "image_url": ""
+    "image_url": "https://cdn.prod.website-files.com/661fb6045e9e2d962afc4c6c/69871f55b849960fe88a6787_PKXiwSoe40ZdxS94voHZ4CB9zNzUgkgDyINN0FJxXqI.png"
   },
   {
     "title": "Databento",
