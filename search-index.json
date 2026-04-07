@@ -14,13 +14,6 @@
     "image_url": ""
   },
   {
-    "title": "OFF SPACE ? Identity & Editorial",
-    "description": "",
-    "description_long": "",
-    "url": "https://www.behance.net/gallery/231834013/OFF-SPACE-Identity-Editorial",
-    "image_url": ""
-  },
-  {
     "title": "CMCC Global",
     "description": "CMCC Globalはアジア初のブロックチェーン技術に特化したベンチャーキャピタルで、北米とアジアに拠点を持ちます。",
     "description_long": "CMCC Globalは、アジア初のブロックチェーン技術に特化したベンチャーキャピタルです。北米とアジアに拠点を持ち、ブロックチェーン関連の企業やプロジェクトへの投資を行っています。CMCC Globalは、革新的な技術を持つスタートアップに対して資金提供を行い、成長を支援することを目指しています。また、専門的な知識とネットワークを活かし、投資先企業の成功を促進するためのサポートも提供しています。",
@@ -173,6 +166,13 @@
     "description_long": "株式会社マネーフォワードは、ユーザーに寄り添ったデザインを提供する企業です。私たちは「User Focus」を理念に掲げ、ユーザーの人生や世界を前に進めることを目指しています。デザインの力を通じて、より良い体験を創出し、生活の質を向上させることに貢献しています。多様なデザインプロジェクトを通じて、ユーザーのニーズに応えるための革新的なアプローチを追求しています。",
     "url": "https://design.moneyforward.com/",
     "image_url": "https://cdn.prod.website-files.com/661fb6045e9e2d962afc4c6c/6974f36b786657c02e67a8ac_QmiJHVFbt8PIauqM_E4ZUPNvuYMPw5w39hXQT2RLjZ0.png"
+  },
+  {
+    "title": "横浜銀行 IT・デジタル人財向け採用サイト",
+    "description": "横浜銀行のIT・デジタル人財向け採用サイトです。アジャイル開発による内製化を推進し、地域の未来を支える人材を募集しています。",
+    "description_long": "横浜銀行は、IT・デジタル人財向けの採用を行う銀行です。アジャイル開発を通じて内製化を推進し、地域の未来を支える人材を求めています。デジタル時代に対応したプロダクトを迅速にリリースするため、企画から実装までを内製で行うチームを立ち上げています。この新しいチームでは、エンジニアやデザイナーが自律的に成長できるキャリア制度や働く環境を整えています。求める人物像は、標準以上を目指し、全員で強い組織を作る意欲を持った人材です。横浜銀行は、変化する金融業界において挑戦を続ける企業です。",
+    "url": "https://redesign.boy.co.jp/",
+    "image_url": ""
   },
   {
     "title": "Nextbank",
@@ -1009,9 +1009,9 @@
   },
   {
     "title": "Protean Funds Scandinavia",
-    "description": "",
-    "description_long": "",
-    "url": "https://land-book.com/websites/92707-protean-funds-scandinavia",
+    "description": "Protean Funds Scandinaviaは、スカンジナビアを拠点とする運用会社で、利便性や規模、マーケティングではなくリターンの最適化を追求しています。",
+    "description_long": "Protean Funds Scandinaviaは、スカンジナビアを拠点とする運用会社です。主に投資信託を通じて資産運用を行い、リターンの最適化を追求しています。利便性や規模、マーケティングに依存せず、投資家に対して高いリターンを提供することに注力しています。市場の変化に柔軟に対応し、信念に基づいた運用を行う姿勢が特徴です。",
+    "url": "https://www.proteanfunds.com/",
     "image_url": ""
   },
   {
