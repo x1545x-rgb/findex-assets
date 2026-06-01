@@ -1,0 +1,127 @@
+/**
+ * Callout color tokens — SINGLE SOURCE OF TRUTH.
+ * ------------------------------------------------------------------
+ * All Callout patterns read their colors from these CSS variables.
+ * Components must NOT hard-code hex/rgb values: they reference
+ * `var(--callout-*)` (directly or through Tailwind arbitrary values
+ * like `bg-[var(--callout-surface)]`).
+ *
+ * Each variant sets five roles:
+ *   --callout-accent   the meaning color (bar / icon)
+ *   --callout-surface  pale tonal panel background
+ *   --callout-hairline subtle 1px outline on the surface
+ *   --callout-title    high-contrast heading text on the surface
+ *   --callout-body     body text on the surface (AA against surface)
+ *
+ * Dark mode is supported two ways so it works regardless of the host
+ * project's strategy:
+ *   - system preference  → @media (prefers-color-scheme: dark)
+ *   - Tailwind `class`   → an ancestor `.dark`
+ *
+ * Variants are selected with the attribute `data-callout-variant`,
+ * so a component only ever needs `var(--callout-accent)` etc.
+ */
+
+/* =================================================================
+ * LIGHT (default)
+ * ============================================================== */
+[data-callout-variant="info"] {
+  --callout-accent: #2563eb; /* blue-600 */
+  --callout-surface: #eff6ff; /* blue-50 */
+  --callout-hairline: #bfdbfe; /* blue-200 */
+  --callout-title: #1e3a8a; /* blue-900 */
+  --callout-body: #1e40af; /* blue-800 */
+}
+
+[data-callout-variant="success"] {
+  --callout-accent: #16a34a; /* green-600 */
+  --callout-surface: #f0fdf4; /* green-50 */
+  --callout-hairline: #bbf7d0; /* green-200 */
+  --callout-title: #14532d; /* green-900 */
+  --callout-body: #166534; /* green-800 */
+}
+
+[data-callout-variant="warning"] {
+  --callout-accent: #d97706; /* amber-600 */
+  --callout-surface: #fffbeb; /* amber-50 */
+  --callout-hairline: #fde68a; /* amber-200 */
+  --callout-title: #78350f; /* amber-900 */
+  --callout-body: #92400e; /* amber-800 */
+}
+
+[data-callout-variant="error"] {
+  --callout-accent: #dc2626; /* red-600 */
+  --callout-surface: #fef2f2; /* red-50 */
+  --callout-hairline: #fecaca; /* red-200 */
+  --callout-title: #7f1d1d; /* red-900 */
+  --callout-body: #991b1b; /* red-800 */
+}
+
+/* =================================================================
+ * DARK — system preference
+ * Surfaces become deep tonal tints; text flips to light tones.
+ * Contrast of --callout-body on --callout-surface stays >= 4.5:1.
+ * ============================================================== */
+@media (prefers-color-scheme: dark) {
+  [data-callout-variant="info"] {
+    --callout-accent: #60a5fa; /* blue-400 */
+    --callout-surface: #0c1e3a; /* deep blue tint */
+    --callout-hairline: #1e3a5f;
+    --callout-title: #dbeafe; /* blue-100 */
+    --callout-body: #bfdbfe; /* blue-200 */
+  }
+  [data-callout-variant="success"] {
+    --callout-accent: #4ade80; /* green-400 */
+    --callout-surface: #0c2417;
+    --callout-hairline: #14532d;
+    --callout-title: #dcfce7;
+    --callout-body: #bbf7d0;
+  }
+  [data-callout-variant="warning"] {
+    --callout-accent: #fbbf24; /* amber-400 */
+    --callout-surface: #2a1c05;
+    --callout-hairline: #78350f;
+    --callout-title: #fef3c7;
+    --callout-body: #fde68a;
+  }
+  [data-callout-variant="error"] {
+    --callout-accent: #f87171; /* red-400 */
+    --callout-surface: #2a0e0e;
+    --callout-hairline: #7f1d1d;
+    --callout-title: #fee2e2;
+    --callout-body: #fecaca;
+  }
+}
+
+/* =================================================================
+ * DARK — Tailwind `class` strategy (.dark ancestor)
+ * Mirrors the system-preference values above.
+ * ============================================================== */
+.dark [data-callout-variant="info"] {
+  --callout-accent: #60a5fa;
+  --callout-surface: #0c1e3a;
+  --callout-hairline: #1e3a5f;
+  --callout-title: #dbeafe;
+  --callout-body: #bfdbfe;
+}
+.dark [data-callout-variant="success"] {
+  --callout-accent: #4ade80;
+  --callout-surface: #0c2417;
+  --callout-hairline: #14532d;
+  --callout-title: #dcfce7;
+  --callout-body: #bbf7d0;
+}
+.dark [data-callout-variant="warning"] {
+  --callout-accent: #fbbf24;
+  --callout-surface: #2a1c05;
+  --callout-hairline: #78350f;
+  --callout-title: #fef3c7;
+  --callout-body: #fde68a;
+}
+.dark [data-callout-variant="error"] {
+  --callout-accent: #f87171;
+  --callout-surface: #2a0e0e;
+  --callout-hairline: #7f1d1d;
+  --callout-title: #fee2e2;
+  --callout-body: #fecaca;
+}
