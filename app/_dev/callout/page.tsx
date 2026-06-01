@@ -6,6 +6,9 @@ import {
   CalloutInsetShadow,
   CalloutPseudoBar,
   CalloutTonal,
+  CalloutAccentOutline,
+  CalloutIconTile,
+  CalloutRail,
   type CalloutProps,
   type CalloutVariant,
 } from "@/components/callout";
@@ -61,6 +64,24 @@ const PATTERNS: {
     label: "4. tonal fill + icon（推奨）",
     note: "縦線なし。淡トーナル背景＋意味アイコン。角丸と素直に噛み合う。",
     Component: CalloutTonal,
+  },
+  {
+    id: "accent-outline",
+    label: "5. 全周アクセント枠 + tonal（Bootstrap / Ant / GitHub系）",
+    note: "4辺同色の枠なので角が均一に丸まり楔が出ない。色枠で意味を伝える。",
+    Component: CalloutAccentOutline,
+  },
+  {
+    id: "icon-tile",
+    label: "6. 先頭アイコンタイル（Atlassian / Material のleading element）",
+    note: "縦線なし。塗りつぶしの角丸タイル＋白アイコン。角と無関係で強い意味表現。",
+    Component: CalloutIconTile,
+  },
+  {
+    id: "rail",
+    label: "7. 外付けレール（縦線をパネルの外に出す）",
+    note: "バーをパネルの外の独立要素にし、隙間で離す。border-radius と一切干渉しない。",
+    Component: CalloutRail,
   },
 ];
 

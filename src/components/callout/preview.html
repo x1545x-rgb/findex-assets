@@ -111,6 +111,22 @@
     .p-pseudo { position: relative; padding-left: 24px; }                  /* ③ 疑似要素バー */
     .p-pseudo::before { content:""; position:absolute; left:8px; top:8px; bottom:8px; width:4px; border-radius:9999px; background:var(--callout-accent); }
     .p-tonal  { box-shadow: inset 0 0 0 1px var(--callout-hairline); }     /* ④ tonal（推奨） */
+
+    /* ⑤ 全周アクセント枠 + tonal（4辺同色 → 角が均一に丸まり楔が出ない） */
+    .p-outline { border: 1.5px solid var(--callout-accent); }
+
+    /* ⑥ 先頭アイコンタイル（塗りつぶし角丸タイル＋アイコン、角と無関係） */
+    .p-tile { box-shadow: inset 0 0 0 1px var(--callout-hairline); }
+    .p-tile .ico-tile { flex:none; margin-top:2px; display:flex; align-items:center; justify-content:center; width:32px; height:32px; border-radius:8px; background:var(--callout-accent); color:#fff; }
+    .p-tile .ico-tile .icon { margin-top:0; color:inherit; }
+    /* ダーク時はアクセントが明るいので、白アイコンより濃いグリフが見やすい */
+    body:has(#dark:checked) .p-tile .ico-tile { color:#0a0a0a; }
+    @media (prefers-color-scheme: dark) { body:not(:has(#dark:checked)) .p-tile .ico-tile { color:#0a0a0a; } }
+
+    /* ⑦ 外付けレール（縦バーをパネルの外の独立要素にする） */
+    .p-rail { display:flex; align-items:stretch; gap:10px; background:transparent; padding:0; border-radius:0; }
+    .p-rail .rail { flex:none; width:4px; border-radius:9999px; background:var(--callout-accent); }
+    .p-rail .panel { flex:1; min-width:0; border-radius:12px; background:var(--callout-surface); padding:16px; }
   </style>
 </head>
 <body>
@@ -188,9 +204,47 @@
       </div>
     </section>
 
+    <!-- ⑤ 全周アクセント枠 + tonal -->
+    <section>
+      <h2>5. 全周アクセント枠 + tonal（Bootstrap / Ant / GitHub系）</h2>
+      <p class="note">4辺同色の枠なので角が均一に丸まり楔が出ない。色枠で意味を伝える。</p>
+      <div class="grid">
+        <div class="callout p-outline" data-callout-variant="info" role="note"><div class="row"><svg class="icon"><use href="#ic-info"/></svg><div class="text"><span class="sr-only">情報:</span><p class="ttl">情報</p><div class="body">この操作はいつでも取り消せます。</div></div></div></div>
+        <div class="callout p-outline" data-callout-variant="success" role="status"><div class="row"><svg class="icon"><use href="#ic-success"/></svg><div class="text"><span class="sr-only">成功:</span><p class="ttl">保存しました</p><div class="body">変更内容は正常に反映されました。</div></div></div></div>
+        <div class="callout p-outline" data-callout-variant="warning" role="status"><div class="row"><svg class="icon"><use href="#ic-warning"/></svg><div class="text"><span class="sr-only">警告:</span><p class="ttl">注意</p><div class="body">下書きは7日後に自動削除されます。</div></div></div></div>
+        <div class="callout p-outline" data-callout-variant="error" role="alert"><div class="row"><svg class="icon"><use href="#ic-error"/></svg><div class="text"><span class="sr-only">エラー:</span><p class="ttl">送信に失敗しました</p><div class="body">ネットワークを確認して再試行してください。</div></div></div></div>
+      </div>
+    </section>
+
+    <!-- ⑥ 先頭アイコンタイル -->
+    <section>
+      <h2>6. 先頭アイコンタイル（Atlassian / Material のleading element）</h2>
+      <p class="note">縦線なし。塗りつぶしの角丸タイル＋アイコン。角と無関係で強い意味表現。</p>
+      <div class="grid">
+        <div class="callout p-tile" data-callout-variant="info" role="note"><div class="row"><span class="ico-tile"><svg class="icon"><use href="#ic-info"/></svg></span><div class="text"><span class="sr-only">情報:</span><p class="ttl">情報</p><div class="body">この操作はいつでも取り消せます。</div></div></div></div>
+        <div class="callout p-tile" data-callout-variant="success" role="status"><div class="row"><span class="ico-tile"><svg class="icon"><use href="#ic-success"/></svg></span><div class="text"><span class="sr-only">成功:</span><p class="ttl">保存しました</p><div class="body">変更内容は正常に反映されました。</div></div></div></div>
+        <div class="callout p-tile" data-callout-variant="warning" role="status"><div class="row"><span class="ico-tile"><svg class="icon"><use href="#ic-warning"/></svg></span><div class="text"><span class="sr-only">警告:</span><p class="ttl">注意</p><div class="body">下書きは7日後に自動削除されます。</div></div></div></div>
+        <div class="callout p-tile" data-callout-variant="error" role="alert"><div class="row"><span class="ico-tile"><svg class="icon"><use href="#ic-error"/></svg></span><div class="text"><span class="sr-only">エラー:</span><p class="ttl">送信に失敗しました</p><div class="body">ネットワークを確認して再試行してください。</div></div></div></div>
+      </div>
+    </section>
+
+    <!-- ⑦ 外付けレール -->
+    <section>
+      <h2>7. 外付けレール（縦線をパネルの外に出す）</h2>
+      <p class="note">バーをパネルの外の独立要素にし、隙間で離す。border-radius と一切干渉しない。</p>
+      <div class="grid">
+        <div class="callout p-rail" data-callout-variant="info" role="note"><span class="rail" aria-hidden="true"></span><div class="panel"><div class="row"><svg class="icon"><use href="#ic-info"/></svg><div class="text"><span class="sr-only">情報:</span><p class="ttl">情報</p><div class="body">この操作はいつでも取り消せます。</div></div></div></div></div>
+        <div class="callout p-rail" data-callout-variant="success" role="status"><span class="rail" aria-hidden="true"></span><div class="panel"><div class="row"><svg class="icon"><use href="#ic-success"/></svg><div class="text"><span class="sr-only">成功:</span><p class="ttl">保存しました</p><div class="body">変更内容は正常に反映されました。</div></div></div></div></div>
+        <div class="callout p-rail" data-callout-variant="warning" role="status"><span class="rail" aria-hidden="true"></span><div class="panel"><div class="row"><svg class="icon"><use href="#ic-warning"/></svg><div class="text"><span class="sr-only">警告:</span><p class="ttl">注意</p><div class="body">下書きは7日後に自動削除されます。</div></div></div></div></div>
+        <div class="callout p-rail" data-callout-variant="error" role="alert"><span class="rail" aria-hidden="true"></span><div class="panel"><div class="row"><svg class="icon"><use href="#ic-error"/></svg><div class="text"><span class="sr-only">エラー:</span><p class="ttl">送信に失敗しました</p><div class="body">ネットワークを確認して再試行してください。</div></div></div></div></div>
+      </div>
+    </section>
+
     <footer class="tip">
       <strong>確認ポイント:</strong> パターン①の左上・左下の角を拡大すると、4px の直線バーが
-      border-radius に切り取られて楔状の欠けが見える。②〜④ではいずれも角がクリーンに保たれている。
+      border-radius に切り取られて楔状の欠けが見える。②〜⑦ではいずれも角がクリーンに保たれている。
+      縦線が欲しいなら⑦（外付けレール）か③（疑似要素バー）、線をやめるなら④/⑥、
+      色枠で締めるなら⑤。
     </footer>
   </div>
 </body>

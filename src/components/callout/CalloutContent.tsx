@@ -17,11 +17,25 @@ export interface CalloutProps {
  * The icon uses `text-[var(--callout-accent)]` and body text uses
  * `text-[var(--callout-body)]` — all sourced from tokens.css.
  */
-export function CalloutContent({ variant, title, children }: Omit<CalloutProps, "className">) {
+export function CalloutContent({
+  variant,
+  title,
+  children,
+  iconStyle = "plain",
+}: Omit<CalloutProps, "className"> & {
+  /** "plain" = accent-colored glyph; "tile" = white glyph on an accent tile. */
+  iconStyle?: "plain" | "tile";
+}) {
   const { Icon, srLabel } = VARIANTS[variant];
   return (
     <div className="flex gap-3">
-      <Icon className="mt-0.5 shrink-0 text-[var(--callout-accent)]" />
+      {iconStyle === "tile" ? (
+        <span className="mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-[var(--callout-accent)] text-white">
+          <Icon />
+        </span>
+      ) : (
+        <Icon className="mt-0.5 shrink-0 text-[var(--callout-accent)]" />
+      )}
       <div className="min-w-0 text-[var(--callout-body)]">
         {/* Meaning is never color-only: announce it to AT, hide visually. */}
         <span className="sr-only">{srLabel}</span>

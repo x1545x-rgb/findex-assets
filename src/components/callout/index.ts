@@ -7,3 +7,6 @@ export { CalloutBorderLeftBad } from "./CalloutBorderLeftBad"; // ❌ anti-patte
 export { CalloutInsetShadow } from "./CalloutInsetShadow";
 export { CalloutPseudoBar } from "./CalloutPseudoBar";
 export { CalloutTonal } from "./CalloutTonal";
+export { CalloutAccentOutline } from "./CalloutAccentOutline";
+export { CalloutIconTile } from "./CalloutIconTile";
+export { CalloutRail } from "./CalloutRail";
