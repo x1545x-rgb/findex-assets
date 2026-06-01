@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="ja" class="">
+<!--
+  Callout アクセントパターン — 静的プレビュー（preview-only）
+  ============================================================
+  ビルド不要。このファイルをブラウザで直接開くだけ（file:// でOK）。
+  実コンポーネント（*.tsx）とは独立した目視確認用で、本番には含めない。
+  色トークンと4パターンの見た目は src/components/callout/ と一致させてある。
+-->
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Callout — accent パターン比較（プレビュー）</title>
+  <style>
+    /* ============================================================
+       色トークン（tokens.css と同一）— 単一の真実の源
+       data-callout-variant で選択、各パターンは var(--callout-*) のみ参照
+       ========================================================= */
+    [data-callout-variant="info"]    { --callout-accent:#2563eb; --callout-surface:#eff6ff; --callout-hairline:#bfdbfe; --callout-title:#1e3a8a; --callout-body:#1e40af; }
+    [data-callout-variant="success"] { --callout-accent:#16a34a; --callout-surface:#f0fdf4; --callout-hairline:#bbf7d0; --callout-title:#14532d; --callout-body:#166534; }
+    [data-callout-variant="warning"] { --callout-accent:#d97706; --callout-surface:#fffbeb; --callout-hairline:#fde68a; --callout-title:#78350f; --callout-body:#92400e; }
+    [data-callout-variant="error"]   { --callout-accent:#dc2626; --callout-surface:#fef2f2; --callout-hairline:#fecaca; --callout-title:#7f1d1d; --callout-body:#991b1b; }
+
+    html.dark [data-callout-variant="info"]    { --callout-accent:#60a5fa; --callout-surface:#0c1e3a; --callout-hairline:#1e3a5f; --callout-title:#dbeafe; --callout-body:#bfdbfe; }
+    html.dark [data-callout-variant="success"] { --callout-accent:#4ade80; --callout-surface:#0c2417; --callout-hairline:#14532d; --callout-title:#dcfce7; --callout-body:#bbf7d0; }
+    html.dark [data-callout-variant="warning"] { --callout-accent:#fbbf24; --callout-surface:#2a1c05; --callout-hairline:#78350f; --callout-title:#fef3c7; --callout-body:#fde68a; }
+    html.dark [data-callout-variant="error"]   { --callout-accent:#f87171; --callout-surface:#2a0e0e; --callout-hairline:#7f1d1d; --callout-title:#fee2e2; --callout-body:#fecaca; }
+
+    /* ============================================================
+       ページのシェル（軽量・Tailwind なしで自己完結）
+       ========================================================= */
+    :root { color-scheme: light; }
+    html.dark { color-scheme: dark; }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Hiragino Sans", "Noto Sans JP", sans-serif;
+      background: #ffffff; color: #18181b;
+      transition: background .2s, color .2s;
+    }
+    html.dark body { background: #09090b; color: #f4f4f5; }
+    .wrap { max-width: 1024px; margin: 0 auto; padding: 32px 24px 64px; }
+    header.top { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px; margin-bottom: 32px; }
+    h1 { font-size: 24px; margin: 0; }
+    .sub { margin: 4px 0 0; font-size: 14px; color: #52525b; }
+    html.dark .sub { color: #a1a1aa; }
+    .toggle {
+      border: 1px solid #d4d4d8; background: transparent; color: inherit;
+      border-radius: 10px; padding: 8px 12px; font-size: 14px; font-weight: 600; cursor: pointer;
+    }
+    .toggle:hover { background: #f4f4f5; }
+    html.dark .toggle { border-color: #3f3f46; }
+    html.dark .toggle:hover { background: #27272a; }
+    section { margin-top: 48px; }
+    section:first-of-type { margin-top: 0; }
+    h2 { font-size: 18px; margin: 0; }
+    h2.bad { color: #dc2626; }
+    html.dark h2.bad { color: #f87171; }
+    .note { margin: 4px 0 16px; font-size: 14px; color: #52525b; }
+    html.dark .note { color: #a1a1aa; }
+    .grid { display: grid; gap: 16px; grid-template-columns: 1fr; }
+    @media (min-width: 640px) { .grid { grid-template-columns: 1fr 1fr; } }
+    footer.tip {
+      margin-top: 64px; border: 1px solid #e4e4e7; border-radius: 12px; padding: 16px;
+      font-size: 14px; color: #52525b;
+    }
+    html.dark footer.tip { border-color: #27272a; color: #a1a1aa; }
+    footer.tip strong { color: #27272a; }
+    html.dark footer.tip strong { color: #e4e4e7; }
+
+    /* ============================================================
+       Callout 共通 + 4パターン（コンポーネントと同じ CSS）
+       ========================================================= */
+    .callout { border-radius: 12px; padding: 16px; background: var(--callout-surface); }
+    .callout .row { display: flex; gap: 12px; }
+    .callout .icon { flex: none; margin-top: 2px; color: var(--callout-accent); }
+    .callout .text { min-width: 0; color: var(--callout-body); }
+    .callout .ttl { margin: 0; font-weight: 600; line-height: 1.3; color: var(--callout-title); }
+    .callout .body { font-size: 14px; line-height: 1.6; }
+    .sr-only {
+      position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+      overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0;
+    }
+
+    /* ① ❌ 使用禁止: border-left + radius → 角でマイター楔がクリップされる */
+    .p-bad   { border-left: 4px solid var(--callout-accent); }
+    /* ② inset box-shadow: 帯が角丸に追従して曲がる */
+    .p-inset { box-shadow: inset 4px 0 0 0 var(--callout-accent); }
+    /* ③ inset 疑似要素バー: 余白付きで浮かせた独立ピル、角と衝突しない */
+    .p-pseudo { position: relative; padding-left: 24px; }
+    .p-pseudo::before {
+      content: ""; position: absolute; left: 8px; top: 8px; bottom: 8px;
+      width: 4px; border-radius: 9999px; background: var(--callout-accent);
+    }
+    /* ④ tonal fill + icon（推奨）: 縦線なし、淡背景 + ハーフライン */
+    .p-tonal { box-shadow: inset 0 0 0 1px var(--callout-hairline); }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="top">
+      <div>
+        <h1>Callout — accent パターン比較</h1>
+        <p class="sub">角丸パネルにおける「左の細いアクセント線」の正しい表現方法を比較。</p>
+      </div>
+      <button class="toggle" id="toggle" type="button">🌙 ダーク表示</button>
+    </header>
+    <div id="root"></div>
+    <footer class="tip">
+      <strong>確認ポイント:</strong> パターン①の左上・左下の角を拡大すると、4px の直線バーが
+      border-radius に切り取られて楔状の欠けが見える。②〜④ではいずれも角がクリーンに保たれている。
+    </footer>
+  </div>
+
+  <script>
+    const S = { fill:"none", stroke:"currentColor", "stroke-width":2, "stroke-linecap":"round", "stroke-linejoin":"round" };
+    const svg = (inner) => `<svg class="icon" width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"
+      fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">${inner}</svg>`;
+    const ICONS = {
+      info:    svg(`<circle cx="12" cy="12" r="9"/><line x1="12" y1="11" x2="12" y2="16"/><circle cx="12" cy="7.5" r="0.6" fill="currentColor" stroke="none"/>`),
+      success: svg(`<circle cx="12" cy="12" r="9"/><path d="M8 12.5l2.5 2.5L16 9.5"/>`),
+      warning: svg(`<path d="M12 3.5L21 19H3z"/><line x1="12" y1="9.5" x2="12" y2="14"/><circle cx="12" cy="16.5" r="0.6" fill="currentColor" stroke="none"/>`),
+      error:   svg(`<circle cx="12" cy="12" r="9"/><line x1="9" y1="9" x2="15" y2="15"/><line x1="15" y1="9" x2="9" y2="15"/>`),
+    };
+    const SR = { info:"情報:", success:"成功:", warning:"警告:", error:"エラー:" };
+    const ROLE = { info:"note", success:"status", warning:"status", error:"alert" };
+    const COPY = {
+      info:    { title:"情報",            body:"この操作はいつでも取り消せます。" },
+      success: { title:"保存しました",     body:"変更内容は正常に反映されました。" },
+      warning: { title:"注意",            body:"下書きは7日後に自動削除されます。" },
+      error:   { title:"送信に失敗しました", body:"ネットワークを確認して再試行してください。" },
+    };
+    const VARIANTS = ["info", "success", "warning", "error"];
+    const PATTERNS = [
+      { cls:"p-bad",    label:"1. border-left + radius（❌ 使用禁止）", note:"角で楔/クリップが発生する反面教師。左上・左下を拡大して確認。", bad:true },
+      { cls:"p-inset",  label:"2. inset box-shadow",                 note:"帯が角丸に追従して曲がる。border-left の素直な置き換え。" },
+      { cls:"p-pseudo", label:"3. inset 疑似要素バー",                note:"::before を余白付きで浮かせた独立バー。角と衝突しない。" },
+      { cls:"p-tonal",  label:"4. tonal fill + icon（推奨）",         note:"縦線なし。淡トーナル背景＋意味アイコン。角丸と素直に噛み合う。" },
+    ];
+
+    const card = (cls, v) => `
+      <div class="callout ${cls}" data-callout-variant="${v}" role="${ROLE[v]}">
+        <div class="row">
+          ${ICONS[v]}
+          <div class="text">
+            <span class="sr-only">${SR[v]}</span>
+            <p class="ttl">${COPY[v].title}</p>
+            <div class="body">${COPY[v].body}</div>
+          </div>
+        </div>
+      </div>`;
+
+    document.getElementById("root").innerHTML = PATTERNS.map((p) => `
+      <section>
+        <h2 class="${p.bad ? "bad" : ""}">${p.label}</h2>
+        <p class="note">${p.note}</p>
+        <div class="grid">${VARIANTS.map((v) => card(p.cls, v)).join("")}</div>
+      </section>`).join("");
+
+    const btn = document.getElementById("toggle");
+    btn.addEventListener("click", () => {
+      const dark = document.documentElement.classList.toggle("dark");
+      btn.textContent = dark ? "☀️ ライト表示" : "🌙 ダーク表示";
+    });
+  </script>
+</body>
+</html>
